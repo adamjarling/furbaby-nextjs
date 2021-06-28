@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  h1 {
+    @apply text-4xl md:text-6xl py-4 font-sans uppercase tracking-widest;
+  }
+  h2 {
+    @apply text-4xl md:text-5xl py-4 font-sans uppercase tracking-widest;
+  }
+  p {
+    @apply pb-4;
+  }
+  a {
+    @apply border-b-2 border-dotted;
+  }
+  .banner-headline {
+    @apply inline bg-black p-2 text-6xl;
+  }
+}
