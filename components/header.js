@@ -45,7 +45,7 @@ const socialMediaItems = [
     url: distributors.spotify,
   },
   {
-    id: "instagram",
+    id: "youTube",
     icon: <FaYoutube />,
     url: distributors.youTubeChannel,
   },

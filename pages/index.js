@@ -6,13 +6,22 @@ import CargoPromo from "components/cargo-promo";
 import BannerFlattsFest from "components/banner-2021-07-10";
 import SplashVideos from "components/splash-videos";
 
-export default function Home() {
+function getRandomInt(max) {
+  return Math.floor(Math.random() * max);
+}
+
+const bgImages = [
+  "photo-triangle-wall-hi-res.jpg",
+  "banner-joe-next-year2.jpg",
+];
+
+export default function Home({ photo }) {
   return (
     <Layout>
       <Head>
         <title>Furbaby & the Tight Spaces</title>
       </Head>
-      <Splash1 />
+      <Splash1 photo={photo} />
 
       <section className="flex flex-col items-center justify-center py-8 px-2 md:px-4">
         <p className="text-center text-xl md:text-4xl font-sans uppercase tracking-widest">
@@ -42,4 +51,14 @@ export default function Home() {
       <SplashVideos />
     </Layout>
   );
+}
+
+// This gets called on every request
+export async function getServerSideProps() {
+  const index = getRandomInt(2);
+  const photo = bgImages[index];
+  console.log(`photo`, photo);
+
+  // Pass data to the page via props
+  return { props: { photo } };
 }

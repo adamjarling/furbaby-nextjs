@@ -76,7 +76,7 @@ function SplashSingles() {
       </ParallaxBanner>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 pt-4">
-        {singles.map((single) => (
+        {singles.map((single, i) => (
           <div key={single.src}>
             <div className="aspect-w-16 aspect-h-16">
               <Image

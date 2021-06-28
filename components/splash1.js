@@ -1,21 +1,17 @@
 import { ParallaxBanner } from "react-scroll-parallax";
 import ParallaxBannerChildren from "components/parallax-banner-children";
 
-function Splash1() {
+function Splash1({ photo }) {
   return (
     <ParallaxBanner
       layers={[
         {
           amount: 0.2,
-          image: "/images/photo-triangle-wall-hi-res.jpg",
+          image: `/images/${photo}`,
         },
       ]}
-      style={{ height: "100vh" }}
-    >
-      <ParallaxBannerChildren>
-        <div className="container flex flex-col items-center"></div>
-      </ParallaxBannerChildren>
-    </ParallaxBanner>
+      style={{ height: "90vh" }}
+    ></ParallaxBanner>
   );
 }
 
