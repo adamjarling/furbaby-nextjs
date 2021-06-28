@@ -8,6 +8,9 @@ import Section from "components/section";
 export default function Shows() {
   return (
     <Layout>
+      <Head>
+        <title>Shows - Furbaby & the Tight Spaces</title>
+      </Head>
       <ParallaxBanner
         layers={[
           {

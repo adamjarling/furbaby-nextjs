@@ -15,6 +15,9 @@ import CargoPromo from "components/cargo-promo";
 export default function PressKit() {
   return (
     <Layout>
+      <Head>
+        <title>Press Kit - Furbaby & the Tight Spaces</title>
+      </Head>
       <ParallaxBanner
         layers={[
           {

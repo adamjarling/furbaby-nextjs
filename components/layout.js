@@ -1,5 +1,4 @@
 import Head from "next/head";
-import Link from "next/link";
 import Header from "components/header";
 import Image from "next/image";
 
@@ -11,7 +10,11 @@ export default function Layout({ children, home }) {
       <Head>
         <link rel="icon" href="/images/fur-512x512.png" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
+        <link
+          rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossOrigin="true"
+        />
         <link
           href="https://fonts.googleapis.com/css2?family=Anton&display=swap"
           rel="stylesheet"

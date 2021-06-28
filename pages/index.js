@@ -9,6 +9,9 @@ import SplashVideos from "components/splash-videos";
 export default function Home() {
   return (
     <Layout>
+      <Head>
+        <title>Furbaby & the Tight Spaces</title>
+      </Head>
       <Splash1 />
 
       <section className="flex flex-col items-center justify-center py-8 px-2 md:px-4">

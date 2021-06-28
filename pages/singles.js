@@ -5,6 +5,9 @@ import SplashSingles from "components/splash-singles";
 export default function Singles() {
   return (
     <Layout>
+      <Head>
+        <title>Singles - Furbaby & the Tight Spaces</title>
+      </Head>
       <SplashSingles />
     </Layout>
   );
