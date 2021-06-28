@@ -57,7 +57,7 @@ function SplashVideos(props) {
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         {videos.map((video) => (
-          <div className="aspect-w-16 aspect-h-9">
+          <div key={video.id} className="aspect-w-16 aspect-h-9">
             <iframe
               src={`https://www.youtube.com/embed/${video.id}`}
               title={video.title}

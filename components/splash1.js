@@ -1,13 +1,13 @@
-import { ParallaxBanner, Parallax } from "react-scroll-parallax";
+import { ParallaxBanner } from "react-scroll-parallax";
 import ParallaxBannerChildren from "components/parallax-banner-children";
 
-function Splash1(props) {
+function Splash1() {
   return (
     <ParallaxBanner
       layers={[
         {
           amount: 0.2,
-          image: "images/photo-triangle-wall.webp",
+          image: "/images/photo-triangle-wall-hi-res.jpg",
         },
       ]}
       style={{ height: "100vh" }}

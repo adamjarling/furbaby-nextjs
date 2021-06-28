@@ -102,7 +102,7 @@ export default function Header() {
           {/* Social media icons */}
           <div className="flex text-2xl">
             {socialMediaItems.map((item) => (
-              <span className="px-2">
+              <span key={item.id} className="px-2">
                 <ExternalLink key={item.id} url={item.url}>
                   {item.icon}
                 </ExternalLink>

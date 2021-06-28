@@ -9,7 +9,7 @@ export default function Layout({ children, home }) {
   return (
     <div className="bg-black text-gray-50 min-h-screen font-serif">
       <Head>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/images/fur-512x512.png" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
         <link
@@ -19,14 +19,9 @@ export default function Layout({ children, home }) {
 
         <meta
           name="description"
-          content="Learn how to build a personal website using Next.js"
+          content="FURBABY and the TIGHT SPACES is a garage rock band from Chicago, USA"
         />
-        <meta
-          property="og:image"
-          content={`https://og-image.vercel.app/${encodeURI(
-            siteTitle
-          )}.png?theme=light&md=0&fontSize=75px&images=https%3A%2F%2Fassets.vercel.com%2Fimage%2Fupload%2Ffront%2Fassets%2Fdesign%2Fnextjs-black-logo.svg`}
-        />
+        <meta property="og:image" content="/images/og-image-lava.png" />
         <meta name="og:title" content={siteTitle} />
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
