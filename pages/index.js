@@ -6,14 +6,22 @@ import CargoPromo from "components/cargo-promo";
 import BannerFlattsFest from "components/banner-2021-07-10";
 import SplashVideos from "components/splash-videos";
 
+const videos = [
+  {
+    id: "9jNy5Kvsi68",
+    title: "Furbaby and the Tight Spaces - Next Year video",
+  },
+  {
+    id: "-054IlsCbGQ",
+    title: "Furbaby and the Tight Spaces - I Can Only Give You Everything",
+  },
+];
+
 function getRandomInt(max) {
   return Math.floor(Math.random() * max);
 }
 
-const bgImages = [
-  "photo-triangle-wall-hi-res.jpg",
-  "banner-joe-next-year2.jpg",
-];
+const bgImages = ["photo-triangle-wall-hi-res.jpg", "banner-keyboard.jpg"];
 
 export default function Home({ photo }) {
   return (
@@ -48,7 +56,20 @@ export default function Home({ photo }) {
       <div className="bg-white">
         <SplashLatestSingle />
       </div>
-      <SplashVideos />
+
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+        {videos.map((video) => (
+          <div key={video.id} className="aspect-w-16 aspect-h-9">
+            <iframe
+              src={`https://www.youtube.com/embed/${video.id}`}
+              title={video.title}
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            ></iframe>
+          </div>
+        ))}
+      </div>
     </Layout>
   );
 }
@@ -57,7 +78,6 @@ export default function Home({ photo }) {
 export async function getServerSideProps() {
   const index = getRandomInt(2);
   const photo = bgImages[index];
-  console.log(`photo`, photo);
 
   // Pass data to the page via props
   return { props: { photo } };
