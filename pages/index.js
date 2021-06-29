@@ -5,6 +5,8 @@ import SplashLatestSingle from "components/splash-latest-single";
 import CargoPromo from "components/cargo-promo";
 import BannerFlattsFest from "components/banner-2021-07-10";
 import SplashVideos from "components/splash-videos";
+import SplashSingleSelection from "components/splash-single-selection";
+import LinkButton from "components/link-button";
 
 const videos = [
   {
@@ -32,8 +34,8 @@ export default function Home({ photo }) {
       <Splash1 photo={photo} />
 
       <section className="flex flex-col items-center justify-center py-8 px-2 md:px-4">
-        <p className="text-center text-xl md:text-4xl font-sans uppercase tracking-widest">
-          Qué pasa. We're Furbaby &amp; the Tight Spaces and play garage rock
+        <p className="text-center text-2xl md:text-4xl font-sans uppercase tracking-widest">
+          Qué pasa. We're Furbaby &amp; the Tight Spaces and play garage
         </p>
       </section>
 
@@ -52,9 +54,16 @@ export default function Home({ photo }) {
       </section>
 
       <CargoPromo />
+      <SplashSingleSelection />
+
       <BannerFlattsFest />
-      <div className="bg-white">
+
+      <div className="bg-white py-6">
         <SplashLatestSingle />
+      </div>
+
+      <div className="text-center px-2 md:px-4">
+        <h2>A few videos made in the neighborhood</h2>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -69,6 +78,9 @@ export default function Home({ photo }) {
             ></iframe>
           </div>
         ))}
+      </div>
+      <div className="my-8 text-center">
+        <LinkButton href="videos">View all videos</LinkButton>
       </div>
     </Layout>
   );
