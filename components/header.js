@@ -26,6 +26,10 @@ const navLinks = [
     url: "/singles",
     label: "Singles",
   },
+  {
+    url: "/news",
+    label: "News",
+  },
 ];
 
 const socialMediaItems = [
