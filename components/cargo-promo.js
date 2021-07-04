@@ -8,9 +8,7 @@ export default function CargoPromo() {
     <div className="bg-white text-gray-900">
       <Section>
         <h2>Full-length Album October 1, 2021</h2>
-        <h3 className="font-sans text-4xl uppercase pb-4 tracking-widest text-gray-600">
-          Europe, UK, Japan
-        </h3>
+        <h3 className="text-gray-600">Europe, UK, Japan</h3>
         <div className="relative h-24 md:h-36 w-36 md:w-48 mb-4 float-left mr-4">
           <ExternalLink url="https://www.cargorecords.co.uk/">
             <Image
@@ -21,7 +19,7 @@ export default function CargoPromo() {
             />
           </ExternalLink>
         </div>
-        <p className="text-xl">
+        <p className="text-md md:text-xl">
           <ExternalLink url="https://www.cargorecords.co.uk/">
             Cargo Records UK
           </ExternalLink>{" "}

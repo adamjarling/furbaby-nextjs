@@ -5,9 +5,9 @@ import Image from "next/image";
 import { useScrollPosition } from "@n8tb1t/use-scroll-position";
 import classNames from "classnames";
 import { FaFacebook, FaInstagram, FaSpotify, FaYoutube } from "react-icons/fa";
-import ExternalLink from "components/external-link";
 import { distributors } from "social-media-manifest";
 import logo from "public/images/furbaby-and-ts-logo_white.png";
+import SocialMediaIcons from "components/social-media-icons";
 
 const navLinks = [
   {
@@ -30,29 +30,6 @@ const navLinks = [
   {
     url: "/news",
     label: "News",
-  },
-];
-
-const socialMediaItems = [
-  {
-    id: "facebook",
-    icon: <FaFacebook />,
-    url: distributors.facebook,
-  },
-  {
-    id: "instagram",
-    icon: <FaInstagram />,
-    url: distributors.instagram,
-  },
-  {
-    id: "spotify",
-    icon: <FaSpotify />,
-    url: distributors.spotify,
-  },
-  {
-    id: "youTube",
-    icon: <FaYoutube />,
-    url: distributors.youTubeChannel,
   },
 ];
 
@@ -107,15 +84,8 @@ export default function Header() {
             </a>
           </Link>
 
-          {/* Social media icons */}
-          <div className="flex text-2xl">
-            {socialMediaItems.map((item) => (
-              <span key={item.id} className="px-2">
-                <ExternalLink key={item.id} url={item.url}>
-                  {item.icon}
-                </ExternalLink>
-              </span>
-            ))}
+          <div className="invisible w-0 h-0 md:visible md:w-auto md:h-auto text-2xl">
+            <SocialMediaIcons />
           </div>
         </div>
       </header>
@@ -130,12 +100,13 @@ export default function Header() {
             "h-screen",
             "w-screen",
             "flex",
+            "flex-col",
             "items-center",
             "justify-center",
             "bg-black",
             "font-sans",
             "uppercase",
-            "text-5xl",
+            "text-4xl",
             "md:text-5xl",
             "text-center",
             "tracking-widest",
@@ -157,6 +128,10 @@ export default function Header() {
             </li>
           ))}
         </ul>
+
+        <div className="md:invisible md:w-0 md:h-0 visible w-auto pt-5 text-5xl">
+          <SocialMediaIcons />
+        </div>
       </nav>
     </>
   );

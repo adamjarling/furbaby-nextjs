@@ -6,7 +6,6 @@ import FandTS from "components/f-and-ts";
 import ExternalLink from "components/external-link";
 import Obfuscate from "react-obfuscate";
 import Section from "components/section";
-import Image from "next/image";
 import SplashPhotos from "components/splash-photos";
 import SplashVideos from "components/splash-videos";
 import SplashSingles from "components/splash-singles";
@@ -33,7 +32,7 @@ export default function PressKit() {
           </div>
         </ParallaxBannerChildren>
       </ParallaxBanner>
-      <Section>
+      <Section isJustify>
         <p>
           <FandTS /> records demos, reads, does yoga, drinks wine and takes long
           walks on the beach in Chicago USA.
@@ -72,19 +71,10 @@ export default function PressKit() {
             Tyla and Dogs 'D Amour
           </ExternalLink>
           ,{" "}
-          <ExternalLink url="https://www.blackangusrock.com/">
-            Black Angus
-          </ExternalLink>
-          ,{" "}
           <ExternalLink url="https://www.facebook.com/EarlySound">
             Early Sound
-          </ExternalLink>
-          ,{" "}
-          <ExternalLink url="https://www.keithscottblues.com/">
-            Keith Scott Blues Band
-          </ExternalLink>
-          , <ExternalLink url="#">The Electric Blues Junkies</ExternalLink>, and
-          others.
+          </ExternalLink>{" "}
+          and others.
         </p>
         <p>
           <FandTS /> has evolved from a bedroom studio project into a full live

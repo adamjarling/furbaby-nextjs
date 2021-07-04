@@ -63,7 +63,7 @@ export default function Home({ photo }) {
       </div>
 
       <div className="text-center px-2 md:px-4">
-        <h2>A few videos made in the neighborhood</h2>
+        <h3>A few videos made in the neighborhood</h3>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
