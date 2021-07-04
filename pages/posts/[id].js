@@ -27,7 +27,7 @@ export default function Post({ postData }) {
     <Layout>
       <Head>{postData.title}</Head>
       <Section>
-        <div className="pt-16 pb-6">
+        <div className="pt-24 md:pt-16 pb-6">
           <Image
             src={`/images/posts/${postData.coverImage}`}
             alt={`ho`}

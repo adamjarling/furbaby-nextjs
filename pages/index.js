@@ -7,6 +7,8 @@ import BannerFlattsFest from "components/banner-2021-07-10";
 import SplashVideos from "components/splash-videos";
 import SplashSingleSelection from "components/splash-single-selection";
 import LinkButton from "components/link-button";
+import Image from "next/image";
+import Link from "next/link";
 
 const videos = [
   {
@@ -53,16 +55,30 @@ export default function Home({ photo }) {
         </div>
       </section>
 
+      <section className="py-4 sm:py-20 px-4 lg:px-0 flex flex-col items-center">
+        <div className="container max-w-8xl">
+          <BannerFlattsFest />
+        </div>
+      </section>
+
       <CargoPromo />
-      <SplashSingleSelection />
 
-      <BannerFlattsFest />
-
+      <Link href="/press-kit">
+        <a className="border-none">
+          <Image
+            src="/images/banner-press-kit.jpg"
+            alt="Electronic Press Kit"
+            width={2048}
+            height={1225}
+            fill="responsive"
+          />
+        </a>
+      </Link>
       <div className="bg-white py-6">
         <SplashLatestSingle />
       </div>
 
-      <div className="text-center px-2 md:px-4">
+      {/* <div className="text-center px-2 md:px-4">
         <h3>A few videos made in the neighborhood</h3>
       </div>
 
@@ -81,7 +97,7 @@ export default function Home({ photo }) {
       </div>
       <div className="my-8 text-center">
         <LinkButton href="videos">View all videos</LinkButton>
-      </div>
+      </div> */}
     </Layout>
   );
 }

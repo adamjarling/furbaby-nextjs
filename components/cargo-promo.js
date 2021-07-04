@@ -7,7 +7,7 @@ export default function CargoPromo() {
   return (
     <div className="bg-white text-gray-900">
       <Section>
-        <h2>Full-length Album October 1, 2021</h2>
+        <h3 className="pb-0">Full-length Album October 1, 2021</h3>
         <h3 className="text-gray-600">Europe, UK, Japan</h3>
         <div className="relative h-24 md:h-36 w-36 md:w-48 mb-4 float-left mr-4">
           <ExternalLink url="https://www.cargorecords.co.uk/">
