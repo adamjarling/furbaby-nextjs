@@ -7,6 +7,7 @@ import classNames from "classnames";
 import { FaFacebook, FaInstagram, FaSpotify, FaYoutube } from "react-icons/fa";
 import ExternalLink from "components/external-link";
 import { distributors } from "social-media-manifest";
+import logo from "public/images/furbaby-and-ts-logo_white.png";
 
 const navLinks = [
   {
@@ -94,14 +95,17 @@ export default function Header() {
             </div>
           </div>
 
-          <div className="h-24 w-40 relative">
-            <Image
-              src="/images/furbaby-tight-spaces-logo.png"
-              alt="Furbaby and the Tight Spaces"
-              layout="fill"
-              objectFit="cover"
-            />
-          </div>
+          <Link href="/">
+            <a className="relative border-none w-40 pt-1">
+              <Image
+                src={logo}
+                alt="Furbaby and the Tight Spaces"
+                layout="responsive"
+                width={1640}
+                height={1077}
+              />
+            </a>
+          </Link>
 
           {/* Social media icons */}
           <div className="flex text-2xl">

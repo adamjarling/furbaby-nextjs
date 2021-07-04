@@ -43,7 +43,7 @@ function SplashVideos(props) {
         layers={[
           {
             amount: 0.2,
-            image: "images/banner-videos.jpg",
+            image: "images/banner-lake.jpg",
           },
         ]}
         style={{ height: "50vh" }}

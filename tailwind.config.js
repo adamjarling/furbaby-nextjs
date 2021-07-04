@@ -10,6 +10,9 @@ module.exports = {
       serif: ["Courier", "serif"],
     },
     extend: {
+      backgroundImage: (theme) => ({
+        "texture-pattern": "url('public/images/bg-animal.jpg')",
+      }),
       spacing: {
         128: "32rem",
         144: "36rem",

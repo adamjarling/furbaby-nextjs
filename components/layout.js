@@ -1,12 +1,13 @@
 import Head from "next/head";
 import Header from "components/header";
 import Image from "next/image";
+import { ParallaxBanner } from "react-scroll-parallax";
 
 export const siteTitle = "Furbaby & the Tight Spaces";
 
 export default function Layout({ children, home }) {
   return (
-    <div className="bg-black text-gray-50 min-h-screen font-serif">
+    <div className="bg-texture-pattern text-gray-50 min-h-screen font-serif">
       <Head>
         <link rel="icon" href="/images/fur-512x512.png" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />

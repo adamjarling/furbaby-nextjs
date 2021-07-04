@@ -27,22 +27,22 @@ export default function Post({ postData }) {
     <Layout>
       <Head>{postData.title}</Head>
       <Section>
-        <div className="relative">
+        <div className="pt-16 pb-6">
           <Image
-            src={`/images/${postData.coverImage}`}
+            src={`/images/posts/${postData.coverImage}`}
             alt={`ho`}
             layout="responsive"
-            width={300}
-            height={200}
+            width={1366}
+            height={768}
           />
         </div>
 
-        {postData.title}
-        <br />
-        {postData.id}
-        <br />
-        <Date dateString={postData.date} />
-        <br />
+        <h1>{postData.title}</h1>
+
+        <p>
+          <Date dateString={postData.date} />
+        </p>
+
         <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
       </Section>
     </Layout>

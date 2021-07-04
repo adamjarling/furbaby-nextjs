@@ -28,7 +28,7 @@ export default function News({ allPostsData }) {
           {allPostsData.map(({ id, coverImage, date, title }) => (
             <div className="bg-white text-black">
               <Image
-                src={`/images/${coverImage}`}
+                src={`/images/posts/${coverImage}`}
                 alt={`ho`}
                 width={300}
                 height={200}

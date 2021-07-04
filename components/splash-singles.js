@@ -2,13 +2,7 @@ import { ParallaxBanner, Parallax } from "react-scroll-parallax";
 import ParallaxBannerChildren from "components/parallax-banner-children";
 import Image from "next/image";
 import * as manifest from "music-release-manifest";
-import {
-  FaFacebookSquare,
-  FaSpotify,
-  FaAmazon,
-  FaYoutube,
-  FaApple,
-} from "react-icons/fa";
+import { FaSpotify, FaAmazon, FaYoutube, FaApple } from "react-icons/fa";
 import ExternalLink from "components/external-link";
 
 const singles = [
@@ -78,14 +72,13 @@ function SplashSingles() {
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 pt-4">
         {singles.map((single, i) => (
           <div key={single.src}>
-            <div className="aspect-w-16 aspect-h-16">
-              <Image
-                src={`/images/${single.src}`}
-                alt={single.title}
-                layout="fill"
-                objectFit="cover"
-              />
-            </div>
+            <Image
+              src={`/images/${single.src}`}
+              alt={single.title}
+              layout="responsive"
+              width={500}
+              height={500}
+            />
             <div className="flex justify-evenly items-center text-2xl mt-3 mb-6">
               <ExternalLink url={single.manifestItems.spotify}>
                 <FaSpotify />
