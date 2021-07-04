@@ -21,6 +21,13 @@
   a {
     @apply border-b-2 border-dotted;
   }
+  input[type="email"],
+  input[type="text"] {
+    @apply shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none;
+  }
+  button {
+    @apply bg-transparent hover:bg-gray-200 text-gray-100 font-sans uppercase hover:text-gray-900 py-2 px-8 border border-solid border-gray-200 hover:border-transparent tracking-widest rounded text-xl;
+  }
   .banner-headline {
     @apply inline bg-black p-2 text-6xl;
   }

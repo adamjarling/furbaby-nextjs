@@ -2,6 +2,7 @@ import Head from "next/head";
 import Header from "components/header";
 import Image from "next/image";
 import { ParallaxBanner } from "react-scroll-parallax";
+import MailChimpForm from "components/mailchimp-form";
 
 export const siteTitle = "Furbaby & the Tight Spaces";
 
@@ -41,6 +42,7 @@ export default function Layout({ children, home }) {
             objectFit="cover"
           />
         </div>
+        <MailChimpForm />
         &copy; 2021. Made in Chicago, USA
       </footer>
     </div>
