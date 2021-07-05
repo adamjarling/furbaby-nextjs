@@ -15,6 +15,7 @@ import Obfuscate from "react-obfuscate";
 import SplashPhotos from "components/splash-photos";
 import SplashVideos from "components/splash-videos";
 import SplashSingles from "components/splash-singles";
+import Container from "components/container";
 
 const videos = [
   {
@@ -110,23 +111,19 @@ export default function Home({ photo }) {
         </div>
       </Section>
 
-      {/* <section className="px-4 lg:px-0 pb-4 flex flex-col items-center">
-        <div className="container max-w-8xl">
-          <BannerFlattsFest />
+      <Section>
+        <div className="pb-8">
+          <div className="aspect-w-16 aspect-h-9">
+            <iframe
+              src={`https://www.youtube.com/embed/mqJ4i2EAgTk`}
+              title={`Happy Fourth of July`}
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            ></iframe>
+          </div>
         </div>
-      </section> */}
-
-      <div className="pb-8">
-        <div className="aspect-w-16 aspect-h-9">
-          <iframe
-            src={`https://www.youtube.com/embed/mqJ4i2EAgTk`}
-            title={`Happy Fourth of July`}
-            frameBorder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen
-          ></iframe>
-        </div>
-      </div>
+      </Section>
 
       <CargoPromo />
       <SplashPhotos />
