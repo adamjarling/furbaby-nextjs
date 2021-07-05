@@ -32,19 +32,6 @@ function SplashPhotos(props) {
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 pt-4 uppercase">
           <div>
             <a
-              href={`/images/photo-triangle-wall-hi-res.jpg`}
-              className="border-none"
-            >
-              <Image
-                src={wallPhoto}
-                alt="Promo photo from Cocoa video shoot"
-                fill="responsive"
-                srl_gallery_image="true"
-              />
-            </a>
-          </div>
-          <div>
-            <a
               href={`/images/next-year-video-cover.jpg`}
               className="border-none"
             >
@@ -80,6 +67,19 @@ function SplashPhotos(props) {
               <Image
                 src={lava}
                 alt="Furbaby stuck inside a lava lamp promo photo"
+                fill="responsive"
+                srl_gallery_image="true"
+              />
+            </a>
+          </div>
+          <div>
+            <a
+              href={`/images/photo-triangle-wall-hi-res.jpg`}
+              className="border-none"
+            >
+              <Image
+                src={wallPhoto}
+                alt="Promo photo from Cocoa video shoot"
                 fill="responsive"
                 srl_gallery_image="true"
               />

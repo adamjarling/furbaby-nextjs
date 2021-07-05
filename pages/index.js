@@ -4,11 +4,17 @@ import Splash1 from "components/splash1";
 import SplashLatestSingle from "components/splash-latest-single";
 import CargoPromo from "components/cargo-promo";
 import BannerFlattsFest from "components/banner-2021-07-10";
-import SplashVideos from "components/splash-videos";
 import SplashSingleSelection from "components/splash-single-selection";
 import LinkButton from "components/link-button";
 import Image from "next/image";
 import Link from "next/link";
+import Section from "components/section";
+import FandTS from "components/f-and-ts";
+import ExternalLink from "components/external-link";
+import Obfuscate from "react-obfuscate";
+import SplashPhotos from "components/splash-photos";
+import SplashVideos from "components/splash-videos";
+import SplashSingles from "components/splash-singles";
 
 const videos = [
   {
@@ -33,71 +39,99 @@ export default function Home({ photo }) {
       <Head>
         <title>Furbaby & the Tight Spaces</title>
       </Head>
-      <Splash1 photo={photo} />
+      <Splash1 photo={"photo-triangle-wall-hi-res.jpg"} />
 
-      <section className="flex flex-col items-center justify-center py-8 px-2 md:px-4">
+      {/* <section className="flex flex-col items-center justify-center py-8 px-2 md:px-4">
         <p className="text-center text-2xl md:text-4xl font-sans uppercase tracking-widest">
-          Qué pasa. We're Furbaby &amp; the Tight Spaces and play garage
+          Hi, we're Furbaby &amp; the Tight Spaces and play garage rock
         </p>
-      </section>
+      </section> */}
 
-      <section className="flex flex-col items-center justify-center py-10">
-        <div className="container max-w-6xl">
-          <div className="aspect-w-16 aspect-h-9">
-            <iframe
-              src="https://www.youtube.com/embed/vU_-n-9qmPk"
-              title="YouTube video player"
-              frameBorder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-            ></iframe>
-          </div>
+      <Section isJustify>
+        <div className="md:text-xl">
+          <p>
+            <FandTS /> records demos, reads, does yoga, drinks wine and takes
+            long walks along the beach in Chicago USA.
+          </p>
+          <p>
+            Dreamed up during our 2020 quarantine, <FandTS /> is an
+            alt/garage/psych art project that experiments with music, videos,
+            photography and reflects on what's going on in a world that just got
+            fast-forwarded into the future, unexpectedly.
+          </p>
+          <p>
+            In past and current lives members of the band have played, toured
+            in, and/or recorded with{" "}
+            <ExternalLink url="https://thelastvegas.com">
+              The Last Vegas
+            </ExternalLink>
+            ,{" "}
+            <ExternalLink url="https://www.steepwater.com/">
+              The Steepwater Band
+            </ExternalLink>
+            ,{" "}
+            <ExternalLink url="https://urgeoverkill.com/">
+              Urge Overkill
+            </ExternalLink>
+            ,{" "}
+            <ExternalLink url="https://www.gethip.com/site/artists/cynics/">
+              The Cynics
+            </ExternalLink>
+            ,{" "}
+            <ExternalLink url="https://www.warriorsoulofficial.com/">
+              Warrior Soul
+            </ExternalLink>
+            ,{" "}
+            <ExternalLink url="https://www.abbarama.com/">
+              ABBARAMA
+            </ExternalLink>
+            ,{" "}
+            <ExternalLink url="https://en.wikipedia.org/wiki/The_Dogs_D%27Amour">
+              Tyla and Dogs 'D Amour
+            </ExternalLink>
+            ,{" "}
+            <ExternalLink url="https://www.facebook.com/EarlySound">
+              Early Sound
+            </ExternalLink>{" "}
+            and others.
+          </p>
+          {/* <p>
+            <FandTS /> has evolved from a bedroom studio project into a full
+            live band. Now booking Europe &amp; USA.{" "}
+            <Obfuscate
+              email="furbabyferguson@gmail.com"
+              headers={{
+                subject: "Email from Furbaby.rocks",
+              }}
+            >
+              Drop us a line
+            </Obfuscate>
+          </p> */}
         </div>
-      </section>
+      </Section>
 
-      <section className="py-4 sm:py-20 px-4 lg:px-0 flex flex-col items-center">
+      {/* <section className="px-4 lg:px-0 pb-4 flex flex-col items-center">
         <div className="container max-w-8xl">
           <BannerFlattsFest />
         </div>
-      </section>
+      </section> */}
+
+      <div className="pb-8">
+        <div className="aspect-w-16 aspect-h-9">
+          <iframe
+            src={`https://www.youtube.com/embed/mqJ4i2EAgTk`}
+            title={`Happy Fourth of July`}
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+          ></iframe>
+        </div>
+      </div>
 
       <CargoPromo />
-
-      <Link href="/press-kit">
-        <a className="border-none">
-          <Image
-            src="/images/banner-press-kit.jpg"
-            alt="Electronic Press Kit"
-            width={2048}
-            height={1225}
-            fill="responsive"
-          />
-        </a>
-      </Link>
-      <div className="bg-white py-6">
-        <SplashLatestSingle />
-      </div>
-
-      {/* <div className="text-center px-2 md:px-4">
-        <h3>A few videos made in the neighborhood</h3>
-      </div>
-
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-        {videos.map((video) => (
-          <div key={video.id} className="aspect-w-16 aspect-h-9">
-            <iframe
-              src={`https://www.youtube.com/embed/${video.id}`}
-              title={video.title}
-              frameBorder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-            ></iframe>
-          </div>
-        ))}
-      </div>
-      <div className="my-8 text-center">
-        <LinkButton href="videos">View all videos</LinkButton>
-      </div> */}
+      <SplashPhotos />
+      <SplashVideos />
+      <SplashSingles />
     </Layout>
   );
 }

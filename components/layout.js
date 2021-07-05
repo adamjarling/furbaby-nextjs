@@ -36,7 +36,7 @@ export default function Layout({ children, home }) {
       <footer className="flex flex-col items-center justify-center pt-6 pb-10">
         <div className="relative h-16 md:h-24 w-24 md:w-36">
           <Image
-            src="/images/furbaby-tight-spaces-logo.png"
+            src="/images/furbaby-and-ts-logo_white.png"
             alt="Furbaby and the Tight Spaces"
             layout="fill"
             objectFit="cover"

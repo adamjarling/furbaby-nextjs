@@ -23,7 +23,7 @@ export default function News({ allPostsData }) {
       </Head>
 
       <Section>
-        <h2 className="mt-10">News</h2>
+        <h2 className="mt-20">News</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-4">
           {allPostsData.map(({ id, coverImage, date, title }) => (
             <div className="bg-white text-black">

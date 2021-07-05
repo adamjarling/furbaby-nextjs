@@ -4,29 +4,19 @@ import Link from "next/link";
 import Image from "next/image";
 import { useScrollPosition } from "@n8tb1t/use-scroll-position";
 import classNames from "classnames";
-import { FaFacebook, FaInstagram, FaSpotify, FaYoutube } from "react-icons/fa";
-import { distributors } from "social-media-manifest";
 import logo from "public/images/furbaby-and-ts-logo_white.png";
 import SocialMediaIcons from "components/social-media-icons";
+import Obfuscate from "react-obfuscate";
 
 const navLinks = [
-  {
-    url: "/",
-    label: "Home",
-  },
-
-  {
-    url: "/press-kit",
-    label: "Press Kit",
-  },
-  {
-    url: "/videos",
-    label: "Videos",
-  },
-  {
-    url: "/singles",
-    label: "Singles",
-  },
+  // {
+  //   url: "/videos",
+  //   label: "Videos",
+  // },
+  // {
+  //   url: "/singles",
+  //   label: "Singles",
+  // },
   {
     url: "/news",
     label: "News",
@@ -104,8 +94,6 @@ export default function Header() {
             "items-center",
             "justify-center",
             "bg-black",
-            "font-sans",
-            "uppercase",
             "text-4xl",
             "md:text-5xl",
             "text-center",
@@ -123,13 +111,24 @@ export default function Header() {
       >
         <ul>
           {navLinks.map((nl) => (
-            <li key={nl.label} className="py-8 sm:py-8">
+            <li key={nl.label} className="py-8 sm:py-8 font-sans uppercase">
               <Link href={nl.url}>{nl.label}</Link>
             </li>
           ))}
         </ul>
 
-        <div className="md:invisible md:w-0 md:h-0 visible w-auto pt-5 text-5xl">
+        <div className="pb-10 md:pt-8 text-2xl">
+          <Obfuscate
+            email="furbabyferguson@gmail.com"
+            headers={{
+              subject: "Email from Furbaby.rocks",
+            }}
+          >
+            info@furbaby.rocks
+          </Obfuscate>
+        </div>
+
+        <div className="md:invisible md:w-0 md:h-0 visible w-auto text-5xl">
           <SocialMediaIcons />
         </div>
       </nav>
