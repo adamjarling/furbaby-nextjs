@@ -19,7 +19,7 @@
     @apply pb-4;
   }
   a {
-    @apply border-b-2 border-dotted;
+    @apply border-b-2 border-dotted transition duration-500 ease-in-out;
   }
   input[type="email"],
   input[type="text"] {

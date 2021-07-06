@@ -5,6 +5,7 @@ import Section from "components/section";
 import Image from "next/image";
 import Link from "next/link";
 import { FaArrowRight } from "react-icons/fa";
+import Date from "components/date";
 
 export async function getStaticProps() {
   const allPostsData = getSortedPostsData();
@@ -25,25 +26,24 @@ export default function News({ allPostsData }) {
       <Section>
         <h2 className="mt-20">News</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-4">
-          {allPostsData.map(({ id, coverImage, date, title }) => (
+          {allPostsData.map(({ id, coverImage, date, title, tagLine }) => (
             <div className="bg-white text-black">
               <Image
                 src={`/images/posts/${coverImage}`}
                 alt={`ho`}
-                width={300}
-                height={200}
+                width={1366}
+                height={768}
                 layout="responsive"
               />
               <div className="p-4">
                 <h3 className="black">{title}</h3>
                 <p>
-                  Move posts avoid perhaps. Spiders above see wish comments
-                  purposes. Lot reason around no by so pointing to is fifteen.
-                  Don’t link possible which see...
+                  <Date dateString={date} />
                 </p>
+                <p>{tagLine}</p>
                 <Link href={`posts/${id}`}>
-                  <a>
-                    Read More <FaArrowRight />
+                  <a className="border-gray-800 inline-flex items-center text-gray-700 hover:text-black uppercase">
+                    <span className="pr-3">Read More</span> <FaArrowRight />
                   </a>
                 </Link>
               </div>

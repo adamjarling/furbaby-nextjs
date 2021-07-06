@@ -2,6 +2,7 @@
 title: "F & TS to perform at the 2nd annual Flatts and Sharpe Music Festival in Chicago"
 date: "2020-06-01"
 coverImage: "flatts-and-sharpe-festival.jpg"
+tagLine: "Flatts and Sharpe, with the very fine people at the Oasis Tavern and with Rogers Park's local artists and musicians are proud to bring you the 2nd Annual Flatts and Sharpe Music fest"
 ---
 
 Flatts and Sharpe, with the very fine people at the Oasis Tavern and with Rogers Park's local artists and musicians are proud to bring you the 2nd Annual Flatts and Sharpe Music fest!

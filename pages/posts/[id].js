@@ -43,7 +43,10 @@ export default function Post({ postData }) {
           <Date dateString={postData.date} />
         </p>
 
-        <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
+        <div
+          className="break-words"
+          dangerouslySetInnerHTML={{ __html: postData.contentHtml }}
+        />
       </Section>
     </Layout>
   );

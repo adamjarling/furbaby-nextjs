@@ -13,10 +13,10 @@ const navLinks = [
   //   url: "/videos",
   //   label: "Videos",
   // },
-  // {
-  //   url: "/singles",
-  //   label: "Singles",
-  // },
+  {
+    url: "/",
+    label: "Home",
+  },
   {
     url: "/news",
     label: "News",
@@ -128,7 +128,10 @@ export default function Header() {
           </Obfuscate>
         </div>
 
-        <div className="md:invisible md:w-0 md:h-0 visible w-auto text-5xl">
+        {/* <div className="md:invisible md:w-0 md:h-0 visible w-auto text-5xl">
+          <SocialMediaIcons />
+        </div> */}
+        <div className="text-5xl mt-3">
           <SocialMediaIcons />
         </div>
       </nav>
