@@ -111,20 +111,6 @@ export default function Home({ photo }) {
         </div>
       </Section>
 
-      <Section>
-        <div className="pb-8">
-          <div className="aspect-w-16 aspect-h-9">
-            <iframe
-              src={`https://www.youtube.com/embed/mqJ4i2EAgTk`}
-              title={`Happy Fourth of July`}
-              frameBorder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-            ></iframe>
-          </div>
-        </div>
-      </Section>
-
       <CargoPromo />
       <SplashPhotos />
       <SplashVideos />

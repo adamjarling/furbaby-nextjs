@@ -8,6 +8,7 @@ import nextYearPhoto from "public/images/next-year-video-cover.jpg";
 import logo from "public/images/furbaby-and-ts-logo_white.png";
 import legs from "public/images/post-pandemic-legs.png";
 import lava from "public/images/og-image-lava.png";
+import feet from "public/images/band-wall-feet.jpg";
 
 function SplashPhotos(props) {
   return (
@@ -59,6 +60,14 @@ function SplashPhotos(props) {
               <Image
                 src={legs}
                 alt="Post pandemic chillin"
+                fill="responsive"
+                srl_gallery_image="true"
+              />
+            </a>
+            <a href={`/images/band-wall-feet.jpg`} className="border-none">
+              <Image
+                src={feet}
+                alt="Band legs"
                 fill="responsive"
                 srl_gallery_image="true"
               />
