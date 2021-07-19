@@ -28,13 +28,18 @@ export default function News({ allPostsData }) {
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-4">
           {allPostsData.map(({ id, coverImage, date, title, tagLine }) => (
             <div className="bg-white text-black">
-              <Image
-                src={`/images/posts/${coverImage}`}
-                alt={`ho`}
-                width={1366}
-                height={768}
-                layout="responsive"
-              />
+              <Link href={`posts/${id}`}>
+                <a>
+                  <Image
+                    src={`/images/posts/${coverImage}`}
+                    alt={`ho`}
+                    width={1366}
+                    height={768}
+                    layout="responsive"
+                  />
+                </a>
+              </Link>
+
               <div className="p-4">
                 <h3 className="black">{title}</h3>
                 <p>

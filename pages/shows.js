@@ -5,6 +5,21 @@ import ParallaxBannerChildren from "components/parallax-banner-children";
 import ExternalLink from "components/external-link";
 import Section from "components/section";
 
+const shows = [
+  {
+    date: "September 3, 2021",
+    venue: "Cubby Bear - Multiple Sclerosis Benefit",
+    location: "Chicago, IL",
+    ticketUrl: "",
+  },
+  {
+    date: "July 10, 2021",
+    venue: "Flatts and Sharpe Music Festival",
+    location: "Chicago, IL",
+    ticketUrl: "",
+  },
+];
+
 export default function Shows() {
   return (
     <Layout>
@@ -28,14 +43,15 @@ export default function Shows() {
       </ParallaxBanner>
 
       <Section>
-        <div className="aspect-w-12 aspect-h-16">
-          <ExternalLink url="https://www.facebook.com/events/500774671119331">
-            <img
-              src="/images/flyer-2021-07-10.jpeg"
-              alt="Furbaby and the Tight Spaces at Flatts and Sharpe Music Festival"
-            />
-          </ExternalLink>
-        </div>
+        {shows.map((show) => (
+          <ul className="w-full">
+            <li className="flex flex-col py-4 items-center">
+              <h3>{show.date}</h3>
+              <span className="flex-grow-2">{show.venue}</span>
+              <span>{show.location}</span>
+            </li>
+          </ul>
+        ))}
       </Section>
     </Layout>
   );

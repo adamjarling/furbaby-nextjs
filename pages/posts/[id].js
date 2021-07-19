@@ -30,7 +30,7 @@ export default function Post({ postData }) {
         <div className="pt-24 md:pt-16 pb-6">
           <Image
             src={`/images/posts/${postData.coverImage}`}
-            alt={`ho`}
+            alt={postData.title}
             layout="responsive"
             width={1366}
             height={768}

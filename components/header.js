@@ -18,6 +18,10 @@ const navLinks = [
     label: "Home",
   },
   {
+    url: "/shows",
+    label: "Shows",
+  },
+  {
     url: "/news",
     label: "News",
   },

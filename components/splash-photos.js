@@ -9,6 +9,7 @@ import logo from "public/images/furbaby-and-ts-logo_white.png";
 import legs from "public/images/post-pandemic-legs.png";
 import lava from "public/images/og-image-lava.png";
 import feet from "public/images/band-wall-feet.jpg";
+import stage from "public/images/DSC01740-ANIMATION.gif";
 
 function SplashPhotos(props) {
   return (
@@ -50,6 +51,14 @@ function SplashPhotos(props) {
               <Image
                 src={logo}
                 alt="Furbaby & the Tight Spaces logo"
+                fill="responsive"
+                srl_gallery_image="true"
+              />
+            </a>
+            <a href={`/images/DSC01740-ANIMATION.gif`} className="border-none">
+              <Image
+                src={stage}
+                alt="Photo: Bikerchickie Mako"
                 fill="responsive"
                 srl_gallery_image="true"
               />
