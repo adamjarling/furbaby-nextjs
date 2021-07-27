@@ -3,7 +3,7 @@ export const distributors = {
   appleMusic: `https://music.apple.com/us/artist/furbaby/1520136448`,
   facebook: `https://www.facebook.com/furBabyAndtheTightSpaces`,
   instagram: `https://www.instagram.com/furbaby_rocks/`,
-  spotify: `https://open.spotify.com/artist/1hpsUJGJST9u6Qf8KWn8CR?si=Faiv2grEQX6vwJ9z_4sMQQ`,
+  spotify: `https://open.spotify.com/artist/1LvYc4eNh0wdQwzbqsei2w`,
   youTubeChannel: `https://www.youtube.com/channel/UCSoulFKYB6zGzHhbV-rkPzg/`,
   youTubeMusic: `https://music.youtube.com/channel/UC0piiF582lfZJbNFcoQTapQ`,
 };
