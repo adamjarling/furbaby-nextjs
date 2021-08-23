@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: furbaby.rocks
+Token: 806e32d777bf5cbc876062546710d288c802a82661aa1b8d5fafbff7d67ad7fb
