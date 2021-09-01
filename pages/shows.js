@@ -6,12 +6,12 @@ import ExternalLink from "components/external-link";
 import Section from "components/section";
 
 const shows = [
-  {
-    date: "September 3, 2021",
-    venue: "Cubby Bear - Multiple Sclerosis Benefit",
-    location: "Chicago, IL",
-    ticketUrl: "",
-  },
+  // {
+  //   date: "September 3, 2021",
+  //   venue: "Cubby Bear - Multiple Sclerosis Benefit",
+  //   location: "Chicago, IL",
+  //   ticketUrl: "",
+  // },
   {
     date: "July 10, 2021",
     venue: "Flatts and Sharpe Music Festival",
