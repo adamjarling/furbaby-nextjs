@@ -3,7 +3,6 @@ import Layout from "components/layout";
 import Splash1 from "components/splash1";
 import SplashLatestSingle from "components/splash-latest-single";
 import CargoPromo from "components/cargo-promo";
-import BannerFlattsFest from "components/banner-2021-07-10";
 import SplashSingleSelection from "components/splash-single-selection";
 import LinkButton from "components/link-button";
 import Image from "next/image";
@@ -16,6 +15,7 @@ import SplashPhotos from "components/splash-photos";
 import SplashVideos from "components/splash-videos";
 import SplashSingles from "components/splash-singles";
 import Container from "components/container";
+import reggiesFlyer from "public/images/Oct8SteepwaterLONG.jpg";
 
 const videos = [
   {
@@ -110,6 +110,18 @@ export default function Home({ photo }) {
           </p> */}
         </div>
       </Section>
+
+      <div
+        className="flex flex-col items-center pb-8"
+        style={{ backgroundColor: "#0b3134" }}
+      >
+        <Image src={reggiesFlyer} />
+        <div className="mt-6">
+          <LinkButton href="https://www.ticketweb.com/event/the-steepwater-band-reggies-rock-club-tickets/11345365">
+            Buy Tickets
+          </LinkButton>
+        </div>
+      </div>
 
       <CargoPromo />
       <SplashPhotos />

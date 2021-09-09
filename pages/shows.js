@@ -4,6 +4,9 @@ import { ParallaxBanner, Parallax } from "react-scroll-parallax";
 import ParallaxBannerChildren from "components/parallax-banner-children";
 import ExternalLink from "components/external-link";
 import Section from "components/section";
+import LinkButton from "components/link-button";
+import Image from "next/image";
+import reggiesPoster from "public/images/Oct8SteepwaterIG.jpg";
 
 const shows = [
   // {
@@ -43,15 +46,33 @@ export default function Shows() {
       </ParallaxBanner>
 
       <Section>
-        {shows.map((show) => (
-          <ul className="w-full">
-            <li className="flex flex-col py-4 items-center">
+        <ul className="w-full">
+          <li className="flex flex-col py-6 items-center">
+            <h3>October 8, 2021</h3>
+            <span className="flex-grow-2">
+              <ExternalLink url="https://www.reggieslive.com/">
+                Reggies Rock Room
+              </ExternalLink>
+            </span>
+            <span className="mt-2">8pm doors. Ages 17+</span>
+            <span>Chicago, IL</span>
+            <div className="mt-6">
+              <LinkButton href="https://www.ticketweb.com/event/the-steepwater-band-reggies-rock-club-tickets/11345365">
+                Buy Tickets
+              </LinkButton>
+            </div>
+            <div className="max-w-sm mt-8">
+              <Image src={reggiesPoster} />
+            </div>
+          </li>
+          {shows.map((show) => (
+            <li className="flex flex-col py-6 items-center">
               <h3>{show.date}</h3>
               <span className="flex-grow-2">{show.venue}</span>
               <span>{show.location}</span>
             </li>
-          </ul>
-        ))}
+          ))}
+        </ul>
       </Section>
     </Layout>
   );
