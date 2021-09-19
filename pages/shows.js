@@ -7,6 +7,7 @@ import Section from "components/section";
 import LinkButton from "components/link-button";
 import Image from "next/image";
 import reggiesPoster from "public/images/Oct8SteepwaterIG.jpg";
+import BannerReggies from "components/banner-2021-10-08";
 
 const shows = [
   // {
@@ -56,13 +57,16 @@ export default function Shows() {
             </span>
             <span className="mt-2">8pm doors. Ages 17+</span>
             <span>Chicago, IL</span>
-            <div className="mt-6">
+            {/* <div className="mt-6">
               <LinkButton href="https://www.ticketweb.com/event/the-steepwater-band-reggies-rock-club-tickets/11345365">
                 Buy Tickets
               </LinkButton>
-            </div>
-            <div className="max-w-sm mt-8">
+            </div> */}
+            {/* <div className="max-w-sm mt-8">
               <Image src={reggiesPoster} />
+            </div> */}
+            <div className="pt-6">
+              <BannerReggies />
             </div>
           </li>
           {shows.map((show) => (

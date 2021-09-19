@@ -10,8 +10,8 @@ export default function CargoPromo() {
       <Section>
         <h3 className="pb-0">Full-length Album October 15, 2021</h3>
         <h3 className="text-gray-600">Europe, UK, Japan</h3>
-        <div className="pb-12">
-          <div className="relative h-24 md:h-36 w-36 md:w-48 mb-4 float-left mr-4">
+        <div className="">
+          <div className="relative h-24 md:h-36 w-36 md:w-48 float-left mr-4">
             <ExternalLink url="https://www.cargorecords.co.uk/">
               <Image
                 src="/images/cargo-records.jpeg"
@@ -31,12 +31,12 @@ export default function CargoPromo() {
           </p>
         </div>
 
-        <LinkButton
+        {/* <LinkButton
           isInverted
           href="https://cargorecordsdirect.co.uk/products/furbaby-the-tight-spaces-furbaby-the-tight-spaces"
         >
           Pre-Order the Album
-        </LinkButton>
+        </LinkButton> */}
       </Section>
     </div>
   );
