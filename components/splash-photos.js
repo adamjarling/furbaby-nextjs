@@ -21,11 +21,11 @@ function SplashPhotos(props) {
             image: "images/banner-box.jpg",
           },
         ]}
-        style={{ height: "30vh" }}
+        style={{ height: "50vh" }}
       >
         <ParallaxBannerChildren>
           <div className="container flex flex-col items-center">
-            <h2>Photos</h2>
+            <h2 className="banner-headline">Photos</h2>
           </div>
         </ParallaxBannerChildren>
       </ParallaxBanner>

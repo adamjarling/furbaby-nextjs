@@ -1,13 +1,17 @@
 import Link from "next/link";
 
 const sharedClasses = [
-  "py-2 px-8 tracking-widest rounded text-xl uppercase inline-block",
+  "py-4 px-12 tracking-widest text-2xl uppercase inline-block",
 ];
 
 export default function LinkButton({ children, href, isInverted }) {
   return isInverted ? (
     <Link href={href}>
-      <a className="bg-black hover:bg-gray-800 text-gray-100 font-sans  hover:text-gray-200 border-none">
+      <a
+        className={`${[
+          ...sharedClasses,
+        ]} bg-gray-800 hover:bg-gray-800 text-gray-100 font-sans  hover:text-gray-200 border-none`}
+      >
         {children}
       </a>
     </Link>

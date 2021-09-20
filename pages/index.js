@@ -44,10 +44,11 @@ export default function Home({ photo }) {
       </section> */}
 
       <IntroParagraph />
+      <BannerNewAlbumPromo />
+
       <BannerReggies />
 
       <CargoPromo />
-      <BannerNewAlbumPromo />
 
       <SplashPhotos />
       <SplashVideos />
