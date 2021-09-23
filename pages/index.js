@@ -11,6 +11,7 @@ import reggiesFlyer from "public/images/Oct8SteepwaterLONG.jpg";
 import IntroParagraph from "components/intro-paragraph";
 import BannerReggies from "components/banner-2021-10-08";
 import BannerNewAlbumPromo from "components/banner-new-album-promo";
+import Section from "components/section";
 
 const videos = [
   {
@@ -44,6 +45,21 @@ export default function Home({ photo }) {
       </section> */}
 
       <IntroParagraph />
+
+      <section className="flex flex-col items-center pb-16">
+        <div className="container">
+          <div className="aspect-w-16 aspect-h-9 max-w-screen-xl">
+            <iframe
+              src={`https://www.youtube.com/embed/LZQe-LAuwBw`}
+              title="Furbaby &amp; the Tight Spaces Album Pre-Sale Promo Video"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            ></iframe>
+          </div>
+        </div>
+      </section>
+
       <BannerNewAlbumPromo />
 
       <BannerReggies />
