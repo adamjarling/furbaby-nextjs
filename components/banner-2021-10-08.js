@@ -13,10 +13,10 @@ function BannerReggies(props) {
   return (
     <section className="flex flex-col items-center">
       <div className="flex flex-col justify-center items-center md:flex-row">
-        <ExternalLink url={ticketLink} noBorder>
+        <ExternalLink url={ticketLink} noBorder isBrightHover>
           <Image src={swbImage} alt="Steepwater band flyer" />
         </ExternalLink>
-        <ExternalLink url={ticketLink} noBorder>
+        <ExternalLink url={ticketLink} noBorder isBrightHover>
           <Image src={furImage} alt="Furbaby album release flyer" />
         </ExternalLink>
       </div>

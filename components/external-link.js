@@ -1,7 +1,12 @@
 import React from "react";
 import classNames from "classnames";
 
-export default function ExternalLink({ url, noBorder, children }) {
+export default function ExternalLink({
+  url,
+  noBorder,
+  isBrightHover,
+  children,
+}) {
   return (
     <a
       href={url}
@@ -9,6 +14,8 @@ export default function ExternalLink({ url, noBorder, children }) {
       rel="noopener noreferrer"
       className={classNames([], {
         "border-none": noBorder,
+        "opacity-80": isBrightHover,
+        "hover:opacity-100": isBrightHover,
       })}
     >
       {children}

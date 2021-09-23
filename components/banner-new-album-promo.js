@@ -13,14 +13,14 @@ function BannerNewAlbumPromo(props) {
     <section className="flex flex-col items-center mb-4">
       <div className="flex flex-col justify-center items-top md:flex-row">
         <div className="flex flex-col items-center">
-          <ExternalLink url={preOrderLink} noBorder>
+          <ExternalLink url={preOrderLink} noBorder isBrightHover>
             <Image src={cdPromo} alt="New CD Cargo Records promo" />
           </ExternalLink>
           <div className="mt-2 mb-6">
             <LinkButton href={preOrderLink}>Pre-Order Now</LinkButton>
           </div>
         </div>
-        <ExternalLink url={preOrderLink} noBorder>
+        <ExternalLink url={preOrderLink} noBorder isBrightHover>
           <Image src={lpPromo} alt="New vinyl LP Cargo Records promo" />
         </ExternalLink>
       </div>
