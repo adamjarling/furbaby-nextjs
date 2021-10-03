@@ -46,7 +46,7 @@ export default function Shows() {
         </ParallaxBannerChildren>
       </ParallaxBanner>
 
-      <Section>
+      <section>
         <ul className="w-full">
           <li className="flex flex-col py-6 items-center">
             <h3>October 8, 2021</h3>
@@ -77,7 +77,7 @@ export default function Shows() {
             </li>
           ))}
         </ul>
-      </Section>
+      </section>
     </Layout>
   );
 }

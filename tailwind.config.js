@@ -13,6 +13,9 @@ module.exports = {
       backgroundImage: (theme) => ({
         "texture-pattern": "url('public/images/bg-animal.jpg')",
       }),
+      colors: {
+        "fur-yellow": "#cdab45",
+      },
       spacing: {
         128: "32rem",
         144: "36rem",

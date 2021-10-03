@@ -11,18 +11,17 @@ const ticketLink =
 
 function BannerReggies(props) {
   return (
-    <section className="flex flex-col items-center">
-      <div className="flex flex-col justify-center items-center md:flex-row">
-        <ExternalLink url={ticketLink} noBorder isBrightHover>
-          <Image src={swbImage} alt="Steepwater band flyer" />
-        </ExternalLink>
-        <ExternalLink url={ticketLink} noBorder isBrightHover>
-          <Image src={furImage} alt="Furbaby album release flyer" />
-        </ExternalLink>
+    <section className="flex flex-col items-center py-8 bg-fur-yellow">
+      <div className="container text-center">
+        <h3>Album release show postponed</h3>
+        <p>
+          Covid complications.... any ticket sales will be refunded by Reggies.
+          New date coming soon.
+        </p>
       </div>
-
-      <div className="my-6">
-        <LinkButton href={ticketLink}>Buy Tickets</LinkButton>
+      <div className="flex flex-col justify-center items-center md:flex-row opacity-50">
+        <Image src={swbImage} alt="Steepwater band flyer" />
+        <Image src={furImage} alt="Furbaby album release flyer" />
       </div>
     </section>
   );
