@@ -1,6 +1,6 @@
 ---
 title: "Fantastico Manual de Supervivencia podcast spins latest Tight Spaces single"
-date: "2020-04-15"
+date: "2021-04-15"
 coverImage: "manual-de-supervivencia1.jpg"
 tagLine: "Getting spins on the fantastico Manual de Supervivencia podcast"
 ---

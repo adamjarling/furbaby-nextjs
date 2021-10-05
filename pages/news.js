@@ -45,7 +45,7 @@ export default function News({ allPostsData }) {
                 <p>
                   <Date dateString={date} />
                 </p>
-                <p>{tagLine}</p>
+                {/* <p>{tagLine}</p> */}
                 <Link href={`posts/${id}`}>
                   <a className="border-gray-800 inline-flex items-center text-gray-700 hover:text-black uppercase">
                     <span className="pr-3">Read More</span> <FaArrowRight />

@@ -48,7 +48,7 @@ export default function Home({ photo }) {
 
       <section className="flex flex-col items-center pb-16">
         <div className="container">
-          <div className="aspect-w-16 aspect-h-9 max-w-screen-xl">
+          <div className="aspect-w-16 aspect-h-9 ">
             <iframe
               src={`https://www.youtube.com/embed/LZQe-LAuwBw`}
               title="Furbaby &amp; the Tight Spaces Album Pre-Sale Promo Video"
@@ -64,7 +64,7 @@ export default function Home({ photo }) {
 
       <BannerReggies />
 
-      <CargoPromo />
+      {/* <CargoPromo /> */}
 
       <SplashPhotos />
       <SplashVideos />

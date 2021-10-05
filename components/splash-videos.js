@@ -15,7 +15,7 @@ const videos = [
     title: "Furbaby and the Tight Spaces - I Can Only Give You Everything",
   },
   {
-    id: "ZhlYufBQwN8",
+    id: "lAihAqrB7aU",
     title: "Furbaby and the Tight Spaces - Social Distance",
   },
   {

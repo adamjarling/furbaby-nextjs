@@ -11,18 +11,19 @@ const ticketLink =
 
 function BannerReggies(props) {
   return (
-    <section className="flex flex-col items-center py-8 bg-fur-yellow">
-      <div className="container text-center">
+    <section className="flex flex-col items-center py-8 bg-white text-black">
+      <div className="container text-center max-w-4xl">
         <h3>Album release show postponed</h3>
-        <p>
-          Covid complications.... any ticket sales will be refunded by Reggies.
-          New date coming soon.
+        <p className="md:text-xl">
+          Super super sorry, but due to Covid complications we're postponing the
+          Steepwater Band / Furbaby gig at Reggies October 8, 2021. All ticket
+          sales will be refunded. New date coming soon.
         </p>
       </div>
-      <div className="flex flex-col justify-center items-center md:flex-row opacity-50">
+      {/* <div className="flex flex-col justify-center items-center md:flex-row opacity-50">
         <Image src={swbImage} alt="Steepwater band flyer" />
         <Image src={furImage} alt="Furbaby album release flyer" />
-      </div>
+      </div> */}
     </section>
   );
 }

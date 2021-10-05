@@ -26,7 +26,7 @@ export default function Post({ postData }) {
   return (
     <Layout>
       <Head>{postData.title}</Head>
-      <Section>
+      <div className="container">
         <div className="pt-24 md:pt-16 pb-6">
           <Image
             src={`/images/posts/${postData.coverImage}`}
@@ -47,7 +47,7 @@ export default function Post({ postData }) {
           className="break-words"
           dangerouslySetInnerHTML={{ __html: postData.contentHtml }}
         />
-      </Section>
+      </div>
     </Layout>
   );
 }
