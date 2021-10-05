@@ -1,10 +1,10 @@
 import Link from "next/link";
 
 const sharedClasses = [
-  "py-4 px-12 tracking-widest text-2xl uppercase inline-block",
+  "py-10 px-16 tracking-widest text-2xl uppercase inline-block border-2",
 ];
 
-export default function LinkButton({ children, href, isInverted }) {
+export default function LinkButton({ children, href, isInverted, isExternal }) {
   return isInverted ? (
     <Link href={href}>
       <a

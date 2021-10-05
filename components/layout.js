@@ -7,7 +7,7 @@ export const siteTitle = "Furbaby & the Tight Spaces";
 
 export default function Layout({ children, home }) {
   return (
-    <div className="bg-texture-pattern text-gray-50 min-h-screen font-display font-light">
+    <div className="text-gray-50 bg-black min-h-screen font-display font-light">
       <Head>
         <link rel="icon" href="/images/fur-512x512.png" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />

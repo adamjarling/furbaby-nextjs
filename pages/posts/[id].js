@@ -26,28 +26,30 @@ export default function Post({ postData }) {
   return (
     <Layout>
       <Head>{postData.title}</Head>
-      <div className="container">
-        <div className="pt-24 md:pt-16 pb-6">
-          <Image
-            src={`/images/posts/${postData.coverImage}`}
-            alt={postData.title}
-            layout="responsive"
-            width={1366}
-            height={768}
+      <Section>
+        <div className="">
+          <div className="pt-24 md:pt-16 pb-6">
+            <Image
+              src={`/images/posts/${postData.coverImage}`}
+              alt={postData.title}
+              layout="responsive"
+              width={1366}
+              height={768}
+            />
+          </div>
+
+          <h1>{postData.title}</h1>
+
+          <p>
+            <Date dateString={postData.date} />
+          </p>
+
+          <div
+            className="break-words"
+            dangerouslySetInnerHTML={{ __html: postData.contentHtml }}
           />
         </div>
-
-        <h1>{postData.title}</h1>
-
-        <p>
-          <Date dateString={postData.date} />
-        </p>
-
-        <div
-          className="break-words"
-          dangerouslySetInnerHTML={{ __html: postData.contentHtml }}
-        />
-      </div>
+      </Section>
     </Layout>
   );
 }

@@ -5,48 +5,56 @@ import * as manifest from "music-release-manifest";
 import { FaSpotify, FaAmazon, FaYoutube, FaApple } from "react-icons/fa";
 import ExternalLink from "components/external-link";
 
-const singles = [
+export const singles = [
   {
     src: "give-u-everything-album-art-v1.jpg",
-    title: "I Can Only Give You Everything - Furbaby and the Tight Spaces",
+    title: "I Can Only Give You Everything",
     manifestItems: manifest.iCanOnlyGiveYouEverything,
+    year: "2020",
   },
   {
     src: "FURBABY-boxed-in-cover-art-no-outline.png",
-    title: "Boxed In - Furbaby and the Tight Spaces",
+    title: "Boxed In",
     manifestItems: manifest.boxedIn,
+    year: "2020",
   },
   {
     src: "cocoa-single-cover.jpg",
-    title: "Cocoa - Furbaby and the Tight Spaces",
+    title: "Cocoa",
     manifestItems: manifest.cocoa,
+    year: "2020",
   },
   {
     src: "waiting-album-art.jpg",
-    title: "Waiting - Furbaby and the Tight Spaces",
+    title: "Waiting",
     manifestItems: manifest.waiting,
+    year: "2021",
   },
   {
     src: "social-distance-album-art.jpg",
-    title: "Social Distance - Furbaby and the Tight Spaces",
+    title: "Social Distance",
     manifestItems: manifest.socialDistance,
+    year: "2021",
   },
 
   {
     src: "next-year-album-art-v2-sharp.jpg",
-    title: "Next Year - Furbaby and the Tight Spaces",
+    title: "Next Year",
     manifestItems: manifest.nextYear,
+    year: "2021",
   },
   {
     src: "reaching-out-album-art-v2.jpg",
-    title: "Reaching Out (For Higher Ground) - Furbaby and the Tight Spaces",
+    title: "Reaching Out (For Higher Ground)",
     manifestItems: manifest.reachingOut,
+    year: "2020",
   },
 
   {
     src: "behind-the-door-cover-art-v2.jpg",
-    title: "Behind The Door - Furbaby and the Tight Spaces",
+    title: "Behind The Door",
     manifestItems: manifest.behindTheDoor,
+    year: "2020",
   },
 ];
 

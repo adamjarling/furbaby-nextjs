@@ -6,14 +6,18 @@
   html {
     font-size: 16px;
   }
-  h1 {
-    @apply text-7xl md:text-8xl py-4 font-sans uppercase;
+  h1,
+  .big-title {
+    @apply text-7xl md:text-9xl py-4 font-sans uppercase break-words;
   }
   h2 {
-    @apply text-5xl md:text-5xl py-4 font-sans uppercase;
+    @apply text-5xl md:text-8xl py-4 font-sans uppercase break-words;
   }
   h3 {
-    @apply text-3xl md:text-4xl py-4 font-sans uppercase font-light;
+    @apply text-3xl md:text-4xl py-4 font-sans uppercase font-light break-words;
+  }
+  h4 {
+    @apply text-xl md:text-2xl py-4 font-sans font-semibold uppercase break-words;
   }
   h3.black {
     @apply text-black;
