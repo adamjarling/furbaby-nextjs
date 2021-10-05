@@ -2,7 +2,7 @@ import Head from "next/head";
 import Layout from "components/layout";
 import SplashSingles from "components/splash-singles";
 
-export default function Singles() {
+export default function Music() {
   return (
     <Layout>
       <Head>

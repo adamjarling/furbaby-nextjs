@@ -1,14 +1,13 @@
 import Head from "next/head";
 import Header from "components/header";
 import Image from "next/image";
-import { ParallaxBanner } from "react-scroll-parallax";
 import MailChimpForm from "components/mailchimp-form";
 
 export const siteTitle = "Furbaby & the Tight Spaces";
 
 export default function Layout({ children, home }) {
   return (
-    <div className="bg-texture-pattern text-gray-50 min-h-screen font-light">
+    <div className="bg-texture-pattern text-gray-50 min-h-screen font-display font-light">
       <Head>
         <link rel="icon" href="/images/fur-512x512.png" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />

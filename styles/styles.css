@@ -3,20 +3,23 @@
 @tailwind utilities;
 
 @layer base {
+  html {
+    font-size: 16px;
+  }
   h1 {
-    @apply text-5xl md:text-6xl py-4 font-sans uppercase tracking-widest;
+    @apply text-7xl md:text-8xl py-4 font-sans uppercase;
   }
   h2 {
-    @apply text-5xl md:text-5xl py-4 font-sans uppercase tracking-widest;
+    @apply text-5xl md:text-5xl py-4 font-sans uppercase;
   }
   h3 {
-    @apply text-3xl md:text-4xl py-4 font-sans uppercase tracking-widest;
+    @apply text-3xl md:text-4xl py-4 font-sans uppercase font-light;
   }
   h3.black {
     @apply text-black;
   }
   p {
-    @apply pb-4;
+    @apply pb-4 tracking-widest font-light;
   }
   a {
     @apply border-b-2 border-dotted transition duration-500 ease-in-out;
@@ -30,5 +33,8 @@
   }
   .banner-headline {
     @apply inline bg-black p-6 text-6xl;
+  }
+  .lead-text {
+    @apply text-xl;
   }
 }

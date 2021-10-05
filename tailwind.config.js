@@ -6,8 +6,9 @@ module.exports = {
   darkMode: true, // or 'media' or 'class'
   theme: {
     fontFamily: {
-      sans: ["Roboto", "Anton", "sans-serif"],
+      sans: ["Roboto", "sans-serif"],
       serif: ["Courier", "serif"],
+      display: ["Poppins", "sans-serif"],
     },
     extend: {
       backgroundImage: (theme) => ({
@@ -15,6 +16,8 @@ module.exports = {
       }),
       colors: {
         "fur-yellow": "#cdab45",
+        "fur-pink": "#ec1384",
+        "fur-blue": "#0a91c7",
       },
       spacing: {
         128: "32rem",
