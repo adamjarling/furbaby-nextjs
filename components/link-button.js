@@ -1,7 +1,7 @@
 import Link from "next/link";
 
 const sharedClasses = [
-  "py-10 px-16 tracking-widest text-2xl uppercase inline-block border-2",
+  "py-10 px-16 tracking-widest text-2xl uppercase inline-block border-2 text-center",
 ];
 
 export default function LinkButton({ children, href, isInverted, isExternal }) {

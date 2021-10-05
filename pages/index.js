@@ -13,6 +13,8 @@ import BannerReggies from "components/banner-2021-10-08";
 import BannerNewAlbumPromo from "components/banner-new-album-promo";
 import Section from "components/section";
 import BannerNewAlbumPromoVideo from "components/banner-new-album-promo-video";
+import LatestSingle from "components/latest-single";
+import PhotoPreview from "components/photo-preview";
 
 const videos = [
   {
@@ -38,23 +40,26 @@ export default function Home({ photo }) {
         <title>Furbaby & the Tight Spaces</title>
       </Head>
       <Splash1 photo={"photo-triangle-wall-hi-res.jpg"} />
-
-      {/* <section className="flex flex-col items-center justify-center py-8 px-2 md:px-4">
-        <p className="text-center text-2xl md:text-4xl font-sans uppercase tracking-widest">
-          Hi, we're Furbaby &amp; the Tight Spaces and play garage rock
-        </p>
-      </section> */}
-
       <BannerNewAlbumPromoVideo />
+      <div className="bg-white text-black">
+        <BannerReggies />
+      </div>
 
-      <BannerReggies />
-      <IntroParagraph />
+      <div className="bg-fur-pink">
+        <Section>
+          <LatestSingle />
+        </Section>
+      </div>
+
+      {/* <PhotoPreview /> */}
+
+      {/* <IntroParagraph /> */}
 
       {/* <CargoPromo /> */}
 
       <SplashPhotos />
       <SplashVideos />
-      <SplashSingles />
+      {/* <SplashSingles /> */}
     </Layout>
   );
 }

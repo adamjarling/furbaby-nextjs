@@ -5,14 +5,15 @@ import Image from "next/image";
 import furImage from "public/images/2021-10-08-fuzzy.JPG";
 import LinkButton from "components/link-button";
 import ExternalLink from "components/external-link";
+import Section from "components/section";
 
 const ticketLink =
   "https://www.ticketweb.com/event/the-steepwater-band-reggies-rock-club-tickets/11345365";
 
 function BannerReggies(props) {
   return (
-    <section className="flex flex-col items-center py-8 bg-white text-black">
-      <p className="big-title">Tour Dates</p>
+    <Section isCentered>
+      <p className="big-title text-center">Tour Dates</p>
       <div className="container text-center max-w-4xl">
         <h3>Album release show postponed</h3>
         <p className="md:text-xl">
@@ -25,7 +26,7 @@ function BannerReggies(props) {
         <Image src={swbImage} alt="Steepwater band flyer" />
         <Image src={furImage} alt="Furbaby album release flyer" />
       </div> */}
-    </section>
+    </Section>
   );
 }
 

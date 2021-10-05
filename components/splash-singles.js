@@ -5,7 +5,7 @@ import * as manifest from "music-release-manifest";
 import { FaSpotify, FaAmazon, FaYoutube, FaApple } from "react-icons/fa";
 import ExternalLink from "components/external-link";
 
-export const singles = [
+const singles = [
   {
     src: "give-u-everything-album-art-v1.jpg",
     title: "I Can Only Give You Everything",
