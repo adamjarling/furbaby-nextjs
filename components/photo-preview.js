@@ -17,7 +17,7 @@ export default function PhotoPreview() {
   return (
     <div className="container grid grid-cols-2 md:grid-cols-4 mx-auto relative">
       {photos.map((photo) => (
-        <div className="w-full">
+        <div key={photo.src} className="w-full">
           <Image
             src={`/images/${photo.src}`}
             layout="fill"

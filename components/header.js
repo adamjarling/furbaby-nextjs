@@ -54,7 +54,7 @@ export default function Header() {
           {/* Desktop nav */}
           <nav className="hidden lg:block text-sm uppercase">
             {navLinks.map(({ url, label }) => (
-              <span className="px-10">
+              <span key={url} className="px-10">
                 <Link href={url}>
                   <a className="border-none">{label}</a>
                 </Link>

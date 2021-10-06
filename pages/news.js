@@ -27,7 +27,7 @@ export default function News({ allPostsData }) {
         <h2 className="mt-20">News</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-4">
           {allPostsData.map(({ id, coverImage, date, title, tagLine }) => (
-            <div className="bg-white text-black">
+            <div key={id} className="bg-white text-black">
               <Link href={`posts/${id}`}>
                 <a>
                   <Image

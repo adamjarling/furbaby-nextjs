@@ -72,7 +72,7 @@ export default function Shows() {
               </div>
             </li>
             {shows.map((show) => (
-              <li className="flex flex-col py-6 items-center">
+              <li key={show.date} className="flex flex-col py-6 items-center">
                 <h3>{show.date}</h3>
                 <span className="flex-grow-2">{show.venue}</span>
                 <span>{show.location}</span>

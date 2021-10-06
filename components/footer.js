@@ -36,7 +36,7 @@ export default function Footer() {
           </div>
           <ul className="flex-1">
             {footerSocials.map((item) => (
-              <li>
+              <li key={item.url}>
                 <ExternalLink url={item.url}>{item.label}</ExternalLink>
               </li>
             ))}

@@ -24,7 +24,7 @@ export default function Music() {
       <div className="pt-20 md:pt-36">
         <Section>
           {singles.map((single, i) => (
-            <div className="mb-24">
+            <div key={single.src} className="mb-24">
               <ImageCalloutWrapper isReversed={isEvenRow(i)}>
                 <ImageCalloutImage>
                   <Image
