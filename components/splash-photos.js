@@ -14,7 +14,7 @@ import stage from "public/images/DSC01740-ANIMATION.gif";
 function SplashPhotos(props) {
   return (
     <>
-      <ParallaxBanner
+      {/* <ParallaxBanner
         layers={[
           {
             amount: 0.2,
@@ -28,7 +28,7 @@ function SplashPhotos(props) {
             <h2 className="banner-headline">Photos</h2>
           </div>
         </ParallaxBannerChildren>
-      </ParallaxBanner>
+      </ParallaxBanner> */}
 
       <SRLWrapper>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 pt-4 uppercase">

@@ -12,8 +12,7 @@ const ticketLink =
 
 function BannerReggies(props) {
   return (
-    <Section isCentered>
-      <p className="big-title text-center">Tour Dates</p>
+    <>
       <div className="container text-center max-w-4xl">
         <h3>Album release show postponed</h3>
         <p className="md:text-xl">
@@ -26,7 +25,7 @@ function BannerReggies(props) {
         <Image src={swbImage} alt="Steepwater band flyer" />
         <Image src={furImage} alt="Furbaby album release flyer" />
       </div> */}
-    </Section>
+    </>
   );
 }
 

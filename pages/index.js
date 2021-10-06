@@ -41,8 +41,12 @@ export default function Home({ photo }) {
       </Head>
       <Splash1 photo={"photo-triangle-wall-hi-res.jpg"} />
       <BannerNewAlbumPromoVideo />
+
       <div className="bg-white text-black">
-        <BannerReggies />
+        <Section isCentered>
+          <p className="big-title text-center">Tour Dates</p>
+          <BannerReggies />
+        </Section>
       </div>
 
       <div className="bg-fur-pink">
@@ -58,7 +62,12 @@ export default function Home({ photo }) {
       {/* <CargoPromo /> */}
 
       <SplashPhotos />
-      <SplashVideos />
+
+      <Section>
+        <p className="big-title text-center">Videos</p>
+        <SplashVideos />
+      </Section>
+
       {/* <SplashSingles /> */}
     </Layout>
   );

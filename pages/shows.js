@@ -30,7 +30,7 @@ export default function Shows() {
       <Head>
         <title>Shows - Furbaby & the Tight Spaces</title>
       </Head>
-      <ParallaxBanner
+      {/* <ParallaxBanner
         layers={[
           {
             amount: 0.2,
@@ -44,40 +44,43 @@ export default function Shows() {
             <h2 className="banner-headline">Shows</h2>
           </div>
         </ParallaxBannerChildren>
-      </ParallaxBanner>
+      </ParallaxBanner> */}
 
-      <section>
-        <ul className="w-full">
-          <li className="flex flex-col py-6 items-center">
-            <h3>October 8, 2021</h3>
-            <span className="flex-grow-2">
-              <ExternalLink url="https://www.reggieslive.com/">
-                Reggies Rock Room
-              </ExternalLink>
-            </span>
-            <span className="mt-2">8pm doors. Ages 17+</span>
-            <span>Chicago, IL</span>
-            {/* <div className="mt-6">
+      <Section isCentered>
+        <div className="mt-24">
+          <h1 className="text-center">Tour Dates</h1>
+          <ul className="w-full">
+            <li className="flex flex-col py-6 items-center">
+              <h3>October 8, 2021</h3>
+              <span className="flex-grow-2">
+                <ExternalLink url="https://www.reggieslive.com/">
+                  Reggies Rock Room
+                </ExternalLink>
+              </span>
+              <span className="mt-2">8pm doors. Ages 17+</span>
+              <span>Chicago, IL</span>
+              {/* <div className="mt-6">
               <LinkButton href="https://www.ticketweb.com/event/the-steepwater-band-reggies-rock-club-tickets/11345365">
                 Buy Tickets
               </LinkButton>
             </div> */}
-            {/* <div className="max-w-sm mt-8">
+              {/* <div className="max-w-sm mt-8">
               <Image src={reggiesPoster} />
             </div> */}
-            <div className="pt-6">
-              <BannerReggies />
-            </div>
-          </li>
-          {shows.map((show) => (
-            <li className="flex flex-col py-6 items-center">
-              <h3>{show.date}</h3>
-              <span className="flex-grow-2">{show.venue}</span>
-              <span>{show.location}</span>
+              <div className="pt-6">
+                <BannerReggies />
+              </div>
             </li>
-          ))}
-        </ul>
-      </section>
+            {shows.map((show) => (
+              <li className="flex flex-col py-6 items-center">
+                <h3>{show.date}</h3>
+                <span className="flex-grow-2">{show.venue}</span>
+                <span>{show.location}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </Section>
     </Layout>
   );
 }

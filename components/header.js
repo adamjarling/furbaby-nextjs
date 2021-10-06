@@ -18,6 +18,10 @@ const navLinks = [
     label: "Home",
   },
   {
+    url: "/music",
+    label: "Music",
+  },
+  {
     url: "/shows",
     label: "Shows",
   },
@@ -96,7 +100,7 @@ export default function Header() {
             "flex",
             "flex-col",
             "items-center",
-            "justify-center",
+            "justify-between",
             "bg-black",
             "text-4xl",
             "md:text-5xl",
@@ -113,29 +117,18 @@ export default function Header() {
           }
         )}
       >
-        <ul>
+        <ul className="pt-36">
           {navLinks.map((nl) => (
-            <li key={nl.label} className="py-8 sm:py-8 font-sans uppercase">
+            <li key={nl.label} className="py-4 sm:py-8 font-sans uppercase">
               <Link href={nl.url}>{nl.label}</Link>
             </li>
           ))}
         </ul>
 
-        <div className="pb-10 md:pt-8 text-2xl">
-          <Obfuscate
-            email="furbabyferguson@gmail.com"
-            headers={{
-              subject: "Email from Furbaby.rocks",
-            }}
-          >
-            info@furbaby.rocks
-          </Obfuscate>
-        </div>
-
         {/* <div className="md:invisible md:w-0 md:h-0 visible w-auto text-5xl">
           <SocialMediaIcons />
         </div> */}
-        <div className="text-5xl mt-3">
+        <div className="text-2xl mb-12">
           <SocialMediaIcons />
         </div>
       </nav>

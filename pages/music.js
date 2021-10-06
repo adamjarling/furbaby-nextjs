@@ -21,7 +21,7 @@ export default function Music() {
         <title>Music - Furbaby & the Tight Spaces</title>
       </Head>
 
-      <div className="pt-36">
+      <div className="pt-20 md:pt-36">
         <Section>
           {singles.map((single, i) => (
             <div className="mb-24">

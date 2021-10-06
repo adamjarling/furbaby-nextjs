@@ -39,7 +39,7 @@ const videos = [
 function SplashVideos(props) {
   return (
     <>
-      <ParallaxBanner
+      {/* <ParallaxBanner
         layers={[
           {
             amount: 0.2,
@@ -53,7 +53,7 @@ function SplashVideos(props) {
             <h2 className="banner-headline">Videos</h2>
           </div>
         </ParallaxBannerChildren>
-      </ParallaxBanner>
+      </ParallaxBanner> */}
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         {videos.map((video) => (

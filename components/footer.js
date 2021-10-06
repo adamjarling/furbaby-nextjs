@@ -26,7 +26,7 @@ const footerSocials = [
 
 export default function Footer() {
   return (
-    <footer className="bg-black text-white uppercase text-xl md:text-2xl">
+    <footer className="bg-white text-black uppercase text-xl md:text-2xl">
       <Section>
         <div className="flex flex-col md:flex-row pl-6 md:pl-12">
           <div className="pb-10 flex-1">
