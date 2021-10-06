@@ -23,7 +23,7 @@
     @apply text-black;
   }
   p {
-    @apply pb-4 tracking-widest font-light;
+    @apply pb-4 tracking-widest font-light leading-relaxed;
   }
   a {
     @apply border-b-2 border-dotted transition duration-500 ease-in-out;

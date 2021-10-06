@@ -13,21 +13,21 @@ const navLinks = [
   //   url: "/videos",
   //   label: "Videos",
   // },
-  {
-    url: "/",
-    label: "Home",
-  },
+  // {
+  //   url: "/",
+  //   label: "Home",
+  // },
   {
     url: "/music",
     label: "Music",
   },
   {
-    url: "/shows",
-    label: "Shows",
+    url: "/press",
+    label: "Press",
   },
   {
-    url: "/news",
-    label: "News",
+    url: "/shows",
+    label: "Shows",
   },
 ];
 
@@ -90,6 +90,11 @@ export default function Header() {
       <nav
         className={names(
           [
+            // "flex",
+            // "flex-col",
+            // "items-center",
+            // "justify-between",
+
             "z-10",
             "fixed",
             "transition-all",
@@ -97,13 +102,11 @@ export default function Header() {
             "ease-in-out",
             "h-screen",
             "w-screen",
-            "flex",
-            "flex-col",
-            "items-center",
-            "justify-between",
             "bg-black",
-            "text-4xl",
-            "md:text-5xl",
+            "text-3xl",
+            "sm:text-5xl",
+            "md:text-6xl",
+            "font-display",
             "text-center",
             "tracking-widest",
             "h-0",
@@ -117,18 +120,19 @@ export default function Header() {
           }
         )}
       >
-        <ul className="pt-36">
-          {navLinks.map((nl) => (
-            <li key={nl.label} className="py-4 sm:py-8 font-sans uppercase">
-              <Link href={nl.url}>{nl.label}</Link>
-            </li>
-          ))}
-        </ul>
+        <div className="flex flex-col items-center justify-center h-full">
+          <ul className="">
+            {navLinks.map((nl) => (
+              <li key={nl.label} className="py-5 sm:py-8 font-sans uppercase">
+                <Link href={nl.url}>
+                  <a className="border-none">{nl.label}</a>
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
 
-        {/* <div className="md:invisible md:w-0 md:h-0 visible w-auto text-5xl">
-          <SocialMediaIcons />
-        </div> */}
-        <div className="text-2xl mb-12">
+        <div className="flex items-center justify-center w-full text-2xl mb-12 absolute bottom-0">
           <SocialMediaIcons />
         </div>
       </nav>

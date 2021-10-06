@@ -4,12 +4,17 @@ import Head from "next/head";
 import Date from "components/date";
 import Image from "next/image";
 import Section from "components/section";
+import { getSortedPostsData } from "lib/posts";
+import Link from "next/link";
 
 export async function getStaticProps({ params }) {
   const postData = await getPostData(params.id);
+  const allPostsData = getSortedPostsData();
+
   return {
     props: {
       postData,
+      allPostsData,
     },
   };
 }
@@ -22,34 +27,55 @@ export async function getStaticPaths() {
   };
 }
 
-export default function Post({ postData }) {
+export default function Post({ postData, allPostsData }) {
+  const previousLink = () => {};
+
+  const currentIndex = allPostsData.findIndex(
+    (item) => item.id === postData.id
+  );
+
+  const renderPrev = () => {
+    const prevIndex =
+      currentIndex === 0 ? allPostsData.length - 1 : currentIndex - 1;
+    const prev = allPostsData[prevIndex];
+    return <Link href={`/posts/${prev.id}`}>{prev.title}</Link>;
+  };
+  const renderNext = () => {
+    const nextIndex =
+      currentIndex === allPostsData.length - 1 ? 0 : currentIndex + 1;
+    const next = allPostsData[nextIndex];
+    return <Link href={`/posts/${next.id}`}>{next.title}</Link>;
+  };
+
   return (
     <Layout>
       <Head>{postData.title}</Head>
-      <Section>
-        <div className="">
-          <div className="pt-24 md:pt-16 pb-6">
-            <Image
-              src={`/images/posts/${postData.coverImage}`}
-              alt={postData.title}
-              layout="responsive"
-              width={1366}
-              height={768}
-            />
-          </div>
-
-          <h1>{postData.title}</h1>
-
-          <p>
+      <div className="pt-24">
+        <Section isSkinny>
+          <p className="text-center">
             <Date dateString={postData.date} />
           </p>
-
+          <h1 className="text-center text-5xl md:text-6xl lg:text-7xl xl:text-8xl leading-relaxed py-8 lg:py-12 xl:py-16">
+            {postData.title}
+          </h1>
+          {/* <div className="pb-6 relative h-96">
+              <Image
+                src={`/images/posts/${postData.coverImage}`}
+                alt={postData.title}
+                layout="fill"
+                objectFit="contain"
+              />
+            </div> */}
           <div
             className="break-words"
             dangerouslySetInnerHTML={{ __html: postData.contentHtml }}
           />
-        </div>
-      </Section>
+        </Section>
+        <nav className="px-6 py-6 md:px-12 md:py-12 flex justify-between uppercase md:text-xl w-full">
+          <div className="max-w-sm">{renderPrev()}</div>
+          <div className="max-w-sm text-right">{renderNext()}</div>
+        </nav>
+      </div>
     </Layout>
   );
 }

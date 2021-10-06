@@ -1,11 +1,9 @@
 ---
-title: "Album Release October 15, 2021"
+title: "Press Release: UK's No Quarter PR"
 date: "2021-09-25"
-coverImage: "album-pre-sale.jpg"
+coverImage: "square_cd-album-promo.jpg"
 tagLine: "Pre-sale now live!  Order now at Cargo Records UK Direct: FURBABY & THE TIGHT SPACES full album of singles (including 2 unreleased tracks) on Vinyl and CD in UK/Europe/Japan/USA"
 ---
-
-## FURBABY & THE TIGHT SPACES
 
 ### On CD, Limited Edition Hot Pink Vinyl & Digital formats
 

@@ -31,7 +31,7 @@ export default function Footer() {
         <div className="flex flex-col md:flex-row pl-6 md:pl-12">
           <div className="pb-10 flex-1">
             <Link href="mailto:furbabyferguson@gmail.com">
-              info@furbaby.rocks
+              <a className="border-none">info@furbaby.rocks</a>
             </Link>
           </div>
           <ul className="flex-1">
