@@ -9,14 +9,6 @@ import SocialMediaIcons from "components/social-media-icons";
 import Obfuscate from "react-obfuscate";
 
 const navLinks = [
-  // {
-  //   url: "/videos",
-  //   label: "Videos",
-  // },
-  // {
-  //   url: "/",
-  //   label: "Home",
-  // },
   {
     url: "/music",
     label: "Music",
@@ -59,10 +51,25 @@ export default function Header() {
         )}
       >
         <div className="flex justify-between items-center px-4 md:px-8">
+          {/* Desktop nav */}
+          <nav className="hidden lg:block text-sm uppercase">
+            {navLinks.map(({ url, label }) => (
+              <span className="px-10">
+                <Link href={url}>
+                  <a className="border-none">{label}</a>
+                </Link>
+              </span>
+            ))}
+          </nav>
+
+          {/* Hamburger menu mobile nav */}
           <div
-            className={names(["tham", "tham-e-squeeze", "tham-w-8"], {
-              "tham-active": active,
-            })}
+            className={names(
+              ["tham", "tham-e-squeeze", "tham-w-8", "lg:hidden"],
+              {
+                "tham-active": active,
+              }
+            )}
             onClick={() => setActive(!active)}
           >
             <div className="tham-box">
@@ -90,11 +97,6 @@ export default function Header() {
       <nav
         className={names(
           [
-            // "flex",
-            // "flex-col",
-            // "items-center",
-            // "justify-between",
-
             "z-10",
             "fixed",
             "transition-all",
