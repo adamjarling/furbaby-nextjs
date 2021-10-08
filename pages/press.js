@@ -27,18 +27,26 @@ export default function Press({ allPostsData }) {
 
       <Section isCentered isNarrow>
         <div className="mt-24 text-center">
-          {allPostsData.map(({ id, coverImage, date, title, tagLine }) => (
-            <article key={id} className="pb-28">
-              <p>
-                <Date dateString={date} />
-              </p>
-              <h2 className="leading-normal">
-                <Link href={`posts/${id}`}>
-                  <a className="border-none">{title}</a>
-                </Link>
-              </h2>
-            </article>
-          ))}
+          {allPostsData.map(
+            ({ id, coverImage, date, title, tagLine, externalUrl }) => (
+              <article key={id} className="pb-28">
+                <p>
+                  <Date dateString={date} />
+                </p>
+                <h2 className="leading-normal">
+                  {externalUrl ? (
+                    <ExternalLink url={externalUrl}>
+                      <a className="border-none">{title}</a>
+                    </ExternalLink>
+                  ) : (
+                    <Link href={`posts/${id}`}>
+                      <a className="border-none">{title}</a>
+                    </Link>
+                  )}
+                </h2>
+              </article>
+            )
+          )}
         </div>
       </Section>
     </Layout>

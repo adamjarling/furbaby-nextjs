@@ -7,6 +7,8 @@ import Section from "components/section";
 import { getSortedPostsData } from "lib/posts";
 import Link from "next/link";
 import ExternalLink from "components/external-link";
+import { ParallaxBanner, Parallax } from "react-scroll-parallax";
+import ParallaxBannerChildren from "components/parallax-banner-children";
 
 export async function getStaticProps({ params }) {
   const postData = await getPostData(params.id);
@@ -57,14 +59,37 @@ export default function Post({ postData, allPostsData }) {
     <Layout>
       <Head>{postData.title}</Head>
       <div className="pt-24">
+        <ParallaxBanner
+          layers={[
+            {
+              amount: 0.2,
+              image: `/images/posts/${postData.coverImage}`,
+            },
+          ]}
+          style={{ height: "90vh" }}
+        >
+          <ParallaxBannerChildren>
+            <div>
+              <p className="text-center bg-black p-1 bg-opacity-90">
+                <Date dateString={postData.date} />
+              </p>
+              <h1 className="text-center text-5xl md:text-6xl lg:text-7xl xl:text-8xl leading-relaxed py-8 lg:py-12 xl:py-16">
+                <span className="bg-black p-1 bg-opacity-90">
+                  {postData.title}
+                </span>
+              </h1>
+            </div>
+          </ParallaxBannerChildren>
+        </ParallaxBanner>
         <Section isSkinny>
+          {/*
           <p className="text-center">
             <Date dateString={postData.date} />
           </p>
           <h1 className="text-center text-5xl md:text-6xl lg:text-7xl xl:text-8xl leading-relaxed py-8 lg:py-12 xl:py-16">
             {postData.title}
           </h1>
-          {/* <div className="pb-6 relative h-96">
+           <div className="pb-6 relative h-96">
               <Image
                 src={`/images/posts/${postData.coverImage}`}
                 alt={postData.title}

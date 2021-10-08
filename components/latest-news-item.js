@@ -9,6 +9,7 @@ import ExternalLink from "components/external-link";
 export default function LatestNewsItem({ post }) {
   return (
     <HeadlineCalloutWrapper isWhite>
+      <h2 className="big-title text-center">Latest News</h2>
       <HeadlineCalloutSubhead>
         <Date dateString={post.date} />
       </HeadlineCalloutSubhead>
