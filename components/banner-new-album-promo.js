@@ -16,9 +16,6 @@ function BannerNewAlbumPromo(props) {
           <ExternalLink url={preOrderLink} noBorder isBrightHover>
             <Image src={cdPromo} alt="New CD Cargo Records promo" />
           </ExternalLink>
-          <div className="mt-2 mb-6">
-            <LinkButton href={preOrderLink}>Pre-Order Now</LinkButton>
-          </div>
         </div>
         <ExternalLink url={preOrderLink} noBorder isBrightHover>
           <Image src={lpPromo} alt="New vinyl LP Cargo Records promo" />

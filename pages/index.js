@@ -15,17 +15,17 @@ import Section from "components/section";
 import BannerNewAlbumPromoVideo from "components/banner-new-album-promo-video";
 import LatestSingle from "components/latest-single";
 import PhotoPreview from "components/photo-preview";
+import LatestNewsItem from "components/latest-news-item";
+import { getSortedPostsData } from "lib/posts";
 
-const videos = [
-  {
-    id: "9jNy5Kvsi68",
-    title: "Furbaby and the Tight Spaces - Next Year video",
-  },
-  {
-    id: "-054IlsCbGQ",
-    title: "Furbaby and the Tight Spaces - I Can Only Give You Everything",
-  },
-];
+export async function getStaticProps() {
+  const allPostsData = getSortedPostsData();
+  return {
+    props: {
+      allPostsData,
+    },
+  };
+}
 
 function getRandomInt(max) {
   return Math.floor(Math.random() * max);
@@ -33,7 +33,9 @@ function getRandomInt(max) {
 
 const bgImages = ["photo-triangle-wall-hi-res.jpg", "banner-keyboard.jpg"];
 
-export default function Home({ photo }) {
+export default function Home({ allPostsData }) {
+  const thePost = allPostsData[0];
+
   return (
     <Layout>
       <Head>
@@ -41,13 +43,16 @@ export default function Home({ photo }) {
       </Head>
       <Splash1 photo={"photo-triangle-wall-hi-res.jpg"} />
       <BannerNewAlbumPromoVideo />
+      <BannerNewAlbumPromo />
 
-      <div className="bg-white text-black">
+      <LatestNewsItem post={thePost} />
+
+      {/* <div className="bg-white text-black">
         <Section isCentered>
           <p className="big-title text-center">Tour Dates</p>
           <BannerReggies />
         </Section>
-      </div>
+      </div> */}
 
       <div className="bg-fur-pink">
         <Section>
@@ -73,11 +78,11 @@ export default function Home({ photo }) {
   );
 }
 
-// This gets called on every request
-export async function getServerSideProps() {
-  const index = getRandomInt(2);
-  const photo = bgImages[index];
+// // This gets called on every request
+// export async function getServerSideProps() {
+//   const index = getRandomInt(2);
+//   const photo = bgImages[index];
 
-  // Pass data to the page via props
-  return { props: { photo } };
-}
+//   // Pass data to the page via props
+//   return { props: { photo } };
+// }

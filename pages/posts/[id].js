@@ -6,6 +6,7 @@ import Image from "next/image";
 import Section from "components/section";
 import { getSortedPostsData } from "lib/posts";
 import Link from "next/link";
+import ExternalLink from "components/external-link";
 
 export async function getStaticProps({ params }) {
   const postData = await getPostData(params.id);
@@ -28,8 +29,6 @@ export async function getStaticPaths() {
 }
 
 export default function Post({ postData, allPostsData }) {
-  const previousLink = () => {};
-
   const currentIndex = allPostsData.findIndex(
     (item) => item.id === postData.id
   );
@@ -38,12 +37,19 @@ export default function Post({ postData, allPostsData }) {
     const prevIndex =
       currentIndex === 0 ? allPostsData.length - 1 : currentIndex - 1;
     const prev = allPostsData[prevIndex];
+
+    if (prev.externalUrl)
+      return <ExternalLink url={prev.externalUrl}>{prev.title}</ExternalLink>;
     return <Link href={`/posts/${prev.id}`}>{prev.title}</Link>;
   };
+
   const renderNext = () => {
     const nextIndex =
       currentIndex === allPostsData.length - 1 ? 0 : currentIndex + 1;
     const next = allPostsData[nextIndex];
+
+    if (next.externalUrl)
+      return <ExternalLink url={next.externalUrl}>{next.title}</ExternalLink>;
     return <Link href={`/posts/${next.id}`}>{next.title}</Link>;
   };
 

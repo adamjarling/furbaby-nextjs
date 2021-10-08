@@ -2,6 +2,9 @@ import React from "react";
 import PropTypes from "prop-types";
 import Section from "components/section";
 import LinkButton from "components/link-button";
+import HeadlineCalloutWrapper from "components/headline-callout/wrapper";
+import HeadlineCalloutSubhead from "components/headline-callout/subhead";
+import HeadlineCalloutHeadline from "components/headline-callout/headline";
 
 const preOrderLink =
   "https://cargorecordsdirect.co.uk/products/furbaby-the-tight-spaces-furbaby-the-tight-spaces";
@@ -18,11 +21,15 @@ function BannerNewAlbumPromoVideo(props) {
           allowFullScreen
         ></iframe>
       </div>
-      <h4 className="pt-10 md:pt-20 pb-6">Release Date October 15, 2021</h4>
-      <h2 className="mb-6">
-        Album Pre-Sale Now Live at Cargo Records UK Direct
-      </h2>
-      <LinkButton href={preOrderLink}>Pre-Order Now</LinkButton>
+      <HeadlineCalloutWrapper>
+        <HeadlineCalloutSubhead>
+          Release Date October 15, 2021
+        </HeadlineCalloutSubhead>
+        <HeadlineCalloutHeadline>
+          Album Pre-Sale Now Live at Cargo Records UK Direct
+        </HeadlineCalloutHeadline>
+        <LinkButton href={preOrderLink}>Pre-Order Now</LinkButton>
+      </HeadlineCalloutWrapper>
     </Section>
   );
 }

@@ -10,7 +10,7 @@ export default function LinkButton({ children, href, isInverted, isExternal }) {
       <a
         className={`${[
           ...sharedClasses,
-        ]} bg-gray-800 hover:bg-gray-800 text-gray-100 font-sans  hover:text-gray-200 border-none`}
+        ]} bg-black hover:bg-transparent text-gray-100 font-sans hover:text-gray-800 border-none hover:border-black`}
       >
         {children}
       </a>
