@@ -8,6 +8,7 @@ export default function LinkButton({ children, href, isInverted, isExternal }) {
   return isInverted ? (
     <Link href={href}>
       <a
+        target={isExternal ? `_blank` : undefined}
         className={`${[
           ...sharedClasses,
         ]} bg-black hover:bg-transparent text-gray-100 font-sans hover:text-gray-800 border-none hover:border-black`}
@@ -18,6 +19,7 @@ export default function LinkButton({ children, href, isInverted, isExternal }) {
   ) : (
     <Link href={href}>
       <a
+        target={isExternal ? `_blank` : undefined}
         className={`${[
           ...sharedClasses,
         ]} bg-transparent hover:bg-gray-200 text-gray-100 font-sans hover:text-gray-900 border border-solid border-gray-200 hover:border-transparent`}

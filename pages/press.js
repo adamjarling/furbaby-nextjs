@@ -34,7 +34,7 @@ export default function Press({ allPostsData }) {
                   <Date dateString={date} />
                 </p>
                 <h2 className="leading-normal">
-                  {externalUrl ? (
+                  {/* {externalUrl ? (
                     <ExternalLink url={externalUrl}>
                       <a className="border-none">{title}</a>
                     </ExternalLink>
@@ -42,7 +42,10 @@ export default function Press({ allPostsData }) {
                     <Link href={`posts/${id}`}>
                       <a className="border-none">{title}</a>
                     </Link>
-                  )}
+                  )} */}
+                  <Link href={`posts/${id}`}>
+                    <a className="border-none">{title}</a>
+                  </Link>
                 </h2>
               </article>
             )
