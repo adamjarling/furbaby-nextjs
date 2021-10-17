@@ -41,6 +41,19 @@ export const iCanOnlyGiveYouEverything = {
   youTubeMusic: "https://music.youtube.com/watch?v=pSCeBgvsXFQ&feature=share",
 };
 
+export const furbabyAndTheTightSpaces_album1 = {
+  amazonMusic: "",
+  appleMusic:
+    "https://music.apple.com/us/album/furbaby-the-tight-spaces/1588711620",
+  coverFileTitle: "furbaby-album-self-titled.jpg",
+  spotify:
+    "https://open.spotify.com/album/5FWzks9tPTABxrK96G4rN9?si=LavykPzXT3KAECCO72PhzQ",
+  wav: "",
+  youTubeId: "",
+  youTubeMusic:
+    "https://music.youtube.com/playlist?list=OLAK5uy_m18dmz9f03fY76gW_3PTXO2xCNw7rV_c4&feature=share",
+};
+
 export const nextYear = {
   amazonMusic: "https://www.amazon.com/Next-Year/dp/B08WCM1VW7",
   appleMusic: "https://music.apple.com/us/album/next-year-single/1552984262",

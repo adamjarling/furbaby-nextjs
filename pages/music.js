@@ -23,40 +23,57 @@ export default function Music() {
 
       <div className="pt-20 md:pt-36">
         <Section>
-          {singles.map((single, i) => (
-            <div key={single.src} className="mb-24">
+          {releases.map(({ src, title, manifestItems, year }, i) => (
+            <div key={src} className="mb-24">
               <ImageCalloutWrapper isReversed={isEvenRow(i)}>
                 <ImageCalloutImage>
                   <Image
-                    src={`/images/${single.src}`}
-                    alt={single.title}
+                    src={`/images/${src}`}
+                    alt={title}
                     layout="responsive"
                     width={500}
                     height={500}
                   />
                 </ImageCalloutImage>
                 <ImageCalloutCallout isReversed={isEvenRow(i)}>
-                  <h2 className="pb-0 pt-8 md:p-0">{single.title}</h2>
+                  <h2 className="pb-0 pt-8 md:p-0">{title}</h2>
                   <p className="uppercase py-6 md:py-12">
-                    Single - {single.year}
+                    {title === "Furbaby and the Tight Spaces"
+                      ? "New Album!"
+                      : "Single"}{" "}
+                    - {year}
                   </p>
-                  <LinkButton isExternal href={single.manifestItems.spotify}>
-                    Listen
-                  </LinkButton>
-                  {/* <div className="flex justify-evenly items-center text-2xl mt-3 mb-6">
-                    <ExternalLink url={single.manifestItems.spotify}>
-                      <FaSpotify />
-                    </ExternalLink>
-                    <ExternalLink url={single.manifestItems.youTubeMusic}>
+                  <div className="flex flex-col md:flex-row justify-between">
+                    <LinkButton isExternal href={manifestItems.spotify}>
+                      <span className="flex items-center justify-center">
+                        <FaSpotify /> <span className="pl-3">Listen</span>
+                      </span>
+                    </LinkButton>
+                    {title === "Furbaby and the Tight Spaces" && (
+                      <LinkButton
+                        isExternal
+                        href="https://cargorecordsdirect.co.uk/products/furbaby-the-tight-spaces-furbaby-the-tight-spaces"
+                      >
+                        Order Now!
+                      </LinkButton>
+                    )}
+                  </div>
+
+                  <div className="flex text-2xl mt-10 mb-6">
+                    <ExternalLink url={manifestItems.youTubeMusic}>
                       <FaYoutube />
                     </ExternalLink>
-                    <ExternalLink url={single.manifestItems.appleMusic}>
-                      <FaApple />
-                    </ExternalLink>
-                    <ExternalLink url={single.manifestItems.amazonMusic}>
-                      <FaAmazon />
-                    </ExternalLink>
-                  </div> */}
+                    <span className="px-6">
+                      <ExternalLink url={manifestItems.appleMusic}>
+                        <FaApple />
+                      </ExternalLink>
+                    </span>
+                    {manifestItems.amazonMusic && (
+                      <ExternalLink url={manifestItems.amazonMusic}>
+                        <FaAmazon />
+                      </ExternalLink>
+                    )}
+                  </div>
                 </ImageCalloutCallout>
               </ImageCalloutWrapper>
             </div>
@@ -67,7 +84,13 @@ export default function Music() {
   );
 }
 
-export const singles = [
+export const releases = [
+  {
+    src: "furbaby-album-self-titled.jpg",
+    title: "Furbaby and the Tight Spaces",
+    manifestItems: manifest.furbabyAndTheTightSpaces_album1,
+    year: "2021",
+  },
   {
     src: "give-u-everything-album-art-v1.jpg",
     title: "I Can Only Give You Everything",

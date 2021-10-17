@@ -3,10 +3,10 @@ import ImageCalloutWrapper from "components/image-callout/wrapper";
 import ImageCalloutImage from "components/image-callout/image";
 import ImageCalloutCallout from "components/image-callout/callout";
 import Image from "next/image";
-import { singles } from "pages/music";
+import { releases } from "pages/music";
 import LinkButton from "./link-button";
 
-const latestSingle = singles.find(
+const latestSingle = releases.find(
   (single) => single.src === "social-distance-album-art.jpg"
 );
 

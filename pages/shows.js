@@ -50,6 +50,24 @@ export default function Shows() {
         <div className="mt-24">
           <h1 className="text-center">Tour Dates</h1>
           <ul className="w-full">
+            <li className="flex flex-col py-12 items-center">
+              <h3>November 6, 2021</h3>
+              <span className="flex-grow-2">
+                <ExternalLink url="https://www.reggieslive.com/">
+                  Reggies Chicago
+                </ExternalLink>
+              </span>
+              <span className="my-2">w/ Cactus!</span>
+              <span className="mt-2">
+                7pm doors. Ages 21+ Seated ticket $55
+              </span>
+              <span>Chicago, IL</span>
+              <div className="mt-6">
+                <LinkButton href="https://www.ticketweb.com/event/cactus-reggies-banannas-comedy-shack-tickets/11240445">
+                  Buy Tickets
+                </LinkButton>
+              </div>
+            </li>
             <li className="flex flex-col py-6 items-center">
               <h3>October 8, 2021</h3>
               <span className="flex-grow-2">
@@ -64,9 +82,9 @@ export default function Shows() {
                 Buy Tickets
               </LinkButton>
             </div> */}
-              {/* <div className="max-w-sm mt-8">
-              <Image src={reggiesPoster} />
-            </div> */}
+              <div className="max-w-sm mt-8">
+                <Image src={reggiesPoster} />
+              </div>
               <div className="pt-6">
                 <BannerReggies />
               </div>

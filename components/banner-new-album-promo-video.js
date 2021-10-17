@@ -26,9 +26,9 @@ function BannerNewAlbumPromoVideo(props) {
           Release Date October 15, 2021
         </HeadlineCalloutSubhead>
         <HeadlineCalloutHeadline>
-          Album Pre-Sale Now Live at Cargo Records UK Direct
+          It's alive! Debut album now available at Cargo Records UK Direct
         </HeadlineCalloutHeadline>
-        <LinkButton href={preOrderLink}>Pre-Order Now</LinkButton>
+        <LinkButton href={preOrderLink}>Order Now</LinkButton>
       </HeadlineCalloutWrapper>
     </Section>
   );
