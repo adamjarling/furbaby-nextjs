@@ -6,21 +6,48 @@ import ExternalLink from "components/external-link";
 import Section from "components/section";
 import LinkButton from "components/link-button";
 import Image from "next/image";
-import reggiesPoster from "public/images/Oct8SteepwaterIG.jpg";
-import BannerReggies from "components/banner-2021-10-08";
 
 const shows = [
-  // {
-  //   date: "September 3, 2021",
-  //   venue: "Cubby Bear - Multiple Sclerosis Benefit",
-  //   location: "Chicago, IL",
-  //   ticketUrl: "",
-  // },
   {
-    date: "July 10, 2021",
-    venue: "Flatts and Sharpe Music Festival",
-    location: "Chicago, IL",
+    date: "DEC 9 THURS",
+    venue: "Liars Club",
+    venueLink: "https://www.facebook.com/liarsclubchicago/",
+    time: "8pm",
+    playingWith: "Bill Kozy's Rising Force, Viceroy",
+    location: "Chicago, IL USA",
     ticketUrl: "",
+    facebookEventUrl: "",
+  },
+  {
+    date: "NOV 6 SAT (Canceled, again)",
+    venue: "Reggies Live",
+    venueLink: "https://www.reggieslive.com/",
+    time: "7pm",
+    playingWith: "Cactus",
+    location: "Chicago, IL USA",
+    ticketUrl:
+      "https://www.ticketweb.com/event/cactus-reggies-banannas-comedy-shack-tickets/11240445",
+    facebookEventUrl: "https://www.facebook.com/events/850162969206508",
+  },
+  {
+    date: "OCT 9 FRI (CANCELED)",
+    venue: "Reggies Live",
+    venueLink: "https://www.reggieslive.com/",
+    time: "8pm",
+    playingWith: "Steepwater Band",
+    location: "Chicago, IL USA",
+    ticketUrl: "",
+    facebookEventUrl: "",
+  },
+  {
+    date: "JUL 10 SAT",
+    venue: "Flatts and Sharpe Music Festival",
+    venueLink: "https://www.flattsandsharpe.com/events",
+    time: "4pm",
+    playingWith: "Outlaw Family Band",
+    location: "Chicago, IL USA",
+    ticketUrl: "",
+    facebookEventUrl: "",
   },
 ];
 
@@ -28,75 +55,61 @@ export default function Shows() {
   return (
     <Layout>
       <Head>
-        <title>Shows - Furbaby & the Tight Spaces</title>
+        <title>Tour Dates - Furbaby and the Tight Spaces</title>
       </Head>
-      {/* <ParallaxBanner
+      <ParallaxBanner
         layers={[
           {
             amount: 0.2,
-            image: "/images/banner-lake.jpg",
+            image: "/images/banner-lying-on-beach.jpg",
           },
         ]}
-        style={{ height: "50vh" }}
+        style={{ height: "70vh" }}
       >
-        <ParallaxBannerChildren>
-          <div className="container flex flex-col items-center">
-            <h2 className="banner-headline">Shows</h2>
-          </div>
-        </ParallaxBannerChildren>
-      </ParallaxBanner> */}
+        <div className="absolute top-0 left-0 right-0 bottom-0 flex flex-col justify-between pb-6 px-6">
+          <p className="big-title pt-28">Tour</p>
+          <h1 className="text-right">Dates</h1>
+        </div>
+      </ParallaxBanner>
 
       <Section isCentered>
-        <div className="mt-24">
-          <h1 className="text-center">Tour Dates</h1>
-          <ul className="w-full">
-            <li className="flex flex-col py-12 items-center">
-              <h3>November 6, 2021</h3>
-              <span className="flex-grow-2">
-                <ExternalLink url="https://www.reggieslive.com/">
-                  Reggies Chicago
-                </ExternalLink>
-              </span>
-              <span className="my-2">w/ Cactus!</span>
-              <span className="mt-2">
-                7pm doors. Ages 21+ Seated ticket $55
-              </span>
-              <span>Chicago, IL</span>
-              <div className="mt-6">
-                <LinkButton href="https://www.ticketweb.com/event/cactus-reggies-banannas-comedy-shack-tickets/11240445">
-                  Buy Tickets
-                </LinkButton>
+        <div className="">
+          {shows.map(
+            ({
+              date,
+              venue,
+              venueLink,
+              time,
+              playingWith,
+              location,
+              ticketUrl,
+              facebookEventUrl,
+            }) => (
+              <div className="grid grid-cols-2 w-full text-lg my-20">
+                <div className="flex flex-col md:flex-row justify-items-start w-full">
+                  <span className="pr-6 font-bold flex-1 uppercase">
+                    {date}
+                  </span>
+                  <div className="flex-1">
+                    <div>
+                      <ExternalLink url={venueLink}>{venue}</ExternalLink> @{" "}
+                      {time}
+                    </div>
+                    <div>w/ {playingWith}</div>
+                    <div>{location}</div>
+                  </div>
+                </div>
+                <div className="text-right">
+                  {ticketUrl && (
+                    <a href={ticketUrl} className="mr-4">
+                      Tickets
+                    </a>
+                  )}
+                  {facebookEventUrl && <a href={facebookEventUrl}>RSVP</a>}
+                </div>
               </div>
-            </li>
-            <li className="flex flex-col py-6 items-center">
-              <h3>October 8, 2021</h3>
-              <span className="flex-grow-2">
-                <ExternalLink url="https://www.reggieslive.com/">
-                  Reggies Rock Room
-                </ExternalLink>
-              </span>
-              <span className="mt-2">8pm doors. Ages 17+</span>
-              <span>Chicago, IL</span>
-              {/* <div className="mt-6">
-              <LinkButton href="https://www.ticketweb.com/event/the-steepwater-band-reggies-rock-club-tickets/11345365">
-                Buy Tickets
-              </LinkButton>
-            </div> */}
-              <div className="max-w-sm mt-8">
-                <Image src={reggiesPoster} />
-              </div>
-              <div className="pt-6">
-                <BannerReggies />
-              </div>
-            </li>
-            {shows.map((show) => (
-              <li key={show.date} className="flex flex-col py-6 items-center">
-                <h3>{show.date}</h3>
-                <span className="flex-grow-2">{show.venue}</span>
-                <span>{show.location}</span>
-              </li>
-            ))}
-          </ul>
+            )
+          )}
         </div>
       </Section>
     </Layout>
