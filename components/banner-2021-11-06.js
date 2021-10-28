@@ -1,11 +1,7 @@
 import React from "react";
-import PropTypes from "prop-types";
-import swbImage from "public/images/Oct8SteepwaterIG.jpg";
 import Image from "next/image";
-import furImage from "public/images/2021-10-08-fuzzy.JPG";
 import LinkButton from "components/link-button";
 import ExternalLink from "components/external-link";
-import Section from "components/section";
 
 const ticketLink =
   "https://www.ticketweb.com/event/cactus-reggies-banannas-comedy-shack-tickets/11240445";

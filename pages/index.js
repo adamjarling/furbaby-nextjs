@@ -17,7 +17,7 @@ import LatestSingle from "components/latest-single";
 import PhotoPreview from "components/photo-preview";
 import LatestNewsItem from "components/latest-news-item";
 import { getSortedPostsData } from "lib/posts";
-import BannerCactus from "components/banner-2021-11-06";
+import BannerDoubleDoor from "components/banner-2021-11-07";
 
 export async function getStaticProps() {
   const allPostsData = getSortedPostsData();
@@ -43,7 +43,7 @@ export default function Home({ allPostsData }) {
         <title>Furbaby & the Tight Spaces</title>
       </Head>
       <Splash1 photo={"photo-triangle-wall-hi-res.jpg"} />
-      <BannerCactus />
+      <BannerDoubleDoor />
       <BannerNewAlbumPromoVideo />
       <BannerNewAlbumPromo />
 

@@ -8,15 +8,25 @@ import LinkButton from "components/link-button";
 import Image from "next/image";
 
 const shows = [
+  // {
+  //   date: "DEC 9 THURS",
+  //   venue: "Liars Club",
+  //   venueLink: "https://www.facebook.com/liarsclubchicago/",
+  //   time: "8pm",
+  //   playingWith: "Bill Kozy's Rising Force, Viceroy",
+  //   location: "Chicago, IL USA",
+  //   ticketUrl: "",
+  //   facebookEventUrl: "",
+  // },
   {
-    date: "DEC 9 THURS",
-    venue: "Liars Club",
-    venueLink: "https://www.facebook.com/liarsclubchicago/",
-    time: "8pm",
-    playingWith: "Bill Kozy's Rising Force, Viceroy",
+    date: "NOV 7 SUN",
+    venue: "Double Door",
+    venueLink: "https://www.doubledoor.com/",
+    time: "1pm (free show)",
+    playingWith: "Canning, Autonaughts",
     location: "Chicago, IL USA",
     ticketUrl: "",
-    facebookEventUrl: "",
+    facebookEventUrl: "https://goo.gl/maps/9BFh2mJ9DGdThxbw9",
   },
   {
     date: "NOV 6 SAT (Canceled, again)",
