@@ -25,8 +25,8 @@ const shows = [
     time: "1pm (free show)",
     playingWith: "Canning, Autonaughts",
     location: "Chicago, IL USA",
-    ticketUrl: "",
-    facebookEventUrl: "https://goo.gl/maps/9BFh2mJ9DGdThxbw9",
+    ticketUrl: "https://www.facebook.com/events/168285825506607",
+    facebookEventUrl: "https://forms.gle/yoN4NAZfZzkHSe7Y8",
   },
   {
     date: "NOV 6 SAT (Canceled, again)",
