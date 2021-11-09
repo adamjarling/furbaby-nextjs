@@ -43,7 +43,7 @@ export default function Home({ allPostsData }) {
         <title>Furbaby & the Tight Spaces</title>
       </Head>
       <Splash1 photo={"photo-triangle-wall-hi-res.jpg"} />
-      <BannerDoubleDoor />
+
       <BannerNewAlbumPromoVideo />
       <BannerNewAlbumPromo />
 
@@ -56,6 +56,8 @@ export default function Home({ allPostsData }) {
         </Section>
       </div> */}
 
+      <SplashPhotos />
+
       <div className="bg-fur-pink">
         <Section>
           <LatestSingle />
@@ -67,8 +69,6 @@ export default function Home({ allPostsData }) {
       {/* <IntroParagraph /> */}
 
       {/* <CargoPromo /> */}
-
-      <SplashPhotos />
 
       <Section>
         <p className="big-title text-center">Videos</p>

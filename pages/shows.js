@@ -8,16 +8,16 @@ import LinkButton from "components/link-button";
 import Image from "next/image";
 
 const shows = [
-  // {
-  //   date: "DEC 9 THURS",
-  //   venue: "Liars Club",
-  //   venueLink: "https://www.facebook.com/liarsclubchicago/",
-  //   time: "8pm",
-  //   playingWith: "Bill Kozy's Rising Force, Viceroy",
-  //   location: "Chicago, IL USA",
-  //   ticketUrl: "",
-  //   facebookEventUrl: "",
-  // },
+  {
+    date: "DEC 9 THURS",
+    venue: "Liars Club",
+    venueLink: "https://www.facebook.com/liarsclubchicago/",
+    time: "8pm",
+    playingWith: "Bill Kozy's Rising Force, Viceroy",
+    location: "Chicago, IL USA",
+    ticketUrl: "",
+    facebookEventUrl: "",
+  },
   {
     date: "NOV 7 SUN",
     venue: "Double Door",
@@ -71,10 +71,10 @@ export default function Shows() {
         layers={[
           {
             amount: 0.2,
-            image: "/images/banner-lying-on-beach.jpg",
+            image: "/images/2021-11-07/IMG_3808.jpg",
           },
         ]}
-        style={{ height: "70vh" }}
+        style={{ height: "80vh" }}
       >
         <div className="absolute top-0 left-0 right-0 bottom-0 flex flex-col justify-between pb-6 px-6">
           <p className="big-title pt-28">Tour</p>

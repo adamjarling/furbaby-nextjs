@@ -10,6 +10,8 @@ import legs from "public/images/post-pandemic-legs.png";
 import lava from "public/images/og-image-lava.png";
 import feet from "public/images/band-wall-feet.jpg";
 import stage from "public/images/DSC01740-ANIMATION.gif";
+import ddAirGuitar from "public/images/2021-11-07/IMG_3802.jpg";
+import ddBalcony from "public/images/2021-11-07/IMG_3805.jpg";
 
 function SplashPhotos(props) {
   return (
@@ -33,6 +35,14 @@ function SplashPhotos(props) {
       <SRLWrapper>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 pt-4 uppercase">
           <div>
+            <a href={`/images/2021-11-07/IMG_3802.jpg`} className="border-none">
+              <Image
+                src={ddAirGuitar}
+                alt="Fur sighting at Double Door Chicago USA. Photo: Casey Murtaugh"
+                fill="responsive"
+                srl_gallery_image="true"
+              />
+            </a>
             <a
               href={`/images/next-year-video-cover.jpg`}
               className="border-none"
@@ -40,25 +50,6 @@ function SplashPhotos(props) {
               <Image
                 src={nextYearPhoto}
                 alt="Next Year promo shot"
-                fill="responsive"
-                srl_gallery_image="true"
-              />
-            </a>
-            <a
-              href={`/images/furbaby-and-ts-logo_white.png`}
-              className="border-none"
-            >
-              <Image
-                src={logo}
-                alt="Furbaby & the Tight Spaces logo"
-                fill="responsive"
-                srl_gallery_image="true"
-              />
-            </a>
-            <a href={`/images/DSC01740-ANIMATION.gif`} className="border-none">
-              <Image
-                src={stage}
-                alt="Photo: Bikerchickie Mako"
                 fill="responsive"
                 srl_gallery_image="true"
               />
@@ -76,15 +67,15 @@ function SplashPhotos(props) {
             <a href={`/images/band-wall-feet.jpg`} className="border-none">
               <Image
                 src={feet}
-                alt="Band legs"
+                alt="Artists of the wall - Rogers Park Beach"
                 fill="responsive"
                 srl_gallery_image="true"
               />
             </a>
-            <a href={`/images/og-image-lava.png`} className="border-none">
+            <a href={`/images/2021-11-07/IMG_3805.jpg`} className="border-none">
               <Image
-                src={lava}
-                alt="Furbaby stuck inside a lava lamp promo photo"
+                src={ddBalcony}
+                alt="Moon Boy photo shoot - 2021-11-07 Double Door - Chicago USA "
                 fill="responsive"
                 srl_gallery_image="true"
               />
@@ -98,6 +89,14 @@ function SplashPhotos(props) {
               <Image
                 src={wallPhoto}
                 alt="Promo photo from Cocoa video shoot"
+                fill="responsive"
+                srl_gallery_image="true"
+              />
+            </a>
+            <a href={`/images/og-image-lava.png`} className="border-none">
+              <Image
+                src={lava}
+                alt="Furbaby stuck inside a lava lamp promo photo"
                 fill="responsive"
                 srl_gallery_image="true"
               />
