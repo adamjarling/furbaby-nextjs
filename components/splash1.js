@@ -19,7 +19,7 @@ function Splash1({ photo }) {
             Listen Now
           </a>
         </Link>
-        <h1 className="text-right">What's up</h1>
+        <h1 className="text-right">New Album!</h1>
       </div>
     </ParallaxBanner>
   );
