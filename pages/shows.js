@@ -4,22 +4,31 @@ import { ParallaxBanner, Parallax } from "react-scroll-parallax";
 import ParallaxBannerChildren from "components/parallax-banner-children";
 import ExternalLink from "components/external-link";
 import Section from "components/section";
-import LinkButton from "components/link-button";
-import Image from "next/image";
+import { format, parseISO } from "date-fns";
 
-const shows = [
+const shows2021 = [
+  // {
+  //   date: "2021-12-23",
+  //   venue: "Liars Club",
+  //   venueLink: "https://www.facebook.com/liarsclubchicago/",
+  //   time: "8pm",
+  //   playingWith: "Annual I Luv Richmas Holiday Party!",
+  //   location: "Chicago, IL USA",
+  //   ticketUrl: "",
+  //   facebookEventUrl: "",
+  // },
   {
-    date: "DEC 9 THURS",
+    date: "2021-12-10",
     venue: "Liars Club",
     venueLink: "https://www.facebook.com/liarsclubchicago/",
     time: "8pm",
-    playingWith: "Bill Kozy's Rising Force, Viceroy",
+    playingWith: "El Segundo, Viceroy",
     location: "Chicago, IL USA",
     ticketUrl: "",
-    facebookEventUrl: "",
+    facebookEventUrl: "https://www.facebook.com/events/2116482021838783",
   },
   {
-    date: "NOV 7 SUN",
+    date: "2021-11-07",
     venue: "Double Door",
     venueLink: "https://www.doubledoor.com/",
     time: "1pm (free show)",
@@ -28,29 +37,29 @@ const shows = [
     ticketUrl: "https://www.facebook.com/events/168285825506607",
     facebookEventUrl: "https://forms.gle/yoN4NAZfZzkHSe7Y8",
   },
+  // {
+  //   date: "2021-11-06",
+  //   venue: "Reggies Live",
+  //   venueLink: "https://www.reggieslive.com/",
+  //   time: "7pm",
+  //   playingWith: "Cactus",
+  //   location: "Chicago, IL USA",
+  //   ticketUrl:
+  //     "https://www.ticketweb.com/event/cactus-reggies-banannas-comedy-shack-tickets/11240445",
+  //   facebookEventUrl: "https://www.facebook.com/events/850162969206508",
+  // },
+  // {
+  //   date: "2021-10-09",
+  //   venue: "Reggies Live",
+  //   venueLink: "https://www.reggieslive.com/",
+  //   time: "8pm",
+  //   playingWith: "Steepwater Band",
+  //   location: "Chicago, IL USA",
+  //   ticketUrl: "",
+  //   facebookEventUrl: "",
+  // },
   {
-    date: "NOV 6 SAT (Canceled, again)",
-    venue: "Reggies Live",
-    venueLink: "https://www.reggieslive.com/",
-    time: "7pm",
-    playingWith: "Cactus",
-    location: "Chicago, IL USA",
-    ticketUrl:
-      "https://www.ticketweb.com/event/cactus-reggies-banannas-comedy-shack-tickets/11240445",
-    facebookEventUrl: "https://www.facebook.com/events/850162969206508",
-  },
-  {
-    date: "OCT 9 FRI (CANCELED)",
-    venue: "Reggies Live",
-    venueLink: "https://www.reggieslive.com/",
-    time: "8pm",
-    playingWith: "Steepwater Band",
-    location: "Chicago, IL USA",
-    ticketUrl: "",
-    facebookEventUrl: "",
-  },
-  {
-    date: "JUL 10 SAT",
+    date: "2021-07-10",
     venue: "Flatts and Sharpe Music Festival",
     venueLink: "https://www.flattsandsharpe.com/events",
     time: "4pm",
@@ -60,6 +69,10 @@ const shows = [
     facebookEventUrl: "",
   },
 ];
+
+function formatDate(date) {
+  return format(parseISO(date), "E MMM dd");
+}
 
 export default function Shows() {
   return (
@@ -83,8 +96,9 @@ export default function Shows() {
       </ParallaxBanner>
 
       <Section isCentered>
+        <h2>2021</h2>
         <div className="">
-          {shows.map(
+          {shows2021.map(
             ({
               date,
               venue,
@@ -98,7 +112,7 @@ export default function Shows() {
               <div className="grid grid-cols-2 w-full text-lg my-20">
                 <div className="flex flex-col md:flex-row justify-items-start w-full">
                   <span className="pr-6 font-bold flex-1 uppercase">
-                    {date}
+                    {formatDate(date)}
                   </span>
                   <div className="flex-1">
                     <div>
