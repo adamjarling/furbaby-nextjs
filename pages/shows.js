@@ -7,16 +7,17 @@ import Section from "components/section";
 import { format, parseISO } from "date-fns";
 
 const shows2021 = [
-  // {
-  //   date: "2021-12-23",
-  //   venue: "Liars Club",
-  //   venueLink: "https://www.facebook.com/liarsclubchicago/",
-  //   time: "8pm",
-  //   playingWith: "Annual I Luv Richmas Holiday Party!",
-  //   location: "Chicago, IL USA",
-  //   ticketUrl: "",
-  //   facebookEventUrl: "",
-  // },
+  {
+    date: "2021-12-23",
+    venue: "Liars Club",
+    venueLink: "https://www.facebook.com/liarsclubchicago/",
+    time: "8pm",
+    playingWith:
+      "Rollo Tomasi, I Luv Rich. Annual I Luv Richmas Holiday Party!",
+    location: "Chicago, IL USA",
+    ticketUrl: "",
+    facebookEventUrl: "https://www.facebook.com/events/308927907766064",
+  },
   {
     date: "2021-12-10",
     venue: "Liars Club",
