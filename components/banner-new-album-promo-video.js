@@ -12,6 +12,18 @@ const preOrderLink =
 function BannerNewAlbumPromoVideo(props) {
   return (
     <Section>
+      <div className="mb-12">
+        <div className="aspect-w-16 aspect-h-9 ">
+          <iframe
+            src={`https://www.youtube.com/embed/Ibh5dl6g030`}
+            title="Furbaby &amp; the Tight Spaces plays Run Rudolph Run"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+          ></iframe>
+        </div>
+      </div>
+
       <div className="aspect-w-16 aspect-h-9 ">
         <iframe
           src={`https://www.youtube.com/embed/LZQe-LAuwBw`}

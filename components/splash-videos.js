@@ -3,6 +3,10 @@ import ParallaxBannerChildren from "components/parallax-banner-children";
 
 const videos = [
   {
+    id: "Ibh5dl6g030",
+    title: "Furbaby and the Tight Spaces - Run Rudolph Run video",
+  },
+  {
     id: "9jNy5Kvsi68",
     title: "Furbaby and the Tight Spaces - Next Year video",
   },

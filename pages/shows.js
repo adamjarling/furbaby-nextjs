@@ -5,6 +5,21 @@ import ParallaxBannerChildren from "components/parallax-banner-children";
 import ExternalLink from "components/external-link";
 import Section from "components/section";
 import { format, parseISO } from "date-fns";
+import Image from "next/image";
+
+const shows2022 = [
+  {
+    date: "2022-01-29",
+    venue: "Reggies",
+    venueLink: "https://www.reggieslive.com/",
+    time: "8pm",
+    playingWith: "Steepwater Band. Joe's special 5150 birthday bash",
+    location: "Chicago, IL USA",
+    ticketUrl:
+      "https://www.ticketweb.com/event/the-steepwater-band-reggies-banannas-comedy-shack-tickets/11469105",
+    facebookEventUrl: "https://www.facebook.com/events/592852821807630",
+  },
+];
 
 const shows2021 = [
   {
@@ -95,6 +110,56 @@ export default function Shows() {
           <h1 className="text-right">Dates</h1>
         </div>
       </ParallaxBanner>
+
+      <div className="flex justify-center mt-8">
+        <Image
+          src="/images/2022-01-29-flyer-reggies.jpeg"
+          width="825"
+          height="1275"
+        />
+      </div>
+
+      <Section isCentered>
+        <h2>2022</h2>
+        <div className="">
+          {shows2022.map(
+            ({
+              date,
+              venue,
+              venueLink,
+              time,
+              playingWith,
+              location,
+              ticketUrl,
+              facebookEventUrl,
+            }) => (
+              <div className="grid grid-cols-2 w-full text-lg my-20">
+                <div className="flex flex-col md:flex-row justify-items-start w-full">
+                  <span className="pr-6 font-bold flex-1 uppercase">
+                    {formatDate(date)}
+                  </span>
+                  <div className="flex-1">
+                    <div>
+                      <ExternalLink url={venueLink}>{venue}</ExternalLink> @{" "}
+                      {time}
+                    </div>
+                    <div>w/ {playingWith}</div>
+                    <div>{location}</div>
+                  </div>
+                </div>
+                <div className="text-right">
+                  {ticketUrl && (
+                    <a href={ticketUrl} className="mr-4">
+                      Tickets
+                    </a>
+                  )}
+                  {facebookEventUrl && <a href={facebookEventUrl}>RSVP</a>}
+                </div>
+              </div>
+            )
+          )}
+        </div>
+      </Section>
 
       <Section isCentered>
         <h2>2021</h2>
