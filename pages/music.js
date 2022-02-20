@@ -36,7 +36,7 @@ export default function Music() {
                   />
                 </ImageCalloutImage>
                 <ImageCalloutCallout isReversed={isEvenRow(i)}>
-                  <h2 className="pb-0 pt-8 md:p-0">{title}</h2>
+                  <h2 className="pb-0 pt-8 lg:p-0">{title}</h2>
                   <p className="uppercase py-6 md:py-12">
                     {title === "Furbaby and the Tight Spaces"
                       ? "New Album!"

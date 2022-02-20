@@ -5,8 +5,8 @@ import classNames from "classnames";
 function ImageCalloutWrapper({ isReversed, children }) {
   return (
     <figure
-      className={classNames("flex flex-col md:flex-row md:justify-between", {
-        "md:flex-row-reverse": isReversed,
+      className={classNames("flex flex-col lg:flex-row lg:justify-between", {
+        "lg:flex-row-reverse": isReversed,
       })}
     >
       {children}

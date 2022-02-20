@@ -90,6 +90,42 @@ function formatDate(date) {
   return format(parseISO(date), "E MMM dd");
 }
 
+function ShowsGrid({
+  date,
+  venue,
+  venueLink,
+  time,
+  playingWith,
+  location,
+  ticketUrl,
+  facebookEventUrl,
+}) {
+  return (
+    <div className="grid grid-cols-2 w-full text-lg my-10 md:my-20">
+      <div className="flex flex-col md:flex-row justify-items-start w-full">
+        <span className="pr-6 font-bold flex-1 uppercase">
+          {formatDate(date)}
+        </span>
+        <div className="flex-1">
+          <div>
+            <ExternalLink url={venueLink}>{venue}</ExternalLink> @ {time}
+          </div>
+          <div>w/ {playingWith}</div>
+          <div>{location}</div>
+        </div>
+      </div>
+      <div className="text-right">
+        {ticketUrl && (
+          <a href={ticketUrl} className="mr-4">
+            Tickets
+          </a>
+        )}
+        {facebookEventUrl && <a href={facebookEventUrl}>RSVP</a>}
+      </div>
+    </div>
+  );
+}
+
 export default function Shows() {
   return (
     <Layout>
@@ -111,95 +147,43 @@ export default function Shows() {
         </div>
       </ParallaxBanner>
 
-      <div className="flex justify-center mt-8">
-        <Image
-          src="/images/2022-01-29-flyer-reggies.jpeg"
-          width="825"
-          height="1275"
-        />
-      </div>
-
       <Section isCentered>
         <h2>2022</h2>
         <div className="">
-          {shows2022.map(
-            ({
-              date,
-              venue,
-              venueLink,
-              time,
-              playingWith,
-              location,
-              ticketUrl,
-              facebookEventUrl,
-            }) => (
-              <div className="grid grid-cols-2 w-full text-lg my-20">
-                <div className="flex flex-col md:flex-row justify-items-start w-full">
-                  <span className="pr-6 font-bold flex-1 uppercase">
-                    {formatDate(date)}
-                  </span>
-                  <div className="flex-1">
-                    <div>
-                      <ExternalLink url={venueLink}>{venue}</ExternalLink> @{" "}
-                      {time}
-                    </div>
-                    <div>w/ {playingWith}</div>
-                    <div>{location}</div>
-                  </div>
-                </div>
-                <div className="text-right">
-                  {ticketUrl && (
-                    <a href={ticketUrl} className="mr-4">
-                      Tickets
-                    </a>
-                  )}
-                  {facebookEventUrl && <a href={facebookEventUrl}>RSVP</a>}
-                </div>
-              </div>
-            )
-          )}
+          {shows2022.map((show) => (
+            <ShowsGrid {...show}></ShowsGrid>
+          ))}
         </div>
       </Section>
+
+      <div className="grid grid-cols-1 md:grid-cols-2 w-full">
+        <div className="">
+          <Image
+            src="/images/2021-12-10-flyer__instagram.jpg"
+            width={1000}
+            height={1000}
+          />
+          <Image
+            src="/images/2021-11-07-event2.jpg"
+            width={1920}
+            height={1005}
+          />
+        </div>
+        <div>
+          <Image
+            src="/images/2022-01-29-flyer-reggies.jpeg"
+            width={875}
+            height={1275}
+          />
+        </div>
+      </div>
 
       <Section isCentered>
         <h2>2021</h2>
         <div className="">
-          {shows2021.map(
-            ({
-              date,
-              venue,
-              venueLink,
-              time,
-              playingWith,
-              location,
-              ticketUrl,
-              facebookEventUrl,
-            }) => (
-              <div className="grid grid-cols-2 w-full text-lg my-20">
-                <div className="flex flex-col md:flex-row justify-items-start w-full">
-                  <span className="pr-6 font-bold flex-1 uppercase">
-                    {formatDate(date)}
-                  </span>
-                  <div className="flex-1">
-                    <div>
-                      <ExternalLink url={venueLink}>{venue}</ExternalLink> @{" "}
-                      {time}
-                    </div>
-                    <div>w/ {playingWith}</div>
-                    <div>{location}</div>
-                  </div>
-                </div>
-                <div className="text-right">
-                  {ticketUrl && (
-                    <a href={ticketUrl} className="mr-4">
-                      Tickets
-                    </a>
-                  )}
-                  {facebookEventUrl && <a href={facebookEventUrl}>RSVP</a>}
-                </div>
-              </div>
-            )
-          )}
+          {shows2021.map((show) => (
+            <ShowsGrid {...show}></ShowsGrid>
+          ))}
         </div>
       </Section>
     </Layout>

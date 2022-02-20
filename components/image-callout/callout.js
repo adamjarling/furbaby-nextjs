@@ -6,8 +6,8 @@ export default function Callout({ isReversed, children }) {
     <div className="flex flex-1 items-center min-h-full">
       <div
         className={classNames({
-          "md:pl-20": !isReversed,
-          "md:pr-20": isReversed,
+          "lg:pl-20": !isReversed,
+          "lg:pr-20": isReversed,
         })}
       >
         {children}
