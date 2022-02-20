@@ -1,6 +1,6 @@
 import React from "react";
 import cdPromo from "public/images/square_cd-album-promo.jpg";
-import lpPromo from "public/images/square_lp-album-promo.jpg";
+import lpPromo from "public/images/square_lp-album-promo-v2.jpg";
 import Image from "next/image";
 import ExternalLink from "components/external-link";
 import LinkButton from "components/link-button";

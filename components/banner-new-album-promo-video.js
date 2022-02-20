@@ -35,7 +35,7 @@ function BannerNewAlbumPromoVideo(props) {
       </div>
       <HeadlineCalloutWrapper>
         <HeadlineCalloutSubhead>
-          Release Date October 15, 2021
+          Vinyl Release March 2022!
         </HeadlineCalloutSubhead>
         <HeadlineCalloutHeadline>
           It's alive! Debut album now available at Cargo Records UK Direct
