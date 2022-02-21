@@ -159,14 +159,15 @@ export default function Shows() {
       <div className="grid grid-cols-1 md:grid-cols-2 w-full">
         <div className="">
           <Image
-            src="/images/2021-12-10-flyer__instagram.jpg"
+            src="/images/2022-01-07-empty-bottle.jpeg"
             width={1000}
             height={1000}
           />
+
           <Image
-            src="/images/2021-11-07-event2.jpg"
-            width={1920}
-            height={1005}
+            src="/images/2021-12-10-flyer__instagram.jpg"
+            width={1000}
+            height={1000}
           />
         </div>
         <div>
@@ -174,6 +175,11 @@ export default function Shows() {
             src="/images/2022-01-29-flyer-reggies.jpeg"
             width={875}
             height={1275}
+          />
+          <Image
+            src="/images/2021-11-07-event2.jpg"
+            width={1920}
+            height={1005}
           />
         </div>
       </div>

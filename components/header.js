@@ -14,6 +14,10 @@ const navLinks = [
     label: "Music",
   },
   {
+    url: "/photos",
+    label: "Photos",
+  },
+  {
     url: "/press",
     label: "Press",
   },
