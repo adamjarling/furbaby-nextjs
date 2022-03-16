@@ -9,6 +9,17 @@ import Image from "next/image";
 
 const shows2022 = [
   {
+    date: "2022-03-30",
+    venue: "Reggies Music Joint",
+    venueLink: "https://www.reggieslive.com/",
+    time: "7pm",
+    playingWith: "Ricky Liontones, Eraserhead, Mud Flower",
+    location: "Chicago, IL USA",
+    ticketUrl:
+      "https://www.ticketweb.com/event/eraserhead-reggies-music-joint-tickets/11913465",
+    facebookEventUrl: "https://www.facebook.com/events/494392152138628",
+  },
+  {
     date: "2022-01-29",
     venue: "Reggies",
     venueLink: "https://www.reggieslive.com/",
@@ -157,7 +168,13 @@ export default function Shows() {
       </Section>
 
       <div className="grid grid-cols-1 md:grid-cols-2 w-full">
-        <div className="">
+        <div>
+          <Image
+            src="/images/2022-03-30-instagram-grunge.jpeg"
+            width={1000}
+            height={1000}
+          />
+
           <Image
             src="/images/2022-01-07-empty-bottle.jpeg"
             width={1000}

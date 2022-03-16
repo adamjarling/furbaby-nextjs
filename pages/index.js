@@ -6,18 +6,12 @@ import LinkButton from "components/link-button";
 import Image from "next/image";
 import SplashPhotos from "components/splash-photos";
 import SplashVideos from "components/splash-videos";
-import SplashSingles from "components/splash-singles";
-import reggiesFlyer from "public/images/Oct8SteepwaterLONG.jpg";
-import IntroParagraph from "components/intro-paragraph";
-import BannerReggies from "components/banner-2021-10-08";
 import BannerNewAlbumPromo from "components/banner-new-album-promo";
 import Section from "components/section";
 import BannerNewAlbumPromoVideo from "components/banner-new-album-promo-video";
 import LatestSingle from "components/latest-single";
-import PhotoPreview from "components/photo-preview";
 import LatestNewsItem from "components/latest-news-item";
 import { getSortedPostsData } from "lib/posts";
-import BannerDoubleDoor from "components/banner-2021-11-07";
 
 export async function getStaticProps() {
   const allPostsData = getSortedPostsData();
@@ -28,12 +22,6 @@ export async function getStaticProps() {
   };
 }
 
-function getRandomInt(max) {
-  return Math.floor(Math.random() * max);
-}
-
-const bgImages = ["photo-triangle-wall-hi-res.jpg", "banner-keyboard.jpg"];
-
 export default function Home({ allPostsData }) {
   const thePost = allPostsData[0];
 
@@ -43,6 +31,28 @@ export default function Home({ allPostsData }) {
         <title>Furbaby & the Tight Spaces</title>
       </Head>
       <Splash1 photo={"photo-triangle-wall-hi-res.jpg"} />
+
+      <div className="pt-12 text-center">
+        <Image
+          src="/images/2022-03-30_fb-event-logo.jpg"
+          height={1005}
+          width={1920}
+        />
+        <div className="hidden md:block mt-8">
+          <LinkButton
+            isExternal
+            href={`https://www.ticketweb.com/event/eraserhead-reggies-music-joint-tickets/11913465`}
+          >
+            Buy Tickets
+          </LinkButton>
+          <LinkButton
+            isExternal
+            href={`https://www.facebook.com/events/494392152138628`}
+          >
+            Facebook Event
+          </LinkButton>
+        </div>
+      </div>
 
       <BannerNewAlbumPromoVideo />
       <BannerNewAlbumPromo />
