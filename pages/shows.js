@@ -9,6 +9,16 @@ import Image from "next/image";
 
 const shows2022 = [
   {
+    date: "2022-06-19",
+    venue: "Liars Club",
+    venueLink: "https://www.facebook.com/liarsclubchicago/",
+    time: "8pm",
+    playingWith: "Jason Kane and the Jive",
+    location: "Chicago, IL USA",
+    ticketUrl: "",
+    facebookEventUrl: "",
+  },
+  {
     date: "2022-03-30",
     venue: "Reggies Music Joint",
     venueLink: "https://www.reggieslive.com/",
@@ -170,9 +180,9 @@ export default function Shows() {
       <div className="grid grid-cols-1 md:grid-cols-2 w-full">
         <div>
           <Image
-            src="/images/2022-03-30-instagram-grunge.jpeg"
-            width={1000}
-            height={1000}
+            src="/images/2022-06-19_liars-club.jpeg"
+            height={2100}
+            width={1500}
           />
 
           <Image
@@ -188,6 +198,11 @@ export default function Shows() {
           />
         </div>
         <div>
+          <Image
+            src="/images/2022-03-30-instagram-grunge.jpeg"
+            width={1000}
+            height={1000}
+          />
           <Image
             src="/images/2022-01-29-flyer-reggies.jpeg"
             width={875}

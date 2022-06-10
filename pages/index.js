@@ -28,15 +28,15 @@ export default function Home({ allPostsData }) {
   return (
     <Layout>
       <Head>
-        <title>Furbaby & the Tight Spaces</title>
+        <title>Furbaby and the Tight Spaces</title>
       </Head>
       <Splash1 photo={"photo-triangle-wall-hi-res.jpg"} />
 
       <div className="pt-12 text-center">
         <Image
-          src="/images/2022-03-30_fb-event-logo.jpg"
-          height={1005}
-          width={1920}
+          src="/images/2022-06-19_liars-club.jpeg"
+          height={2100}
+          width={1500}
         />
         <div className="hidden md:block mt-8">
           <LinkButton
