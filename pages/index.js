@@ -32,28 +32,6 @@ export default function Home({ allPostsData }) {
       </Head>
       <Splash1 photo={"photo-triangle-wall-hi-res.jpg"} />
 
-      <div className="pt-12 text-center">
-        <Image
-          src="/images/2022-06-19_liars-club.jpeg"
-          height={2100}
-          width={1500}
-        />
-        <div className="hidden md:block mt-8">
-          <LinkButton
-            isExternal
-            href={`https://www.ticketweb.com/event/eraserhead-reggies-music-joint-tickets/11913465`}
-          >
-            Buy Tickets
-          </LinkButton>
-          <LinkButton
-            isExternal
-            href={`https://www.facebook.com/events/494392152138628`}
-          >
-            Facebook Event
-          </LinkButton>
-        </div>
-      </div>
-
       <BannerNewAlbumPromoVideo />
       <BannerNewAlbumPromo />
 
@@ -65,6 +43,11 @@ export default function Home({ allPostsData }) {
           <BannerReggies />
         </Section>
       </div> */}
+
+      <Section>
+        <p className="big-title text-center">Videos</p>
+        <SplashVideos />
+      </Section>
 
       <SplashPhotos />
 
@@ -79,11 +62,6 @@ export default function Home({ allPostsData }) {
       {/* <IntroParagraph /> */}
 
       {/* <CargoPromo /> */}
-
-      <Section>
-        <p className="big-title text-center">Videos</p>
-        <SplashVideos />
-      </Section>
 
       {/* <SplashSingles /> */}
     </Layout>
