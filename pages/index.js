@@ -12,6 +12,7 @@ import BannerNewAlbumPromoVideo from "components/banner-new-album-promo-video";
 import LatestSingle from "components/latest-single";
 import LatestNewsItem from "components/latest-news-item";
 import { getSortedPostsData } from "lib/posts";
+import EuroTease from "components/EuroTease";
 
 export async function getStaticProps() {
   const allPostsData = getSortedPostsData();
@@ -32,10 +33,14 @@ export default function Home({ allPostsData }) {
       </Head>
       <Splash1 photo={"photo-triangle-wall-hi-res.jpg"} />
 
+      <div className="bg-fur-blue">
+        <Section>
+          <EuroTease />
+        </Section>
+      </div>
+
       <BannerNewAlbumPromoVideo />
       <BannerNewAlbumPromo />
-
-      <LatestNewsItem post={thePost} />
 
       {/* <div className="bg-white text-black">
         <Section isCentered>
@@ -48,6 +53,8 @@ export default function Home({ allPostsData }) {
         <p className="big-title text-center">Videos</p>
         <SplashVideos />
       </Section>
+
+      <LatestNewsItem post={thePost} />
 
       <SplashPhotos />
 

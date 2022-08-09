@@ -9,6 +9,16 @@ import Image from "next/image";
 
 const shows2022 = [
   {
+    date: "2022-09-23",
+    venue: "Announcing dates soon",
+    venueLink: "/",
+    time: "Midnight",
+    playingWith: "",
+    location: "Somewhere in Europe",
+    ticketUrl: "",
+    facebookEventUrl: "",
+  },
+  {
     date: "2022-06-19",
     venue: "Liars Club",
     venueLink: "https://www.facebook.com/liarsclubchicago/",
