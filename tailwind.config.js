@@ -18,6 +18,7 @@ module.exports = {
         "fur-yellow": "#cdab45",
         "fur-pink": "#ec1384",
         "fur-blue": "#0a91c7",
+        "fur-red": "#f8200b",
       },
       spacing: {
         128: "32rem",

@@ -9,6 +9,7 @@ import ImageCalloutCallout from "components/image-callout/callout";
 import ExternalLink from "components/external-link";
 import { FaSpotify, FaYoutube, FaApple, FaAmazon } from "react-icons/fa";
 import * as manifest from "music-release-manifest";
+import { ParallaxBanner, Parallax } from "react-scroll-parallax";
 
 export default function Music() {
   function isEvenRow(i) {
@@ -21,7 +22,24 @@ export default function Music() {
         <title>Music - Furbaby & the Tight Spaces</title>
       </Head>
 
-      <div className="pt-20 md:pt-36">
+      <ParallaxBanner
+        layers={[
+          {
+            amount: 0.2,
+            image: "/images/next-year-video-cover.jpg",
+          },
+        ]}
+        style={{ height: "60vh" }}
+      >
+        <div className="absolute inset-0 bg-fur-yellow mix-blend-multiply" />
+        <div className="absolute top-0 left-0 right-0 bottom-0 flex flex-col justify-end pb-6 px-6">
+          <h1 className="text-right" style={{ textShadow: "1px 1px black" }}>
+            Music
+          </h1>
+        </div>
+      </ParallaxBanner>
+
+      <div className="">
         <Section>
           {releases.map(({ src, title, manifestItems, year }, i) => (
             <div key={src} className="mb-24">

@@ -26,17 +26,12 @@ export default function Press() {
             image: "/images/banner-lying-on-beach.jpg",
           },
         ]}
-        style={{ height: "50vh" }}
+        style={{ height: "60vh" }}
       >
-        <div className="absolute top-0 left-0 right-0 bottom-0 flex flex-col justify-between pb-6 px-6">
-          <p
-            className="big-title pt-28"
-            style={{ textShadow: "1px 1px black" }}
-          >
-            Press
-          </p>
+        <div className="absolute inset-0 bg-fur-blue mix-blend-multiply" />
+        <div className="absolute top-0 left-0 right-0 bottom-0 flex flex-col justify-end pb-6 px-6">
           <h1 className="text-right" style={{ textShadow: "1px 1px black" }}>
-            Pack
+            Press Pack
           </h1>
         </div>
       </ParallaxBanner>

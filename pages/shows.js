@@ -7,17 +7,111 @@ import Section from "components/section";
 import { format, parseISO } from "date-fns";
 import Image from "next/image";
 
-const shows2022 = [
+const upcomingShows = [
   {
-    date: "2022-09-23",
-    venue: "Announcing dates soon",
-    venueLink: "/",
-    time: "Midnight",
+    date: "2022-09-02",
+    venue: "Liars Club",
+    venueLink: "https://www.facebook.com/liarsclubchicago/",
+    time: "22:00",
     playingWith: "",
-    location: "Somewhere in Europe",
+    location: "Chicago USA",
     ticketUrl: "",
     facebookEventUrl: "",
   },
+  {
+    date: "2022-09-24",
+    venue: "Louie Louie",
+    venueLink: "/",
+    time: "20:00",
+    playingWith: "",
+    location: "Estepona, España",
+    ticketUrl: "",
+    facebookEventUrl: "",
+  },
+  {
+    date: "2022-09-25",
+    venue: "RocknRolla",
+    venueLink: "https://www.facebook.com/rocknrollagranada",
+    time: "20:00",
+    playingWith: "",
+    location: "Granada, España",
+    ticketUrl: "",
+    facebookEventUrl: "",
+  },
+  {
+    date: "2022-09-27",
+    venue: "Rock Beer the New",
+    venueLink:
+      "https://www.facebook.com/pages/Rock-Beer-the-New-santander/174324646033480",
+    time: "20:00",
+    playingWith: "",
+    location: "Santander, España",
+    ticketUrl: "",
+    facebookEventUrl: "",
+  },
+  {
+    date: "2022-09-28",
+    venue: "El Gran Café",
+    venueLink: "https://www.facebook.com/ELGRANCAFELEON",
+    time: "20:00",
+    playingWith: "",
+    location: "León, España",
+    ticketUrl: "",
+    facebookEventUrl: "",
+  },
+  {
+    date: "2022-09-29",
+    venue: "La Nube Café Teatro",
+    venueLink: "https://www.facebook.com/LaNubeCafeTeatro",
+    time: "20:00",
+    playingWith: "",
+    location: "Bilbao, España",
+    ticketUrl: "",
+    facebookEventUrl: "",
+  },
+  {
+    date: "2022-09-30",
+    venue: "Sala Corleone",
+    venueLink: "https://www.facebook.com/salacorleone",
+    time: "20:00",
+    playingWith: "",
+    location: "Sabiñánigo, España",
+    ticketUrl: "",
+    facebookEventUrl: "",
+  },
+  {
+    date: "2022-10-01",
+    venue: "Cal Jou Conques",
+    venueLink: "https://www.facebook.com/caljouconques",
+    time: "20:00",
+    playingWith: "",
+    location: "Lleida, España",
+    ticketUrl: "",
+    facebookEventUrl: "",
+  },
+  {
+    date: "2022-10-02",
+    venue: "Sala Porto Caeli",
+    venueLink: "https://www.facebook.com/salaportacaeli",
+    time: "20:00",
+    playingWith: "",
+    location: "Valladolid, España",
+    ticketUrl: "",
+    facebookEventUrl: "",
+  },
+  {
+    date: "2022-10-03",
+    venue: "Cafe Cultural Auriense",
+    venueLink: "https://www.facebook.com/cafeauriense",
+    time: "20:00",
+    playingWith: "",
+    location: "Ourense, España",
+    ticketUrl: "",
+    facebookEventUrl: "",
+  },
+];
+
+const pastShows = [
   {
     date: "2022-06-19",
     venue: "Liars Club",
@@ -50,9 +144,6 @@ const shows2022 = [
       "https://www.ticketweb.com/event/the-steepwater-band-reggies-banannas-comedy-shack-tickets/11469105",
     facebookEventUrl: "https://www.facebook.com/events/592852821807630",
   },
-];
-
-const shows2021 = [
   {
     date: "2021-12-23",
     venue: "Liars Club",
@@ -170,8 +261,9 @@ export default function Shows() {
             image: "/images/2021-11-07/IMG_3808.jpg",
           },
         ]}
-        style={{ height: "80vh" }}
+        style={{ height: "60vh" }}
       >
+        <div className="absolute inset-0 bg-fur-red mix-blend-multiply" />
         <div className="absolute top-0 left-0 right-0 bottom-0 flex flex-col justify-between pb-6 px-6">
           <p className="big-title pt-28">Tour</p>
           <h1 className="text-right">Dates</h1>
@@ -181,7 +273,7 @@ export default function Shows() {
       <Section isCentered>
         <h2>2022</h2>
         <div className="">
-          {shows2022.map((show) => (
+          {upcomingShows.map((show) => (
             <ShowsGrid {...show}></ShowsGrid>
           ))}
         </div>
@@ -227,9 +319,9 @@ export default function Shows() {
       </div>
 
       <Section isCentered>
-        <h2>2021</h2>
+        <h2>Past Shows</h2>
         <div className="">
-          {shows2021.map((show) => (
+          {pastShows.map((show) => (
             <ShowsGrid {...show}></ShowsGrid>
           ))}
         </div>

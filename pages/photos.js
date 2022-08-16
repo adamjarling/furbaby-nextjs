@@ -4,6 +4,7 @@ import Section from "components/section";
 import Link from "next/link";
 import { getSortedPostsData } from "lib/posts";
 import Image from "next/image";
+import { ParallaxBanner, Parallax } from "react-scroll-parallax";
 
 export async function getStaticProps() {
   const allPostsData = getSortedPostsData();
@@ -105,8 +106,23 @@ export default function Press({ allPostsData }) {
         <title>Photos - Furbaby & the Tight Spaces</title>
       </Head>
 
+      <ParallaxBanner
+        layers={[
+          {
+            amount: 0.2,
+            image: "/images/bg-animal.png",
+          },
+        ]}
+        style={{ height: "60vh" }}
+      >
+        <div className="absolute inset-0 bg-fur-pink mix-blend-multiply" />
+        <div className="absolute top-0 left-0 right-0 bottom-0 flex flex-col justify-end pb-6 px-6">
+          <h1 className="text-right">Photos</h1>
+        </div>
+      </ParallaxBanner>
+
       <Section>
-        <div className="grid grid-cols-1 md-grid-cols-2 xl:grid-cols-2 w-full mt-24">
+        <div className="grid grid-cols-1 md-grid-cols-2 xl:grid-cols-2 w-full">
           <div>
             {photosLeft.map(
               ({ src, width, height, alt, credit, creditUrl }) => (
