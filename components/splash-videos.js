@@ -3,12 +3,12 @@ import ParallaxBannerChildren from "components/parallax-banner-children";
 
 const videos = [
   {
-    id: "Ibh5dl6g030",
-    title: "Furbaby and the Tight Spaces - Run Rudolph Run video",
-  },
-  {
     id: "9jNy5Kvsi68",
     title: "Furbaby and the Tight Spaces - Next Year video",
+  },
+  {
+    id: "vU_-n-9qmPk",
+    title: "Furbaby and the Tight Spaces - Reaching Out (For Higher Ground)",
   },
   {
     id: "e05rIyfWE9Y",
@@ -22,9 +22,10 @@ const videos = [
     id: "lAihAqrB7aU",
     title: "Furbaby and the Tight Spaces - Social Distance",
   },
+
   {
-    id: "vU_-n-9qmPk",
-    title: "Furbaby and the Tight Spaces - Reaching Out (For Higher Ground)",
+    id: "Ibh5dl6g030",
+    title: "Furbaby and the Tight Spaces - Run Rudolph Run video",
   },
   {
     id: "eT_O6nHaa58",

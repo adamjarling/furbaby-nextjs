@@ -13,6 +13,7 @@ import LatestSingle from "components/latest-single";
 import LatestNewsItem from "components/latest-news-item";
 import { getSortedPostsData } from "lib/posts";
 import EuroTease from "components/EuroTease";
+import PromoDownloads from "components/promo-downloads";
 
 export async function getStaticProps() {
   const allPostsData = getSortedPostsData();
@@ -33,7 +34,7 @@ export default function Home({ allPostsData }) {
       </Head>
       <Splash1 photo={"photo-triangle-wall-hi-res.jpg"} />
 
-      <div className="bg-fur-blue">
+      <div className="bg-white text-black">
         <Section>
           <EuroTease />
         </Section>
@@ -54,9 +55,19 @@ export default function Home({ allPostsData }) {
         <SplashVideos />
       </Section>
 
-      <LatestNewsItem post={thePost} />
+      <div className="bg-fur-blue">
+        <Section>
+          <h2 className="big-title text-center">Promo Assets</h2>
+          <PromoDownloads />
+          <div className="text-center">
+            <LinkButton href="/press">Visit Press</LinkButton>
+          </div>
+        </Section>
+      </div>
 
-      <SplashPhotos />
+      {/* <LatestNewsItem post={thePost} /> */}
+
+      {/* <SplashPhotos /> */}
 
       <div className="bg-fur-pink">
         <Section>

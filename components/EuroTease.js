@@ -19,12 +19,12 @@ export default function EuroTease() {
       </ImageCalloutImage>
       <ImageCalloutCallout>
         <p className="uppercase py-6">Special Announcement</p>
-        <h2 className="py-8">Fur Tour 2022</h2>
+        <h2 className="py-8">Fur Euro Tour 2022</h2>
         <p>Dates for late September - early October to be announced soon...</p>
 
-        <LinkButton isExternal href="#">
+        {/* <LinkButton isExternal isInverted href="#">
           More Info
-        </LinkButton>
+        </LinkButton> */}
       </ImageCalloutCallout>
     </ImageCalloutWrapper>
   );
