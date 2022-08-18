@@ -68,7 +68,7 @@ export default function Spain2022Page() {
         alt="Spain Tour 2022"
       />
 
-      <div className="bg-white text-black">
+      <div className="bg-white text-black break-words">
         <Section>
           <h1>Spanish Tour 2022</h1>
           <div className="max-w-screen-lg mx-auto">

@@ -1,18 +1,9 @@
 /* This example requires Tailwind CSS v2.0+ */
 import { Fragment } from "react";
 import { Popover, Transition } from "@headlessui/react";
-import {
-  ChartBarIcon,
-  CursorClickIcon,
-  DocumentReportIcon,
-  MenuIcon,
-  RefreshIcon,
-  ShieldCheckIcon,
-  ViewGridIcon,
-  XIcon,
-} from "@heroicons/react/outline";
-import { ChevronDownIcon } from "@heroicons/react/solid";
+import { MenuIcon, XIcon } from "@heroicons/react/outline";
 import { footerSocials } from "./footer";
+import Link from "next/link";
 
 const navigation = [
   { label: "Music", href: "/music" },
@@ -57,19 +48,21 @@ export default function Example() {
     <Popover className="z-10 w-full bg-gradient-to-b from-black to-transparent fixed">
       <div className="flex justify-between items-center px-4 py-6 sm:px-6 md:justify-start md:space-x-10">
         <div className="flex justify-start lg:w-0 lg:flex-1">
-          <a href="#" className="border-0">
-            <span className="sr-only">Furbaby and the Tight Spaces</span>
-            <img
-              className="h-16 md:h-20 w-auto"
-              src="/images/furbaby-and-ts-logo_white.png"
-              alt=""
-            />
-          </a>
+          <Link href="/">
+            <a className="border-0">
+              <span className="sr-only">Furbaby and the Tight Spaces</span>
+              <img
+                className="h-16 md:h-20 w-auto"
+                src="/images/furbaby-and-ts-logo_white.png"
+                alt=""
+              />
+            </a>
+          </Link>
         </div>
         <div className="-mr-2 -my-2 md:hidden">
           <Popover.Button className="bg-transparent hover:bg-transparent border-0 rounded-md p-2 inline-flex items-center justify-center text-white hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-fur-blue">
             <span className="sr-only">Open menu</span>
-            <MenuIcon className="h-12 w-12" aria-hidden="true" />
+            <MenuIcon className="h-10 w-10" aria-hidden="true" />
           </Popover.Button>
         </div>
         <Popover.Group as="nav" className="hidden md:flex space-x-10 uppercase">
@@ -116,7 +109,7 @@ export default function Example() {
                 <div className="-mr-2">
                   <Popover.Button className="bg-transparent hover:bg-transparent rounded-md border-0 p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-fur-blue">
                     <span className="sr-only">Close menu</span>
-                    <XIcon className="h-12 w-12" aria-hidden="true" />
+                    <XIcon className="h-10 w-10" aria-hidden="true" />
                   </Popover.Button>
                 </div>
               </div>
