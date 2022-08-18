@@ -6,6 +6,8 @@ import ExternalLink from "components/external-link";
 import Section from "components/section";
 import { format, parseISO } from "date-fns";
 import Image from "next/image";
+import PromoDownloads from "components/promo-downloads";
+import LinkButton from "components/link-button";
 
 const upcomingShows = [
   {
@@ -15,9 +17,12 @@ const upcomingShows = [
     time: "22:00",
     playingWith: "",
     location: "Chicago USA",
-    ticketUrl: "",
-    facebookEventUrl: "",
+    ticketUrl: "#",
+    facebookEventUrl: "#",
   },
+];
+
+export const spainShows = [
   {
     date: "2022-09-24",
     venue: "Louie Louie",
@@ -25,8 +30,8 @@ const upcomingShows = [
     time: "20:00",
     playingWith: "",
     location: "Estepona, España",
-    ticketUrl: "",
-    facebookEventUrl: "",
+    ticketUrl: "#",
+    facebookEventUrl: "#",
   },
   {
     date: "2022-09-25",
@@ -35,8 +40,8 @@ const upcomingShows = [
     time: "20:00",
     playingWith: "",
     location: "Granada, España",
-    ticketUrl: "",
-    facebookEventUrl: "",
+    ticketUrl: "#",
+    facebookEventUrl: "#",
   },
   {
     date: "2022-09-27",
@@ -46,8 +51,8 @@ const upcomingShows = [
     time: "20:00",
     playingWith: "",
     location: "Santander, España",
-    ticketUrl: "",
-    facebookEventUrl: "",
+    ticketUrl: "#",
+    facebookEventUrl: "#",
   },
   {
     date: "2022-09-28",
@@ -56,8 +61,8 @@ const upcomingShows = [
     time: "20:00",
     playingWith: "",
     location: "León, España",
-    ticketUrl: "",
-    facebookEventUrl: "",
+    ticketUrl: "#",
+    facebookEventUrl: "#",
   },
   {
     date: "2022-09-29",
@@ -66,8 +71,8 @@ const upcomingShows = [
     time: "20:00",
     playingWith: "",
     location: "Bilbao, España",
-    ticketUrl: "",
-    facebookEventUrl: "",
+    ticketUrl: "#",
+    facebookEventUrl: "#",
   },
   {
     date: "2022-09-30",
@@ -76,8 +81,8 @@ const upcomingShows = [
     time: "20:00",
     playingWith: "",
     location: "Sabiñánigo, España",
-    ticketUrl: "",
-    facebookEventUrl: "",
+    ticketUrl: "#",
+    facebookEventUrl: "#",
   },
   {
     date: "2022-10-01",
@@ -86,8 +91,8 @@ const upcomingShows = [
     time: "20:00",
     playingWith: "",
     location: "Lleida, España",
-    ticketUrl: "",
-    facebookEventUrl: "",
+    ticketUrl: "#",
+    facebookEventUrl: "#",
   },
   {
     date: "2022-10-02",
@@ -96,8 +101,8 @@ const upcomingShows = [
     time: "20:00",
     playingWith: "",
     location: "Valladolid, España",
-    ticketUrl: "",
-    facebookEventUrl: "",
+    ticketUrl: "#",
+    facebookEventUrl: "#",
   },
   {
     date: "2022-10-03",
@@ -106,8 +111,8 @@ const upcomingShows = [
     time: "20:00",
     playingWith: "",
     location: "Ourense, España",
-    ticketUrl: "",
-    facebookEventUrl: "",
+    ticketUrl: "#",
+    facebookEventUrl: "#",
   },
 ];
 
@@ -203,8 +208,8 @@ const pastShows = [
     time: "4pm",
     playingWith: "Outlaw Family Band",
     location: "Chicago, IL USA",
-    ticketUrl: "",
-    facebookEventUrl: "",
+    ticketUrl: "#",
+    facebookEventUrl: "#",
   },
 ];
 
@@ -273,18 +278,19 @@ export default function Shows() {
       <Section isCentered>
         <h2>2022</h2>
         <div className="">
-          {upcomingShows.map((show) => (
+          {[...upcomingShows, ...spainShows].map((show) => (
             <ShowsGrid {...show}></ShowsGrid>
           ))}
         </div>
+        <LinkButton href="/press">Download Tour Kit</LinkButton>
       </Section>
 
       <div className="grid grid-cols-1 md:grid-cols-2 w-full">
         <div>
           <Image
-            src="/images/2022-06-19_liars-club.jpeg"
-            height={2100}
-            width={1500}
+            src="/images/spain2022/lestrato-poster-2022-08-17.jpeg"
+            width="842"
+            height="1191"
           />
 
           <Image
@@ -298,8 +304,18 @@ export default function Shows() {
             width={1000}
             height={1000}
           />
+          <Image
+            src="/images/2021-11-07-event2.jpg"
+            width={1920}
+            height={1005}
+          />
         </div>
         <div>
+          <Image
+            src="/images/2022-06-19_liars-club.jpeg"
+            height={2100}
+            width={1500}
+          />
           <Image
             src="/images/2022-03-30-instagram-grunge.jpeg"
             width={1000}
@@ -310,12 +326,13 @@ export default function Shows() {
             width={875}
             height={1275}
           />
-          <Image
-            src="/images/2021-11-07-event2.jpg"
-            width={1920}
-            height={1005}
-          />
         </div>
+      </div>
+
+      <div className="bg-white">
+        <Section>
+          <PromoDownloads />
+        </Section>
       </div>
 
       <Section isCentered>

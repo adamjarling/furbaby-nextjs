@@ -121,34 +121,36 @@ export default function Press({ allPostsData }) {
         </div>
       </ParallaxBanner>
 
-      <Section>
-        <div className="grid grid-cols-1 md-grid-cols-2 xl:grid-cols-2 w-full">
-          <div>
-            {photosLeft.map(
-              ({ src, width, height, alt, credit, creditUrl }) => (
-                <Image
-                  src={`/images/${src}`}
-                  width={width}
-                  height={height}
-                  alt={alt}
-                />
-              )
-            )}
+      <div className="bg-gradient-to-t from-black to-fur-pink">
+        <Section>
+          <div className="grid grid-cols-1 md-grid-cols-2 xl:grid-cols-2 w-full">
+            <div>
+              {photosLeft.map(
+                ({ src, width, height, alt, credit, creditUrl }) => (
+                  <Image
+                    src={`/images/${src}`}
+                    width={width}
+                    height={height}
+                    alt={alt}
+                  />
+                )
+              )}
+            </div>
+            <div>
+              {photosRight.map(
+                ({ src, width, height, alt, credit, creditUrl }) => (
+                  <Image
+                    src={`/images/${src}`}
+                    width={width}
+                    height={height}
+                    alt={alt}
+                  />
+                )
+              )}
+            </div>
           </div>
-          <div>
-            {photosRight.map(
-              ({ src, width, height, alt, credit, creditUrl }) => (
-                <Image
-                  src={`/images/${src}`}
-                  width={width}
-                  height={height}
-                  alt={alt}
-                />
-              )
-            )}
-          </div>
-        </div>
-      </Section>
+        </Section>
+      </div>
     </Layout>
   );
 }

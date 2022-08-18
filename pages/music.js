@@ -19,7 +19,7 @@ export default function Music() {
   return (
     <Layout>
       <Head>
-        <title>Music - Furbaby & the Tight Spaces</title>
+        <title>Music - Furbaby and the Tight Spaces</title>
       </Head>
 
       <ParallaxBanner
@@ -33,9 +33,7 @@ export default function Music() {
       >
         <div className="absolute inset-0 bg-fur-yellow mix-blend-multiply" />
         <div className="absolute top-0 left-0 right-0 bottom-0 flex flex-col justify-end pb-6 px-6">
-          <h1 className="text-right" style={{ textShadow: "1px 1px black" }}>
-            Music
-          </h1>
+          <h1 className="text-right">Music</h1>
         </div>
       </ParallaxBanner>
 

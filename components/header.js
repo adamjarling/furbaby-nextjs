@@ -8,29 +8,11 @@ import logo from "public/images/furbaby-and-ts-logo_white.png";
 import SocialMediaIcons from "components/social-media-icons";
 import Obfuscate from "react-obfuscate";
 
-const navLinks = [
-  {
-    url: "/music",
-    label: "Music",
-  },
-  {
-    url: "/photos",
-    label: "Photos",
-  },
-  {
-    url: "/press",
-    label: "Press",
-  },
-  {
-    url: "/shows",
-    label: "Shows",
-  },
-];
-
 const navigation = [
   { name: "Music", href: "/music" },
   { name: "Photos", href: "/photos" },
   { name: "Press", href: "/press" },
+  { name: "Spain", href: "/spain2022" },
   { name: "Tour", href: "/shows" },
 ];
 
@@ -62,7 +44,7 @@ export default function Header() {
               <a
                 key={link.name}
                 href={link.href}
-                className="uppercase text-white hover:text-indigo-50 border-0"
+                className="uppercase text-white hover:text-indigo-50 border-0 text-sm md:text-base"
               >
                 {link.name}
               </a>

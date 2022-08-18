@@ -62,7 +62,7 @@ export default function Spain2022Page() {
       </Head>
 
       <Image
-        src="/images/spain2022/fb-event-no-text.jpg"
+        src="/images/spain2022/fb-event-no-text_v2.jpg"
         width="1920"
         height="1005"
         alt="Spain Tour 2022"
@@ -139,7 +139,7 @@ export default function Spain2022Page() {
               columnClassName="my-masonry-grid_column"
             >
               <div className="p-4 text-center">
-                <a href="https://drive.google.com/file/d/1GvSJMP04rxH5T758iHc16fM3avAS2Zs_/view?usp=sharing">
+                <a href="https://drive.google.com/file/d/1GYso10yrcSxZ8lc8B6lkNmDhbZ_XoYdW/view?usp=sharing">
                   <img
                     alt="Fur logo"
                     src="/images/spain2022/fur-spain-2022-tour-instagram.jpg"
@@ -150,8 +150,8 @@ export default function Spain2022Page() {
                 </a>
               </div>
               <div className="text-center">
-                <a href="https://drive.google.com/file/d/1ChRGMG2b9W-GDcyyvU0RzSjZU_bNBRGE/view?usp=sharing">
-                  <img src="/images/spain2022/fb-event-no-text.jpg" />
+                <a href="https://drive.google.com/file/d/1uXNNDUv2B11uzaXI_SR58IZKO02smDsR/view?usp=sharing">
+                  <img src="/images/spain2022/fb-event-no-text_v2.jpg" />
                   <span className="pt-2 inline-block">
                     Download Facebook Event Banner
                   </span>
