@@ -10,21 +10,25 @@ export default function EuroTease() {
     <ImageCalloutWrapper>
       <ImageCalloutImage>
         <Image
-          src={`/images/spain-2022-teaser.JPG`}
-          alt={`Euro Tour Dates teaser`}
+          src={`/images/spain2022/lestrato-poster-2022-08-17.jpeg`}
+          alt={`Spain 2022 Tour Poster`}
           layout="responsive"
-          width={500}
-          height={500}
+          width={842}
+          height={1191}
         />
       </ImageCalloutImage>
       <ImageCalloutCallout>
         <p className="uppercase py-6">Special Announcement</p>
-        <h2 className="py-8">Fur Euro Tour 2022</h2>
-        <p>Dates for late September - early October to be announced soon...</p>
+        <h2 className="py-8">Let's Go! Spanish Tour 2022</h2>
+        <p>
+          We're excited to announce the first official "fur tour", Septiembre 23
+          - Octubre 3, 2022 in a place dear to our hearts. We pledge to bring
+          Chicago #TrashBluesPsychPop to the Iberian Peninsula in full effect.
+        </p>
 
-        {/* <LinkButton isExternal isInverted href="#">
+        <LinkButton isInverted href="/spain2022">
           More Info
-        </LinkButton> */}
+        </LinkButton>
       </ImageCalloutCallout>
     </ImageCalloutWrapper>
   );

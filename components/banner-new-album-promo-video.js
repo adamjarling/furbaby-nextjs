@@ -26,7 +26,7 @@ function BannerNewAlbumPromoVideo(props) {
           Vinyl Release March 2022!
         </HeadlineCalloutSubhead>
         <HeadlineCalloutHeadline>
-          It's alive! Debut album now available at Cargo Records UK Direct
+          Debut album now available at Cargo Records UK Direct
         </HeadlineCalloutHeadline>
         <LinkButton href={preOrderLink}>Order Now</LinkButton>
       </HeadlineCalloutWrapper>

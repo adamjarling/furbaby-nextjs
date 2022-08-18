@@ -55,16 +55,6 @@ export default function Home({ allPostsData }) {
         <SplashVideos />
       </Section>
 
-      <div className="bg-fur-blue">
-        <Section>
-          <h2 className="big-title text-center">Promo Assets</h2>
-          <PromoDownloads />
-          <div className="text-center">
-            <LinkButton href="/press">Visit Press</LinkButton>
-          </div>
-        </Section>
-      </div>
-
       {/* <LatestNewsItem post={thePost} /> */}
 
       {/* <SplashPhotos /> */}

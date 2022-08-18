@@ -15,22 +15,22 @@ export default function PromoDownloads() {
         className="my-masonry-grid"
         columnClassName="my-masonry-grid_column"
       >
-        <div className="bg-white p-4 text-center">
+        <div className="p-4 text-center">
           <a
             href="https://drive.google.com/file/d/1THb8WOjqd4WOOG2_LSeGdbki2RWH_7dH/view?usp=sharing"
             className="border-2 border-white p-2"
           >
             <img alt="Fur logo" src="/images/epk/f-and-ts-logo__black.png" />
-            <span className="text-black">Download logo black</span>
+            <span className="">Download logo black</span>
           </a>
         </div>
-        <div className="p-4 text-center">
+        <div className="p-4 text-center bg-black">
           <a href="https://drive.google.com/file/d/1GvSJMP04rxH5T758iHc16fM3avAS2Zs_/view?usp=sharing">
             <img
               alt="Fur logo"
               src="/images/epk/furbaby-and-ts-logo_white.png"
             />
-            <span>Download logo white</span>
+            <span className="text-white">Download logo white</span>
           </a>
         </div>
         <div className="text-center">
