@@ -5,7 +5,7 @@ import Section from "components/section";
 import ExternalLink from "./external-link";
 import { distributors } from "social-media-manifest";
 
-const footerSocials = [
+export const footerSocials = [
   {
     label: "Instagram",
     url: distributors.instagram,

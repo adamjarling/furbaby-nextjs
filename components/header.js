@@ -1,12 +1,4 @@
 import React from "react";
-import names from "classnames";
-import Link from "next/link";
-import Image from "next/image";
-import { useScrollPosition } from "@n8tb1t/use-scroll-position";
-import classNames from "classnames";
-import logo from "public/images/furbaby-and-ts-logo_white.png";
-import SocialMediaIcons from "components/social-media-icons";
-import Obfuscate from "react-obfuscate";
 
 const navigation = [
   { name: "Music", href: "/music" },
@@ -17,13 +9,6 @@ const navigation = [
 ];
 
 export default function Header() {
-  const [active, setActive] = React.useState(false);
-  const [isNavBg, setIsNavBg] = React.useState(false);
-
-  useScrollPosition(({ prevPos, currPos }) => {
-    setIsNavBg(currPos.y < -200);
-  });
-
   return (
     <header className="bg-gradient-to-b from-black to-transparent fixed z-10 w-full">
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" aria-label="Top">
