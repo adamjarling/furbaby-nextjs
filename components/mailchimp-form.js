@@ -14,33 +14,40 @@ const CustomForm = ({ status, message, onValidated }) => {
     });
 
   return (
-    <div className="text-center mb-6">
-      <p>Join the email list:</p>
-      <div className="flex items-center justify-center">
-        {status === "sending" && (
-          <div className="text-gray-200">sending...</div>
-        )}
-        {status === "error" && (
-          <div
-            className="text-red-400"
-            dangerouslySetInnerHTML={{ __html: message }}
-          />
-        )}
-        {status === "success" && (
-          <div
-            className="text-green-400"
-            dangerouslySetInnerHTML={{ __html: message }}
-          />
-        )}
-        <input
-          ref={(node) => (email = node)}
-          type="email"
-          placeholder="Your email"
-          className="w-32"
+    <div className="text-left mt-6">
+      <p className="text-base pb-0 mb-1">Join the email list:</p>
+      {status === "sending" && <div className="text-gray-200">sending...</div>}
+      {status === "error" && (
+        <div
+          className="text-red-400"
+          dangerouslySetInnerHTML={{ __html: message }}
         />
-        <br />
-        <button onClick={submit}>Submit</button>
-      </div>
+      )}
+      {status === "success" && (
+        <div
+          className="text-green-400"
+          dangerouslySetInnerHTML={{ __html: message }}
+        />
+      )}
+      {status !== "success" && (
+        <>
+          <div className="flex flex-row ">
+            <input
+              ref={(node) => (email = node)}
+              type="email"
+              placeholder="Your email"
+              className="text-base mb-2"
+              style={{ width: "300px" }}
+            />
+          </div>
+          <button
+            className="border-black border-2 text-black text-base px-4 py-2"
+            onClick={submit}
+          >
+            Submit
+          </button>
+        </>
+      )}
     </div>
   );
 };

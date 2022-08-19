@@ -29,11 +29,6 @@ export default function Footer() {
     <footer className="bg-white text-black uppercase text-xl md:text-2xl">
       <Section>
         <div className="flex flex-col md:flex-row pl-6 md:pl-12">
-          <div className="pb-10 flex-1">
-            <Link href="mailto:furbabyferguson@gmail.com">
-              <a className="border-none">info@furbaby.rocks</a>
-            </Link>
-          </div>
           <ul className="flex-1">
             {footerSocials.map((item) => (
               <li key={item.url}>
@@ -41,9 +36,15 @@ export default function Footer() {
               </li>
             ))}
           </ul>
+          <div className="pb-10 flex-1 mt-10 md:mt-0">
+            <Link href="mailto:furbabyferguson@gmail.com">
+              <a className="border-none">info@furbaby.rocks</a>
+            </Link>
+            <div>
+              <MailChimpForm />
+            </div>
+          </div>
         </div>
-
-        {/* <MailChimpForm /> */}
       </Section>
     </footer>
   );

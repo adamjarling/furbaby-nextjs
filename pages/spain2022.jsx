@@ -14,7 +14,7 @@ const breakpointColumnsObj = {
 const dates = [
   {
     date: "23 Septiembre",
-    label: `TBC - Cádiz`,
+    label: `La Gramola - Orihuela`,
   },
   {
     date: "24 Septiembre",
@@ -110,7 +110,7 @@ export default function Spain2022Page() {
             </p>
           </div>
           <Image
-            src={`/images/spain2022/lestrato-poster-2022-08-17.jpeg`}
+            src={`/images/spain2022/lestrato-poster-2022-08-17_v2.jpg`}
             alt={`Spain 2022 Tour Poster`}
             layout="responsive"
             width={842}
@@ -142,7 +142,7 @@ export default function Spain2022Page() {
                 <a href="https://drive.google.com/file/d/1GYso10yrcSxZ8lc8B6lkNmDhbZ_XoYdW/view?usp=sharing">
                   <img
                     alt="Fur logo"
-                    src="/images/spain2022/fur-spain-2022-tour-instagram.jpg"
+                    src="/images/spain2022/fur-spain-2022-tour-instagram_v2.jpg"
                   />
                   <span className="pt-2 inline-block">
                     Download Instagram Poster

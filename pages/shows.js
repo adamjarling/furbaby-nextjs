@@ -1,7 +1,6 @@
 import Head from "next/head";
 import Layout from "components/layout";
 import { ParallaxBanner, Parallax } from "react-scroll-parallax";
-import ParallaxBannerChildren from "components/parallax-banner-children";
 import ExternalLink from "components/external-link";
 import Section from "components/section";
 import { format, parseISO } from "date-fns";
@@ -23,6 +22,16 @@ const upcomingShows = [
 ];
 
 export const spainShows = [
+  {
+    date: "2022-09-23",
+    venue: "La Gramola",
+    venueLink: "https://www.lagramola.com/html/lagramola.html",
+    time: "20:00",
+    playingWith: "",
+    location: "Orihuela, España",
+    ticketUrl: "#",
+    facebookEventUrl: "https://www.facebook.com/LaGramola.Orihuela",
+  },
   {
     date: "2022-09-24",
     venue: "Louie Louie",
@@ -288,7 +297,7 @@ export default function Shows() {
       <div className="grid grid-cols-1 md:grid-cols-2 w-full">
         <div>
           <Image
-            src="/images/spain2022/lestrato-poster-2022-08-17.jpeg"
+            src="/images/spain2022/lestrato-poster-2022-08-17_v2.jpg"
             width="842"
             height="1191"
           />

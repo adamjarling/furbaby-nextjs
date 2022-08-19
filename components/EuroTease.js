@@ -10,7 +10,7 @@ export default function EuroTease() {
     <ImageCalloutWrapper>
       <ImageCalloutImage>
         <Image
-          src={`/images/spain2022/lestrato-poster-2022-08-17.jpeg`}
+          src={`/images/spain2022/lestrato-poster-2022-08-17_v2.jpg`}
           alt={`Spain 2022 Tour Poster`}
           layout="responsive"
           width={842}
