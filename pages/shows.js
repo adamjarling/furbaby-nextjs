@@ -35,12 +35,12 @@ export const spainShows = [
   {
     date: "2022-09-24",
     venue: "Louie Louie",
-    venueLink: "/",
+    venueLink: "https://louielouierockbar.com/",
     time: "20:00",
     playingWith: "",
     location: "Estepona, España",
-    ticketUrl: "#",
-    facebookEventUrl: "#",
+    ticketUrl: "https://louielouierockbar.com/tickets-2/",
+    facebookEventUrl: "https://www.facebook.com/events/1384769695377606",
   },
   {
     date: "2022-09-25",

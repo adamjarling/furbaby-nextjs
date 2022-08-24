@@ -109,6 +109,17 @@ export default function Spain2022Page() {
               be bomb live.. Keep on rockin'!!!
             </p>
           </div>
+          <div className="aspect-w-16 aspect-h-9 my-10">
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/cFFhl6lhtBM"
+              title="YouTube video player"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            ></iframe>
+          </div>
           <Image
             src={`/images/spain2022/lestrato-poster-2022-08-17_v2.jpg`}
             alt={`Spain 2022 Tour Poster`}
