@@ -62,9 +62,9 @@ export default function Spain2022Page() {
       </Head>
 
       <Image
-        src="/images/spain2022/fb-event-no-text_v2.jpg"
-        width="1920"
-        height="1005"
+        src="/images/spain2022/instagram-bare.jpg"
+        width="1200"
+        height="1200"
         alt="Spain Tour 2022"
       />
 

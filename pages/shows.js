@@ -8,100 +8,91 @@ import Image from "next/image";
 import PromoDownloads from "components/promo-downloads";
 import LinkButton from "components/link-button";
 
-const upcomingShows = [
-  {
-    date: "2022-09-02",
-    venue: "Liars Club",
-    venueLink: "https://www.facebook.com/liarsclubchicago/",
-    time: "22:00",
-    playingWith: "",
-    location: "Chicago USA",
-    ticketUrl: "#",
-    facebookEventUrl: "#",
-  },
-];
+const upcomingShows = [];
 
 export const spainShows = [
   {
     date: "2022-09-23",
     venue: "La Gramola",
     venueLink: "https://www.lagramola.com/html/lagramola.html",
-    time: "20:00",
+    time: "23:00",
     playingWith: "",
     location: "Orihuela, España",
     ticketUrl: "#",
-    facebookEventUrl: "https://www.facebook.com/LaGramola.Orihuela",
+    facebookEventUrl: "https://fb.me/e/2l0PIUb6E",
   },
   {
     date: "2022-09-24",
     venue: "Louie Louie",
     venueLink: "https://louielouierockbar.com/",
-    time: "20:00",
+    time: "23:30",
     playingWith: "",
     location: "Estepona, España",
-    ticketUrl: "https://louielouierockbar.com/tickets-2/",
-    facebookEventUrl: "https://www.facebook.com/events/1384769695377606",
+    ticketUrl:
+      "https://www.woutick.es/evento/23715/entradas-furbaby-and-the-tight-spaces",
+    facebookEventUrl: "https://fb.me/e/2R58bjoEN",
   },
   {
     date: "2022-09-25",
     venue: "RocknRolla",
     venueLink: "https://www.facebook.com/rocknrollagranada",
-    time: "20:00",
+    time: "22:00",
     playingWith: "",
     location: "Granada, España",
     ticketUrl: "#",
-    facebookEventUrl: "#",
+    facebookEventUrl: "https://fb.me/e/2OKc51FhO",
   },
   {
     date: "2022-09-27",
     venue: "Rock Beer the New",
     venueLink:
       "https://www.facebook.com/pages/Rock-Beer-the-New-santander/174324646033480",
-    time: "20:00",
+    time: "21:00",
     playingWith: "",
     location: "Santander, España",
     ticketUrl: "#",
-    facebookEventUrl: "#",
+    facebookEventUrl: "https://fb.me/e/2See4hlUP",
   },
   {
     date: "2022-09-28",
     venue: "El Gran Café",
     venueLink: "https://www.facebook.com/ELGRANCAFELEON",
-    time: "20:00",
+    time: "22:00",
     playingWith: "",
     location: "León, España",
     ticketUrl: "#",
-    facebookEventUrl: "#",
+    facebookEventUrl: "https://fb.me/e/oFfe4UAq8",
   },
   {
     date: "2022-09-29",
     venue: "La Nube Café Teatro",
     venueLink: "https://www.facebook.com/LaNubeCafeTeatro",
-    time: "20:00",
+    time: "20:30",
     playingWith: "",
     location: "Bilbao, España",
     ticketUrl: "#",
-    facebookEventUrl: "#",
+    facebookEventUrl: "https://fb.me/e/1MiRLSACL",
   },
   {
     date: "2022-09-30",
     venue: "Sala Corleone",
     venueLink: "https://www.facebook.com/salacorleone",
-    time: "20:00",
+    time: "23:00",
     playingWith: "",
     location: "Sabiñánigo, España",
-    ticketUrl: "#",
-    facebookEventUrl: "#",
+    ticketUrl:
+      "https://www.wegow.com/es-es/conciertos/furbaby-the-tight-spaces-en-sabinanigo",
+    facebookEventUrl: "https://fb.me/e/2f0BbTM6A",
   },
   {
     date: "2022-10-01",
     venue: "Cal Jou Conques",
     venueLink: "https://www.facebook.com/caljouconques",
-    time: "20:00",
+    time: "19:00",
     playingWith: "",
     location: "Lleida, España",
     ticketUrl: "#",
-    facebookEventUrl: "#",
+    facebookEventUrl: "https://fb.me/e/4ZTCyF7iY",
   },
   {
     date: "2022-10-02",
@@ -117,7 +108,7 @@ export const spainShows = [
     date: "2022-10-03",
     venue: "Cafe Cultural Auriense",
     venueLink: "https://www.facebook.com/cafeauriense",
-    time: "20:00",
+    time: "21:00",
     playingWith: "",
     location: "Ourense, España",
     ticketUrl: "#",
@@ -126,6 +117,16 @@ export const spainShows = [
 ];
 
 const pastShows = [
+  {
+    date: "2022-09-02",
+    venue: "Liars Club",
+    venueLink: "https://www.facebook.com/liarsclubchicago/",
+    time: "22:00",
+    playingWith: "",
+    location: "Chicago USA",
+    ticketUrl: "#",
+    facebookEventUrl: "#",
+  },
   {
     date: "2022-06-19",
     venue: "Liars Club",
@@ -226,7 +227,7 @@ function formatDate(date) {
   return format(parseISO(date), "E MMM dd");
 }
 
-function ShowsGrid({
+export function ShowsGrid({
   date,
   venue,
   venueLink,
@@ -246,7 +247,6 @@ function ShowsGrid({
           <div>
             <ExternalLink url={venueLink}>{venue}</ExternalLink> @ {time}
           </div>
-          <div>w/ {playingWith}</div>
           <div>{location}</div>
         </div>
       </div>

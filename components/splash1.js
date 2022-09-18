@@ -19,7 +19,9 @@ function Splash1({ photo }) {
             Listen Now
           </a>
         </Link>
-        <h1 className="text-right">New Album!</h1>
+        <h1 className="text-right text-4xl md:text-6xl lg:text-7xl">
+          #furtour2022
+        </h1>
       </div>
     </ParallaxBanner>
   );

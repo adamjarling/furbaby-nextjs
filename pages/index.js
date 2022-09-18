@@ -13,7 +13,7 @@ import LatestSingle from "components/latest-single";
 import LatestNewsItem from "components/latest-news-item";
 import { getSortedPostsData } from "lib/posts";
 import EuroTease from "components/EuroTease";
-import PromoDownloads from "components/promo-downloads";
+import { ShowsGrid, spainShows } from "./shows";
 
 export async function getStaticProps() {
   const allPostsData = getSortedPostsData();
@@ -32,7 +32,7 @@ export default function Home({ allPostsData }) {
       <Head>
         <title>Furbaby and the Tight Spaces</title>
       </Head>
-      <Splash1 photo={"photo-triangle-wall-hi-res.jpg"} />
+      <Splash1 photo={"photos/DSC04774.JPG"} />
 
       <div className="bg-white text-black">
         <Section>
@@ -48,6 +48,9 @@ export default function Home({ allPostsData }) {
               allowFullScreen
             ></iframe>
           </div>
+          {[...spainShows].map((show) => (
+            <ShowsGrid {...show}></ShowsGrid>
+          ))}
         </Section>
       </div>
 

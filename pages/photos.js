@@ -27,6 +27,36 @@ const photoDefault = {
 const photosLeft = [
   {
     ...photoDefault,
+    src: "photos/IMG_017 Large.jpeg",
+    alt: "Furbaby at Empty Bottle",
+    width: 1280,
+    height: 853,
+  },
+
+  {
+    ...photoDefault,
+    src: "photos/DSC05360.JPG",
+    alt: "Furbaby at Liars Club",
+    width: 3376,
+    height: 6000,
+  },
+  {
+    ...photoDefault,
+    src: "photos/t-shirt-making2.jpg",
+    alt: "Tour T Shirts",
+    width: 1339,
+    height: 1800,
+  },
+  {
+    ...photoDefault,
+    src: "photos/IMG_3805.jpg",
+    alt: "Furbaby at Double Door",
+    width: 2000,
+    height: 2585,
+    credit: "",
+  },
+  {
+    ...photoDefault,
     src: "photos/IMG_005 Large.jpeg",
     alt: "Furbaby at Empty Bottle",
     width: 1280,
@@ -40,6 +70,7 @@ const photosLeft = [
     height: 2252,
     credit: "Mako",
   },
+
   {
     ...photoDefault,
     src: "photos/IMG_010 Large.jpeg",
@@ -48,14 +79,7 @@ const photosLeft = [
     height: 853,
     credit: "",
   },
-  {
-    ...photoDefault,
-    src: "photos/IMG_3805.jpg",
-    alt: "Furbaby at Double Door",
-    width: 2000,
-    height: 2585,
-    credit: "",
-  },
+
   {
     ...photoDefault,
     src: "photos/Fur6.jpg",
@@ -92,10 +116,17 @@ const photosRight = [
   },
   {
     ...photoDefault,
-    src: "photos/IMG_017 Large.jpeg",
+    src: "photos/liars-june-2022.jpg",
     alt: "Furbaby at Empty Bottle",
-    width: 1280,
-    height: 853,
+    width: 2275,
+    height: 1677,
+  },
+  {
+    ...photoDefault,
+    src: "photos/DSC05285.JPG",
+    alt: "Furbaby at Liars Club",
+    width: 6000,
+    height: 3376,
   },
 ];
 
@@ -113,7 +144,7 @@ export default function Press({ allPostsData }) {
             image: "/images/bg-animal.png",
           },
         ]}
-        style={{ height: "60vh" }}
+        style={{ height: "40vh" }}
       >
         <div className="absolute inset-0 bg-fur-pink mix-blend-multiply" />
         <div className="absolute top-0 left-0 right-0 bottom-0 flex flex-col justify-end pb-6 px-6">
