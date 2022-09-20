@@ -60,7 +60,8 @@ export const spainShows = [
     time: "22:00",
     playingWith: "",
     location: "León, España",
-    ticketUrl: "#",
+    ticketUrl:
+      "https://entradium.com/es/events/furbaby-and-the-tight-spaces-en-leon",
     facebookEventUrl: "https://fb.me/e/oFfe4UAq8",
   },
   {
@@ -101,8 +102,8 @@ export const spainShows = [
     time: "20:00",
     playingWith: "",
     location: "Valladolid, España",
-    ticketUrl: "#",
-    facebookEventUrl: "#",
+    ticketUrl: "https://salaportacaeli.com/conciertos-2/furbaby/",
+    facebookEventUrl: "https://fb.me/e/5JjS0kqU1",
   },
   {
     date: "2022-10-03",
