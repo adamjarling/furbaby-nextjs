@@ -32,7 +32,7 @@ export default function Home({ allPostsData }) {
       <Head>
         <title>Furbaby and the Tight Spaces</title>
       </Head>
-      <Splash1 photo={"photos/DSC04774.JPG"} />
+      <Splash1 photo={"spain2022/IMG_0723.JPG"} />
 
       <div className="bg-white text-black">
         <Section>
@@ -49,7 +49,7 @@ export default function Home({ allPostsData }) {
             ></iframe>
           </div>
           {[...spainShows].map((show) => (
-            <ShowsGrid {...show}></ShowsGrid>
+            <ShowsGrid {...show} key={show.date}></ShowsGrid>
           ))}
         </Section>
       </div>

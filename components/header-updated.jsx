@@ -67,7 +67,11 @@ export default function Example() {
         </div>
         <Popover.Group as="nav" className="hidden md:flex space-x-10 uppercase">
           {navigation.map(({ label, href }) => (
-            <a href={`${href}`} className="text-base font-medium border-0">
+            <a
+              key={label}
+              href={`${href}`}
+              className="text-base font-medium border-0"
+            >
               {label}
             </a>
           ))}
