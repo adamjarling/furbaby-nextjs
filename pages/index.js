@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Layout from "components/layout";
 import Splash1 from "components/splash1";
+import SplashMerch from "../components/splash-merch";
 import CargoPromo from "components/cargo-promo";
 import LinkButton from "components/link-button";
 import Image from "next/image";
@@ -33,6 +34,7 @@ export default function Home({ allPostsData }) {
         <title>Furbaby and the Tight Spaces</title>
       </Head>
       <Splash1 photo={"spain2022/IMG_0723.JPG"} />
+      <SplashMerch />
 
       <div className="bg-white text-black">
         <Section>
@@ -56,13 +58,6 @@ export default function Home({ allPostsData }) {
 
       <BannerNewAlbumPromoVideo />
       <BannerNewAlbumPromo />
-
-      {/* <div className="bg-white text-black">
-        <Section isCentered>
-          <p className="big-title text-center">Tour Dates</p>
-          <BannerReggies />
-        </Section>
-      </div> */}
 
       <Section>
         <p className="big-title text-center">Videos</p>

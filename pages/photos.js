@@ -206,6 +206,7 @@ export default function Photos() {
           >
             {photos.map((photo) => (
               <Item
+                key={photo.src}
                 original={photo.src}
                 thumbnail={photo.src}
                 width={photo.width}
