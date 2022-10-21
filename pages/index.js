@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Layout from "components/layout";
 import Splash1 from "components/splash1";
-import SplashMerch from "../components/splash-merch";
+import SplashMerch2 from "../components/splash-merch2";
 import CargoPromo from "components/cargo-promo";
 import LinkButton from "components/link-button";
 import Image from "next/image";
@@ -33,8 +33,14 @@ export default function Home({ allPostsData }) {
       <Head>
         <title>Furbaby and the Tight Spaces</title>
       </Head>
-      <Splash1 photo={"spain2022/IMG_0723.JPG"} />
-      <SplashMerch />
+      <Splash1
+        photo={"spain2022/310574662_534549568673682_7397289109584922197_n.jpeg"}
+      />
+      <div className="bg-white">
+        <Section>
+          <SplashMerch2 />
+        </Section>
+      </div>
 
       <div className="bg-white text-black">
         <Section>
@@ -50,9 +56,9 @@ export default function Home({ allPostsData }) {
               allowFullScreen
             ></iframe>
           </div>
-          {[...spainShows].map((show) => (
+          {/* {[...spainShows].map((show) => (
             <ShowsGrid {...show} key={show.date}></ShowsGrid>
-          ))}
+          ))} */}
         </Section>
       </div>
 
