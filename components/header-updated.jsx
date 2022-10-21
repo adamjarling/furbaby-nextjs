@@ -1,7 +1,7 @@
 /* This example requires Tailwind CSS v2.0+ */
 import { Fragment } from "react";
 import { Popover, Transition } from "@headlessui/react";
-import { MenuIcon, XIcon } from "@heroicons/react/outline";
+import { Bars2Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { footerSocials } from "./footer";
 import Link from "next/link";
 
@@ -13,37 +13,11 @@ const navigation = [
   { label: "Tour", href: "/shows" },
 ];
 
-const resources = [
-  {
-    name: "Help Center",
-    description:
-      "Get all of your questions answered in our forums or contact support.",
-    href: "#",
-  },
-  {
-    name: "Guides",
-    description:
-      "Learn how to maximize our platform to get the most out of it.",
-    href: "#",
-  },
-  {
-    name: "Events",
-    description:
-      "See what meet-ups and other events we might be planning near you.",
-    href: "#",
-  },
-  {
-    name: "Security",
-    description: "Understand how we take your privacy seriously.",
-    href: "#",
-  },
-];
-
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
 
-export default function Example() {
+export default function HeaderUpdated() {
   return (
     <Popover className="z-10 w-full bg-gradient-to-b from-black to-transparent fixed">
       <div className="flex justify-between items-center px-4 py-6 sm:px-6 md:justify-start md:space-x-10">
@@ -62,7 +36,7 @@ export default function Example() {
         <div className="-mr-2 -my-2 md:hidden">
           <Popover.Button className="bg-transparent hover:bg-transparent border-0 rounded-md p-2 inline-flex items-center justify-center text-white hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-fur-blue">
             <span className="sr-only">Open menu</span>
-            <MenuIcon className="h-10 w-10" aria-hidden="true" />
+            <Bars2Icon className="h-10 w-10" aria-hidden="true" />
           </Popover.Button>
         </div>
         <Popover.Group as="nav" className="hidden md:flex space-x-10 uppercase">
@@ -113,7 +87,7 @@ export default function Example() {
                 <div className="-mr-2">
                   <Popover.Button className="bg-transparent hover:bg-transparent rounded-md border-0 p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-fur-blue">
                     <span className="sr-only">Close menu</span>
-                    <XIcon className="h-10 w-10" aria-hidden="true" />
+                    <XMarkIcon className="h-10 w-10" aria-hidden="true" />
                   </Popover.Button>
                 </div>
               </div>

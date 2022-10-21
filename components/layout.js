@@ -16,10 +16,6 @@ export default function Layout({ children, home }) {
           href="https://fonts.gstatic.com"
           crossOrigin="true"
         />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Anton&display=swap"
-          rel="stylesheet"
-        />
 
         <meta
           name="description"
