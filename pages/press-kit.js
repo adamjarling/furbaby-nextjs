@@ -6,7 +6,6 @@ import FandTS from "components/f-and-ts";
 import ExternalLink from "components/external-link";
 import Obfuscate from "react-obfuscate";
 import Section from "components/section";
-import SplashPhotos from "components/splash-photos";
 import SplashVideos from "components/splash-videos";
 import SplashSingles from "components/splash-singles";
 import CargoPromo from "components/cargo-promo";
@@ -91,7 +90,6 @@ export default function PressKit() {
       </Section>
 
       <CargoPromo />
-      <SplashPhotos />
       <SplashVideos />
       <SplashSingles />
     </Layout>

@@ -2,32 +2,14 @@ import Head from "next/head";
 import Layout from "components/layout";
 import Splash1 from "components/splash1";
 import SplashMerch2 from "../components/splash-merch2";
-import CargoPromo from "components/cargo-promo";
-import LinkButton from "components/link-button";
-import Image from "next/image";
-import SplashPhotos from "components/splash-photos";
 import SplashVideos from "components/splash-videos";
 import BannerNewAlbumPromo from "components/banner-new-album-promo";
 import Section from "components/section";
 import BannerNewAlbumPromoVideo from "components/banner-new-album-promo-video";
 import LatestSingle from "components/latest-single";
-import LatestNewsItem from "components/latest-news-item";
-import { getSortedPostsData } from "lib/posts";
 import EuroTease from "components/EuroTease";
-import { ShowsGrid, spainShows } from "./shows";
 
-export async function getStaticProps() {
-  const allPostsData = getSortedPostsData();
-  return {
-    props: {
-      allPostsData,
-    },
-  };
-}
-
-export default function Home({ allPostsData }) {
-  const thePost = allPostsData[0];
-
+export default function Home() {
   return (
     <Layout>
       <Head>
