@@ -1,5 +1,9 @@
 import Head from "next/head";
+import HeadlineCalloutWrapper from "components/headline-callout/wrapper";
+import HeadlineCalloutSubhead from "components/headline-callout/subhead";
+import HeadlineCalloutHeadline from "components/headline-callout/headline";
 import Layout from "components/layout";
+import LinkButton from "components/link-button";
 import Splash1 from "components/splash1";
 import SplashMerch2 from "../components/splash-merch2";
 import SplashVideos from "components/splash-videos";
@@ -18,16 +22,27 @@ export default function Home() {
       <Splash1
         photo={"spain2022/310574662_534549568673682_7397289109584922197_n.jpeg"}
       />
+      <Section>
+        <HeadlineCalloutWrapper>
+          <HeadlineCalloutSubhead>New Show Announcement</HeadlineCalloutSubhead>
+          <HeadlineCalloutHeadline>
+            Jan 25, 2023 at Reggies with Jason Kane and the Jive. 8pm
+          </HeadlineCalloutHeadline>
+          <LinkButton href={"https://www.reggieslive.com/page/2/"}>
+            Read More
+          </LinkButton>
+        </HeadlineCalloutWrapper>
+      </Section>
       <div className="bg-white">
         <Section>
           <SplashMerch2 />
         </Section>
       </div>
 
-      <div className="bg-white text-black">
+      <div className="text-black bg-white">
         <Section>
           <EuroTease />
-          <div className="aspect-w-16 aspect-h-9 mt-10">
+          <div className="mt-10 aspect-w-16 aspect-h-9">
             <iframe
               width="560"
               height="315"
@@ -48,7 +63,7 @@ export default function Home() {
       <BannerNewAlbumPromo />
 
       <Section>
-        <p className="big-title text-center">Videos</p>
+        <p className="text-center big-title">Videos</p>
         <SplashVideos />
       </Section>
 

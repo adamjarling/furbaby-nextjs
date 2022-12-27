@@ -8,7 +8,18 @@ import Image from "next/image";
 import PromoDownloads from "components/promo-downloads";
 import LinkButton from "components/link-button";
 
-const upcomingShows = [];
+const shows2023 = [
+  {
+    date: "2023-01-25",
+    venue: "Reggies Music Joint",
+    venueLink: "https://www.reggieslive.com/",
+    time: "8pm",
+    playingWith: "Jason Kane and the Jive",
+    location: "Chicago USA",
+    ticketUrl: "#",
+    facebookEventUrl: "",
+  },
+];
 
 export const spainShows = [
   {
@@ -117,7 +128,8 @@ export const spainShows = [
   },
 ];
 
-const pastShows = [
+const shows2022 = [
+  ...spainShows.reverse(),
   {
     date: "2022-09-02",
     venue: "Liars Club",
@@ -160,6 +172,9 @@ const pastShows = [
       "https://www.ticketweb.com/event/the-steepwater-band-reggies-banannas-comedy-shack-tickets/11469105",
     facebookEventUrl: "https://www.facebook.com/events/592852821807630",
   },
+];
+
+const shows2021 = [
   {
     date: "2021-12-23",
     venue: "Liars Club",
@@ -239,9 +254,9 @@ export function ShowsGrid({
   facebookEventUrl,
 }) {
   return (
-    <div className="grid grid-cols-2 w-full text-lg my-10 md:my-20">
-      <div className="flex flex-col md:flex-row justify-items-start w-full">
-        <span className="pr-6 font-bold flex-1 uppercase">
+    <div className="grid w-full grid-cols-2 my-10 text-lg md:my-20">
+      <div className="flex flex-col w-full md:flex-row justify-items-start">
+        <span className="flex-1 pr-6 font-bold uppercase">
           {formatDate(date)}
         </span>
         <div className="flex-1">
@@ -279,23 +294,29 @@ export default function Shows() {
         style={{ height: "60vh" }}
       >
         <div className="absolute inset-0 bg-fur-red mix-blend-multiply" />
-        <div className="absolute top-0 left-0 right-0 bottom-0 flex flex-col justify-between pb-6 px-6">
+        <div className="absolute top-0 bottom-0 left-0 right-0 flex flex-col justify-between px-6 pb-6">
           <p className="big-title pt-28">Tour</p>
           <h1 className="text-right">Dates</h1>
         </div>
       </ParallaxBanner>
 
       <Section isCentered>
+        <h2>2023</h2>
+        <div className="">
+          {[...shows2023].map((show) => (
+            <ShowsGrid {...show}></ShowsGrid>
+          ))}
+        </div>
         <h2>2022</h2>
         <div className="">
-          {[...upcomingShows, ...spainShows].map((show) => (
+          {[...shows2022].map((show) => (
             <ShowsGrid {...show}></ShowsGrid>
           ))}
         </div>
         <LinkButton href="/press">Download Tour Kit</LinkButton>
       </Section>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 w-full">
+      <div className="grid w-full grid-cols-1 md:grid-cols-2">
         <div>
           <Image
             src="/images/spain2022/lestrato-poster-2022-08-17_v2.jpg"
@@ -346,9 +367,9 @@ export default function Shows() {
       </div>
 
       <Section isCentered>
-        <h2>Past Shows</h2>
+        <h2>2021</h2>
         <div className="">
-          {pastShows.map((show) => (
+          {shows2021.map((show) => (
             <ShowsGrid {...show}></ShowsGrid>
           ))}
         </div>
