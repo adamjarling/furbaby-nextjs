@@ -1,14 +1,25 @@
-import Head from "next/head";
-import Layout from "components/layout";
-import { ParallaxBanner, Parallax } from "react-scroll-parallax";
-import ExternalLink from "components/external-link";
-import Section from "components/section";
+import { Parallax, ParallaxBanner } from "react-scroll-parallax";
 import { format, parseISO } from "date-fns";
+
+import ExternalLink from "components/external-link";
+import Head from "next/head";
 import Image from "next/image";
-import PromoDownloads from "components/promo-downloads";
+import Layout from "components/layout";
 import LinkButton from "components/link-button";
+import PromoDownloads from "components/promo-downloads";
+import Section from "components/section";
 
 const shows2023 = [
+  {
+    date: "2023-05-17",
+    venue: "Liars Club",
+    venueLink: "https://www.facebook.com/liarsclubchicago",
+    time: "8pm",
+    playingWith: "The Claws, Jeff Massey (solo)",
+    location: "Chicago USA",
+    ticketUrl: "https://buy.stripe.com/28ocOV9nDbNzcKc9AA",
+    facebookEventUrl: "https://www.facebook.com/events/632789461993630",
+  },
   {
     date: "2023-01-25",
     venue: "Reggies Music Joint",
