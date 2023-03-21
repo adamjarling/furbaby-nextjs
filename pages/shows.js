@@ -299,7 +299,7 @@ export default function Shows() {
         layers={[
           {
             amount: 0.2,
-            image: "/images/2021-11-07/IMG_3808.jpg",
+            image: "/images/merch-table.jpeg",
           },
         ]}
         style={{ height: "60vh" }}

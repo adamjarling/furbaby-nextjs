@@ -18,7 +18,7 @@ export default function LiarsMay2023() {
         />
       </ImageCalloutImage>
       <ImageCalloutCallout>
-        <p className="py-6 uppercase">New Show</p>
+        <p className="py-6 uppercase">New Show Announcement</p>
         <h2 className="py-8">Chad's back in town</h2>
         <p>
           Stoked to announce a gig with Los Angeles',{" "}
@@ -29,9 +29,22 @@ export default function LiarsMay2023() {
           <a href="https://thelastvegas.com" target="_blank">
             The Last Vegas
           </a>
-          , at Liars Club on May 17. 8pm. The wizard Jeff Massey (Steepwater
-          Band vocalist/guitar) kicks things off at 9pm, solo. We're gonna have
-          some special guests joining Furbaby's set, then the Claws crush it.
+          , at{" "}
+          <a href="https://www.facebook.com/liarsclubchicago/" target="_blank">
+            Liars Club
+          </a>{" "}
+          on May 17. 8pm.{" "}
+          <a
+            href="https://www.facebook.com/profile.php?id=100063220121283"
+            target="_blank"
+          >
+            Jeff Massey
+          </a>{" "}
+          (
+          <a href="https://www.steepwater.com/" target="_blank">
+            Steepwater Band
+          </a>{" "}
+          vocalist/guitar) solo kicks things off at 9pm. Then Furbaby + friends.
           21+ $10.
         </p>
 
