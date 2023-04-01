@@ -1,10 +1,10 @@
 import Head from "next/head";
-import Layout from "components/layout";
-import Section from "components/section";
-import Link from "next/link";
 import Image from "next/image";
+import Layout from "components/layout";
+import Link from "next/link";
 import Masonry from "react-masonry-css";
 import PromoDownloads from "components/promo-downloads";
+import Section from "components/section";
 
 const breakpointColumnsObj = {
   default: 2,
@@ -62,17 +62,17 @@ export default function Spain2022Page() {
       </Head>
 
       <Image
-        src="/images/spain2022/instagram-bare.jpg"
-        width="1200"
-        height="1200"
+        src="/images/310482808_534549138673725_7421672717356807802_n.jpeg"
+        width="2048"
+        height="1635"
         alt="Spain Tour 2022"
       />
 
-      <div className="bg-white text-black break-words">
+      <div className="text-black break-words bg-white">
         <Section>
           <h1>Spanish Tour 2022</h1>
           <div className="max-w-screen-lg mx-auto">
-            <p className="uppercase font-bold">
+            <p className="font-bold uppercase">
               <a
                 href="https://www.facebook.com/lestrato.rockconciertos"
                 target="_blank"
@@ -109,7 +109,7 @@ export default function Spain2022Page() {
               be bomb live.. Keep on rockin'!!!
             </p>
           </div>
-          <div className="aspect-w-16 aspect-h-9 my-10">
+          <div className="my-10 aspect-w-16 aspect-h-9">
             <iframe
               width="560"
               height="315"
@@ -129,11 +129,11 @@ export default function Spain2022Page() {
           />
         </Section>
 
-        <div className="bg-black text-white text-center text-2xl">
+        <div className="text-2xl text-center text-white bg-black">
           <Section>
             {dates.map(({ date, label }) => (
               <p>
-                <span className="font-bold uppercase text-xl">{date}</span>
+                <span className="text-xl font-bold uppercase">{date}</span>
                 <br />
                 {label}
               </p>
@@ -155,7 +155,7 @@ export default function Spain2022Page() {
                     alt="Fur logo"
                     src="/images/spain2022/fur-spain-2022-tour-instagram_v2.jpg"
                   />
-                  <span className="pt-2 inline-block">
+                  <span className="inline-block pt-2">
                     Download Instagram Poster
                   </span>
                 </a>
@@ -163,7 +163,7 @@ export default function Spain2022Page() {
               <div className="text-center">
                 <a href="https://drive.google.com/file/d/1uXNNDUv2B11uzaXI_SR58IZKO02smDsR/view?usp=sharing">
                   <img src="/images/spain2022/fb-event-no-text_v2.jpg" />
-                  <span className="pt-2 inline-block">
+                  <span className="inline-block pt-2">
                     Download Facebook Event Banner
                   </span>
                 </a>

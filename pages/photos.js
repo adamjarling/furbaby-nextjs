@@ -1,13 +1,14 @@
-import Head from "next/head";
-import Layout from "components/layout";
-import Section from "components/section";
-import Link from "next/link";
-import Image from "next/image";
-import Masonry from "react-masonry-css";
-import { ParallaxBanner, Parallax } from "react-scroll-parallax";
-
 import "photoswipe/dist/photoswipe.css";
+
 import { Gallery, Item } from "react-photoswipe-gallery";
+import { Parallax, ParallaxBanner } from "react-scroll-parallax";
+
+import Head from "next/head";
+import Image from "next/image";
+import Layout from "components/layout";
+import Link from "next/link";
+import Masonry from "react-masonry-css";
+import Section from "components/section";
 
 const breakpointColumnsObj = {
   default: 3,
@@ -186,13 +187,13 @@ export default function Photos() {
         layers={[
           {
             amount: 0.2,
-            image: "/images/bg-animal.png",
+            image: "/images/photos/IMG_3804.jpg",
           },
         ]}
         style={{ height: "40vh" }}
       >
-        <div className="absolute inset-0 bg-fur-pink mix-blend-multiply" />
-        <div className="absolute top-0 left-0 right-0 bottom-0 flex flex-col justify-end pb-6 px-6">
+        {/* <div className="absolute inset-0 bg-fur-pink mix-blend-multiply" /> */}
+        <div className="absolute top-0 bottom-0 left-0 right-0 flex flex-col justify-end px-6 pb-6">
           <h1 className="text-right">Photos</h1>
         </div>
       </ParallaxBanner>
@@ -230,7 +231,7 @@ export default function Photos() {
           <div className="p-4 text-center">
             <a
               href="https://drive.google.com/file/d/1THb8WOjqd4WOOG2_LSeGdbki2RWH_7dH/view?usp=sharing"
-              className="border-2 border-white p-2"
+              className="p-2 border-2 border-white"
             >
               <img alt="Fur logo" src="/images/epk/f-and-ts-logo__black.png" />
               <span className="">Download logo black</span>

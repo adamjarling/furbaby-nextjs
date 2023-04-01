@@ -1,8 +1,8 @@
-import React from "react";
-import MailChimpForm from "components/mailchimp-form";
-import Link from "next/link";
-import Section from "components/section";
 import ExternalLink from "./external-link";
+import Link from "next/link";
+import MailChimpForm from "components/mailchimp-form";
+import React from "react";
+import Section from "components/section";
 import { distributors } from "social-media-manifest";
 
 export const footerSocials = [
@@ -26,9 +26,9 @@ export const footerSocials = [
 
 export default function Footer() {
   return (
-    <footer className="bg-white text-black uppercase text-xl md:text-2xl">
+    <footer className="text-xl text-black uppercase bg-white md:text-2xl">
       <Section>
-        <div className="flex flex-col md:flex-row pl-6 md:pl-12">
+        <div className="flex flex-col md:flex-row md:pl-12">
           <ul className="flex-1">
             {footerSocials.map((item) => (
               <li key={item.url}>
@@ -36,7 +36,7 @@ export default function Footer() {
               </li>
             ))}
           </ul>
-          <div className="pb-10 flex-1 mt-10 md:mt-0">
+          <div className="flex-1 pb-10 mt-10 md:mt-0">
             <Link href="mailto:furbabyferguson@gmail.com">
               <a className="border-none">info@furbaby.rocks</a>
             </Link>

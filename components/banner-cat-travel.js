@@ -28,11 +28,11 @@ export default function BannerCatTravel() {
         <p className="py-6 uppercase">First single in 2 years!</p>
         <h2 className="py-8">What if the Cat Won't Travel</h2>
         <p>
-          April Fools Day everyone! F.A.T.T.S. releases their first single in 2
-          years, and it's a cover of the classic "I'm a Believer" by The
-          Monkees. (Just kidding). Even more questionable, it's a pensive,
-          acoustic number intended to shock, confuse, and grease the wheels for
-          a whole bunch of garage rock coming your way in 2023. 🤘🎸
+          April Fools Day everyone! First single in 2 years just released, and
+          it's a cover of the classic "I'm a Believer" by The Monkees. (Just
+          kidding). Even more questionable, it's a mellow, acoustic number to
+          grease the wheels for a whole bunch of garage rock coming up in 2023.
+          🤘🎸
         </p>
 
         <div className="flex mb-8 text-3xl">

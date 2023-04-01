@@ -14,8 +14,8 @@ const CustomForm = ({ status, message, onValidated }) => {
     });
 
   return (
-    <div className="text-left mt-6">
-      <p className="text-base pb-0 mb-1">Join the email list:</p>
+    <div className="mt-6 text-left">
+      <p className="pb-0 mb-1 text-base">Join the email list:</p>
       {status === "sending" && <div className="text-gray-200">sending...</div>}
       {status === "error" && (
         <div
@@ -36,12 +36,11 @@ const CustomForm = ({ status, message, onValidated }) => {
               ref={(node) => (email = node)}
               type="email"
               placeholder="Your email"
-              className="text-base mb-2"
-              style={{ width: "300px" }}
+              className="mb-2 text-base"
             />
           </div>
           <button
-            className="border-black border-2 text-black text-base px-4 py-2"
+            className="px-4 py-2 text-base text-black border-2 border-black"
             onClick={submit}
           >
             Submit
