@@ -19,7 +19,7 @@ export default function LiarsMay2023() {
       </ImageCalloutImage>
       <ImageCalloutCallout>
         <p className="py-6 uppercase">New Show Announcement</p>
-        <h2 className="py-8">Chad's back in town</h2>
+        <h2 className="py-8">Live!</h2>
         <p>
           Stoked to announce a gig with Los Angeles',{" "}
           <a href="https://www.theclawsrock.com/" target="_blank">

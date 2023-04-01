@@ -1,15 +1,17 @@
-import Head from "next/head";
-import Layout from "components/layout";
-import Image from "next/image";
-import Section from "components/section";
-import LinkButton from "components/link-button";
-import ImageCalloutWrapper from "components/image-callout/wrapper";
-import ImageCalloutImage from "components/image-callout/image";
-import ImageCalloutCallout from "components/image-callout/callout";
-import ExternalLink from "components/external-link";
-import { FaSpotify, FaYoutube, FaApple, FaAmazon } from "react-icons/fa";
 import * as manifest from "music-release-manifest";
-import { ParallaxBanner, Parallax } from "react-scroll-parallax";
+
+import { FaAmazon, FaApple, FaSpotify, FaYoutube } from "react-icons/fa";
+import { Parallax, ParallaxBanner } from "react-scroll-parallax";
+
+import ExternalLink from "components/external-link";
+import Head from "next/head";
+import Image from "next/image";
+import ImageCalloutCallout from "components/image-callout/callout";
+import ImageCalloutImage from "components/image-callout/image";
+import ImageCalloutWrapper from "components/image-callout/wrapper";
+import Layout from "components/layout";
+import LinkButton from "components/link-button";
+import Section from "components/section";
 
 export default function Music() {
   function isEvenRow(i) {
@@ -26,13 +28,13 @@ export default function Music() {
         layers={[
           {
             amount: 0.2,
-            image: "/images/next-year-video-cover.jpg",
+            image: "/images/banner-singles.jpg",
           },
         ]}
         style={{ height: "60vh" }}
       >
         <div className="absolute inset-0 bg-fur-yellow mix-blend-multiply" />
-        <div className="absolute top-0 left-0 right-0 bottom-0 flex flex-col justify-end pb-6 px-6">
+        <div className="absolute top-0 bottom-0 left-0 right-0 flex flex-col justify-end px-6 pb-6">
           <h1 className="text-right">Music</h1>
         </div>
       </ParallaxBanner>
@@ -52,14 +54,14 @@ export default function Music() {
                   />
                 </ImageCalloutImage>
                 <ImageCalloutCallout isReversed={isEvenRow(i)}>
-                  <h2 className="pb-0 pt-8 lg:p-0">{title}</h2>
-                  <p className="uppercase py-6 md:py-12">
+                  <h2 className="pt-8 pb-0 lg:p-0">{title}</h2>
+                  <p className="py-6 uppercase md:py-12">
                     {title === "Furbaby and the Tight Spaces"
                       ? "New Album!"
                       : "Single"}{" "}
                     - {year}
                   </p>
-                  <div className="flex flex-col md:flex-row justify-between">
+                  <div className="flex flex-col justify-between md:flex-row">
                     <LinkButton isExternal href={manifestItems.spotify}>
                       <span className="flex items-center justify-center">
                         <FaSpotify /> <span className="pl-3">Listen</span>
@@ -75,7 +77,7 @@ export default function Music() {
                     )}
                   </div>
 
-                  <div className="flex text-2xl mt-10 mb-6">
+                  <div className="flex mt-10 mb-6 text-2xl">
                     <ExternalLink url={manifestItems.youTubeMusic}>
                       <FaYoutube />
                     </ExternalLink>
@@ -101,6 +103,12 @@ export default function Music() {
 }
 
 export const releases = [
+  {
+    src: "cat-wont-travel_cover.jpg",
+    title: "What if the Cat Won't Travel?",
+    manifestItems: manifest.catWontTravel,
+    year: "2023",
+  },
   {
     src: "furbaby-album-self-titled.jpg",
     title: "Furbaby and the Tight Spaces",

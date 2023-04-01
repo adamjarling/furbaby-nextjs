@@ -1,10 +1,10 @@
-import React from "react";
-import ImageCalloutWrapper from "components/image-callout/wrapper";
-import ImageCalloutImage from "components/image-callout/image";
-import ImageCalloutCallout from "components/image-callout/callout";
 import Image from "next/image";
-import { releases } from "pages/music";
+import ImageCalloutCallout from "components/image-callout/callout";
+import ImageCalloutImage from "components/image-callout/image";
+import ImageCalloutWrapper from "components/image-callout/wrapper";
 import LinkButton from "./link-button";
+import React from "react";
+import { releases } from "pages/music";
 
 const items = [
   {
@@ -39,18 +39,23 @@ const items = [
 
 export default function SplashMerch() {
   return (
-    <div className="mx-auto max-w-2xl py-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8">
+    <div className="max-w-2xl px-4 py-16 mx-auto sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8">
       <div className="grid grid-cols-1 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-3 xl:gap-x-8">
         {items.map((item) => (
-          <a className="group" href={item.href} target="_blank">
-            <div className="aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-lg sm:aspect-w-2 sm:aspect-h-3">
+          <a
+            key={item.imgSrc}
+            className="group"
+            href={item.href}
+            target="_blank"
+          >
+            <div className="w-full overflow-hidden rounded-lg aspect-w-1 aspect-h-1 sm:aspect-w-2 sm:aspect-h-3">
               <img
                 src={item.imgSrc}
                 alt={item.imgAlt}
-                className="h-full w-full object-cover object-center group-hover:opacity-75"
+                className="object-cover object-center w-full h-full group-hover:opacity-75"
               />
             </div>
-            <div className="mt-4 flex items-center justify-between text-base font-medium text-gray-900">
+            <div className="flex items-center justify-between mt-4 text-base font-medium text-gray-900">
               <h3>{item.label}</h3>
               <p>{item.price}</p>
             </div>

@@ -19,6 +19,18 @@ export const boxedIn = {
   youTubeId: "piCdPUIlJlw",
 };
 
+export const catWontTravel = {
+  amazonMusic:
+    "https://music.amazon.com/albums/B0BZX2SLXH?marketplaceId=ATVPDKIKX0DER&musicTerritory=US&ref=dm_sh_6odK0aXWcJW8FJdC9JIkIfNKq",
+  appleMusic:
+    "https://music.apple.com/us/album/what-if-the-cat-wont-travel-single/1679888695",
+  youTubeMusic: "https://music.youtube.com/watch?v=Yb39BY3bDBg&feature=share",
+  spotify:
+    "https://open.spotify.com/album/0vv9b9SpaaDZFekbiujA7w?si=cCwSsASuQCiS_E9m17YpIA",
+  wav: "",
+  youTubeId: "",
+};
+
 export const cocoa = {
   amazonMusic: "https://www.amazon.com/dp/B08F4FLD1V",
   appleMusic: "https://music.apple.com/us/album/cocoa-single/1525576097",
@@ -42,7 +54,8 @@ export const iCanOnlyGiveYouEverything = {
 };
 
 export const furbabyAndTheTightSpaces_album1 = {
-  amazonMusic: "",
+  amazonMusic:
+    "https://music.amazon.com/albums/B09HR41987?marketplaceId=ATVPDKIKX0DER&musicTerritory=US&ref=dm_sh_zLjKcIOIEbRXfHQzMnbxRpgfC",
   appleMusic:
     "https://music.apple.com/us/album/furbaby-the-tight-spaces/1588711620",
   coverFileTitle: "furbaby-album-self-titled.jpg",

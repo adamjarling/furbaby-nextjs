@@ -1,3 +1,4 @@
+import BannerCatTravel from "../components/banner-cat-travel";
 import BannerNewAlbumPromo from "components/banner-new-album-promo";
 import BannerNewAlbumPromoVideo from "components/banner-new-album-promo-video";
 import EuroTease from "components/EuroTease";
@@ -24,6 +25,11 @@ export default function Home() {
       <Splash1
         photo={"spain2022/310574662_534549568673682_7397289109584922197_n.jpeg"}
       />
+      <div className="bg-black">
+        <Section>
+          <BannerCatTravel />
+        </Section>
+      </div>
       <div className="bg-fur-pink">
         <Section>
           <LiarsMay2023 />
@@ -44,14 +50,10 @@ export default function Home() {
               height="315"
               src="https://www.youtube.com/embed/cFFhl6lhtBM"
               title="YouTube video player"
-              frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
             ></iframe>
           </div>
-          {/* {[...spainShows].map((show) => (
-            <ShowsGrid {...show} key={show.date}></ShowsGrid>
-          ))} */}
         </Section>
       </div>
 
@@ -83,12 +85,3 @@ export default function Home() {
     </Layout>
   );
 }
-
-// // This gets called on every request
-// export async function getServerSideProps() {
-//   const index = getRandomInt(2);
-//   const photo = bgImages[index];
-
-//   // Pass data to the page via props
-//   return { props: { photo } };
-// }
