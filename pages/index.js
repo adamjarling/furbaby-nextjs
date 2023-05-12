@@ -1,6 +1,7 @@
 import BannerCatTravel from "../components/banner-cat-travel";
 import BannerNewAlbumPromo from "components/banner-new-album-promo";
 import BannerNewAlbumPromoVideo from "components/banner-new-album-promo-video";
+import BannerTaste from "../components/banner-taste-wild";
 import EuroTease from "components/EuroTease";
 import Head from "next/head";
 import HeadlineCalloutHeadline from "components/headline-callout/headline";
@@ -25,6 +26,22 @@ export default function Home() {
       <Splash1
         photo={"spain2022/310574662_534549568673682_7397289109584922197_n.jpeg"}
       />
+
+      <div className="bg-black">
+        <Section>
+          <BannerTaste />
+        </Section>
+      </div>
+
+      <div className="aspect-w-16 aspect-h-9">
+        <iframe
+          src={`https://www.youtube.com/embed/hGUpzW19SRc`}
+          title={`Taste of the Wild`}
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
+        ></iframe>
+      </div>
+
       <div className="bg-black">
         <Section>
           <BannerCatTravel />
@@ -68,12 +85,6 @@ export default function Home() {
       {/* <LatestNewsItem post={thePost} /> */}
 
       {/* <SplashPhotos /> */}
-
-      <div className="bg-fur-pink">
-        <Section>
-          <LatestSingle />
-        </Section>
-      </div>
 
       {/* <PhotoPreview /> */}
 

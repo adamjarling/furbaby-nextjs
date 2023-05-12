@@ -104,6 +104,12 @@ export default function Music() {
 
 export const releases = [
   {
+    src: "taste-final_v1.png",
+    title: "Taste of the Wild",
+    manifestItems: manifest.tasteOfTheWild,
+    year: "2023",
+  },
+  {
     src: "cat-wont-travel_cover.jpg",
     title: "What if the Cat Won't Travel?",
     manifestItems: manifest.catWontTravel,

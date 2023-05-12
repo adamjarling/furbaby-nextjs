@@ -99,6 +99,18 @@ export const socialDistance = {
   youTubeId: "ZhlYufBQwN8",
 };
 
+export const tasteOfTheWild = {
+  amazonMusic:
+    "https://amazon.com/music/player/albums/B0C4CSBZS1?marketplaceId=ATVPDKIKX0DER&musicTerritory=US&ref=dm_sh_MZFBIUIQPDYsP9vxUNiG8eVyN",
+  appleMusic:
+    "https://music.apple.com/us/album/taste-of-the-wild-single/1686504687",
+  youTubeMusic: "https://music.youtube.com/watch?v=Gk-X_gcmOEU&feature=share",
+  spotify:
+    "https://open.spotify.com/album/5OerOrCwnoROUrnGEyTpOd?si=s7EOq8zUQFeEL9jecpbpuQ",
+  wav: "",
+  youTubeId: "hGUpzW19SRc",
+};
+
 export const waiting = {
   amazonMusic:
     "https://music.amazon.com/albums/B08SP1Q1TL?marketplaceId=ATVPDKIKX0DER&musicTerritory=US&trackAsin=B08SNW8TFM",

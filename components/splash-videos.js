@@ -1,7 +1,12 @@
-import { ParallaxBanner, Parallax } from "react-scroll-parallax";
+import { Parallax, ParallaxBanner } from "react-scroll-parallax";
+
 import ParallaxBannerChildren from "components/parallax-banner-children";
 
 const videos = [
+  {
+    id: "hGUpzW19SRc",
+    title: "Furbaby and the Tight Spaces - Taste of the Wild video",
+  },
   {
     id: "9jNy5Kvsi68",
     title: "Furbaby and the Tight Spaces - Next Year video",
@@ -60,7 +65,7 @@ function SplashVideos(props) {
         </ParallaxBannerChildren>
       </ParallaxBanner> */}
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+      <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
         {videos.map((video) => (
           <div key={video.id} className="aspect-w-16 aspect-h-9">
             <iframe
