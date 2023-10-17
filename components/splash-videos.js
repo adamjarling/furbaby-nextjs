@@ -71,7 +71,6 @@ function SplashVideos(props) {
             <iframe
               src={`https://www.youtube.com/embed/${video.id}`}
               title={video.title}
-              frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
             ></iframe>

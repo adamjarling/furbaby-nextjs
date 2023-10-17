@@ -33,13 +33,15 @@ export default function Home() {
         </Section>
       </div>
 
-      <div className="aspect-w-16 aspect-h-9">
-        <iframe
-          src={`https://www.youtube.com/embed/hGUpzW19SRc`}
-          title={`Taste of the Wild`}
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowFullScreen
-        ></iframe>
+      <div className="container mx-auto">
+        <div className="aspect-w-16 aspect-h-9">
+          <iframe
+            src={`https://www.youtube.com/embed/hGUpzW19SRc`}
+            title={`Taste of the Wild`}
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+          ></iframe>
+        </div>
       </div>
 
       <div className="bg-black">
