@@ -1,13 +1,13 @@
+import Footer from "./footer";
 import Head from "next/head";
-import Header from "components/header-updated";
+import Header from "./header-updated";
 import Image from "next/image";
-import Footer from "components/footer";
 
 export const siteTitle = "Furbaby & the Tight Spaces";
 
 export default function Layout({ children, home }) {
   return (
-    <div className="text-gray-50 bg-black min-h-screen font-display font-light">
+    <div className="min-h-screen font-light bg-black text-gray-50 font-display">
       <Head>
         <link rel="icon" href="/images/fur-512x512.png" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />

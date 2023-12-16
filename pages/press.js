@@ -1,15 +1,14 @@
 import { Parallax, ParallaxBanner } from "react-scroll-parallax";
 import { format, parseISO } from "date-fns";
 
-import ExternalLink from "components/external-link";
 import Head from "next/head";
 import Image from "next/image";
-import Layout from "components/layout";
+import Layout from "../components/layout";
 import Obfuscate from "react-obfuscate";
-import ParallaxBannerChildren from "components/parallax-banner-children";
-import PromoDownloads from "components/promo-downloads";
-import Section from "components/section";
-import SplashVideos from "components/splash-videos";
+import ParallaxBannerChildren from "../components/parallax-banner-children";
+import PromoDownloads from "../components/promo-downloads";
+import Section from "../components/section";
+import SplashVideos from "../components/splash-videos";
 
 function formatDate(date) {
   return format(parseISO(date), "E MMM dd");

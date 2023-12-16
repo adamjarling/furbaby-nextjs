@@ -1,10 +1,10 @@
-import React from "react";
+import HeadlineCalloutHeadline from "./headline-callout/headline";
+import HeadlineCalloutSubhead from "./headline-callout/subhead";
+import HeadlineCalloutWrapper from "./headline-callout/wrapper";
+import LinkButton from "./link-button";
 import PropTypes from "prop-types";
-import Section from "components/section";
-import LinkButton from "components/link-button";
-import HeadlineCalloutWrapper from "components/headline-callout/wrapper";
-import HeadlineCalloutSubhead from "components/headline-callout/subhead";
-import HeadlineCalloutHeadline from "components/headline-callout/headline";
+import React from "react";
+import Section from "./section";
 
 const preOrderLink =
   "https://cargorecordsdirect.co.uk/products/furbaby-the-tight-spaces-furbaby-the-tight-spaces";

@@ -29,8 +29,5 @@ module.exports = {
   variants: {
     extend: {},
   },
-  plugins: [
-    require("tailwind-hamburgers"),
-    require("@tailwindcss/aspect-ratio"),
-  ],
+  plugins: [require("tailwind-hamburgers")],
 };

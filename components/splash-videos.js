@@ -1,7 +1,3 @@
-import { Parallax, ParallaxBanner } from "react-scroll-parallax";
-
-import ParallaxBannerChildren from "components/parallax-banner-children";
-
 const videos = [
   {
     id: "hGUpzW19SRc",
@@ -67,14 +63,14 @@ function SplashVideos(props) {
 
       <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
         {videos.map((video) => (
-          <div key={video.id} className="aspect-w-16 aspect-h-9">
-            <iframe
-              src={`https://www.youtube.com/embed/${video.id}`}
-              title={video.title}
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-            ></iframe>
-          </div>
+          <iframe
+            key={video.id}
+            className="w-full aspect-video"
+            src={`https://www.youtube.com/embed/${video.id}`}
+            title={video.title}
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+          ></iframe>
         ))}
       </div>
     </>

@@ -1,9 +1,11 @@
-import { ParallaxBanner, Parallax } from "react-scroll-parallax";
-import ParallaxBannerChildren from "components/parallax-banner-children";
+import * as manifest from "../music-release-manifest";
+
+import { FaAmazon, FaApple, FaSpotify, FaYoutube } from "react-icons/fa";
+import { Parallax, ParallaxBanner } from "react-scroll-parallax";
+
+import ExternalLink from "./external-link";
 import Image from "next/image";
-import * as manifest from "music-release-manifest";
-import { FaSpotify, FaAmazon, FaYoutube, FaApple } from "react-icons/fa";
-import ExternalLink from "components/external-link";
+import ParallaxBannerChildren from "./parallax-banner-children";
 
 const singles = [
   {
@@ -77,7 +79,7 @@ function SplashSingles() {
         </ParallaxBannerChildren>
       </ParallaxBanner>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 pt-4">
+      <div className="grid grid-cols-1 gap-4 pt-4 sm:grid-cols-2 md:grid-cols-3">
         {singles.map((single, i) => (
           <div key={single.src}>
             <Image
@@ -87,7 +89,7 @@ function SplashSingles() {
               width={500}
               height={500}
             />
-            <div className="flex justify-evenly items-center text-2xl mt-3 mb-6">
+            <div className="flex items-center mt-3 mb-6 text-2xl justify-evenly">
               <ExternalLink url={single.manifestItems.spotify}>
                 <FaSpotify />
               </ExternalLink>

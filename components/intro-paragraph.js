@@ -38,7 +38,7 @@ function IntroParagraph(props) {
           ,{" "}
           <ExternalLink url="https://www.abbarama.com/">ABBARAMA</ExternalLink>,{" "}
           <ExternalLink url="https://en.wikipedia.org/wiki/The_Dogs_D%27Amour">
-            Tyla and Dogs 'D Amour
+            Tyla and Dogs D Amour
           </ExternalLink>
           ,{" "}
           <ExternalLink url="https://www.facebook.com/EarlySound">

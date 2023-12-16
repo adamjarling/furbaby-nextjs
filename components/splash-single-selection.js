@@ -29,14 +29,14 @@ export default function SplashSingleSelection() {
             <Parallax className="custom-class" y={single.y} tagOuter="figure">
               <div className="aspect-w-1 aspect-h-1">
                 <Link href="/singles">
-                  <a>
-                    <Image
-                      src={`/images/${single.src}`}
-                      alt={single.title}
-                      layout="fill"
-                      objectFit="cover"
-                    />
-                  </a>
+
+                  <Image
+                    src={`/images/${single.src}`}
+                    alt={single.title}
+                    layout="fill"
+                    objectFit="cover"
+                  />
+
                 </Link>
               </div>
             </Parallax>

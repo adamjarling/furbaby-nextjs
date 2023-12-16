@@ -1,10 +1,10 @@
 import Head from "next/head";
 import Image from "next/image";
-import Layout from "components/layout";
+import Layout from "../components/layout";
 import Link from "next/link";
 import Masonry from "react-masonry-css";
-import PromoDownloads from "components/promo-downloads";
-import Section from "components/section";
+import PromoDownloads from "../components/promo-downloads";
+import Section from "../components/section";
 
 const breakpointColumnsObj = {
   default: 2,
@@ -109,13 +109,11 @@ export default function Spain2022Page() {
               it&apos;s sure to be bomb live.. Keep on rockin&apos;!!!
             </p>
           </div>
-          <div className="my-10 aspect-w-16 aspect-h-9">
+          <div>
             <iframe
-              width="560"
-              height="315"
+              className="w-full my-10 aspect-video"
               src="https://www.youtube.com/embed/cFFhl6lhtBM"
-              title="YouTube video player"
-              frameBorder="0"
+              title="Furbaby Spain Promo"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
             ></iframe>

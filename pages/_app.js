@@ -1,10 +1,12 @@
 //import 'tailwindcss/tailwind.css'
-import "styles/styles.css";
+import "../styles/styles.css";
+
+import * as ga from "../lib/ga";
+
 import { ParallaxProvider } from "react-scroll-parallax";
 import Script from "next/script";
 import { useEffect } from "react";
 import { useRouter } from "next/router";
-import * as ga from "lib/ga";
 
 function MyApp({ Component, pageProps }) {
   const router = useRouter();

@@ -1,9 +1,8 @@
-import React from "react";
-import cdPromo from "public/images/square_cd-album-promo.jpg";
-import lpPromo from "public/images/square_lp-album-promo-v2.jpg";
+import ExternalLink from "./external-link";
 import Image from "next/image";
-import ExternalLink from "components/external-link";
-import LinkButton from "components/link-button";
+import React from "react";
+import cdPromo from "../public/images/square_cd-album-promo.jpg";
+import lpPromo from "../public/images/square_lp-album-promo-v2.jpg";
 
 const preOrderLink =
   "https://cargorecordsdirect.co.uk/products/furbaby-the-tight-spaces-furbaby-the-tight-spaces";

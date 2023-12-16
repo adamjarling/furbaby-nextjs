@@ -1,17 +1,17 @@
-import * as manifest from "music-release-manifest";
+import * as manifest from "../music-release-manifest";
 
 import { FaAmazon, FaApple, FaSpotify, FaYoutube } from "react-icons/fa";
 import { Parallax, ParallaxBanner } from "react-scroll-parallax";
 
-import ExternalLink from "components/external-link";
+import ExternalLink from "../components/external-link";
 import Head from "next/head";
 import Image from "next/image";
-import ImageCalloutCallout from "components/image-callout/callout";
-import ImageCalloutImage from "components/image-callout/image";
-import ImageCalloutWrapper from "components/image-callout/wrapper";
-import Layout from "components/layout";
-import LinkButton from "components/link-button";
-import Section from "components/section";
+import ImageCalloutCallout from "../components/image-callout/callout";
+import ImageCalloutImage from "../components/image-callout/image";
+import ImageCalloutWrapper from "../components/image-callout/wrapper";
+import Layout from "../components/layout";
+import LinkButton from "../components/link-button";
+import Section from "../components/section";
 
 export default function Music() {
   function isEvenRow(i) {

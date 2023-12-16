@@ -1,16 +1,16 @@
-import Section from "components/section";
+import ExternalLink from "./external-link";
+import FandTS from "./f-and-ts";
 import Image from "next/image";
-import ExternalLink from "components/external-link";
-import FandTS from "components/f-and-ts";
 import LinkButton from "./link-button";
+import Section from "./section";
 
 export default function CargoPromo() {
   return (
-    <div className="bg-white text-gray-900">
+    <div className="text-gray-900 bg-white">
       <Section>
         <h3>Full-length Album October 15, 2021 Europe, UK, Japan, USA</h3>
 
-        <div className="relative h-24 md:h-36 w-36 md:w-48 float-left mr-4">
+        <div className="relative float-left h-24 mr-4 md:h-36 w-36 md:w-48">
           <ExternalLink url="https://www.cargorecords.co.uk/">
             <Image
               src="/images/cargo-records.jpeg"

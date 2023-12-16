@@ -22,15 +22,15 @@ export default function HeaderUpdated() {
     <Popover className="z-10 w-full bg-gradient-to-b from-black to-transparent fixed">
       <div className="flex justify-between items-center px-4 py-6 sm:px-6 md:justify-start md:space-x-10">
         <div className="flex justify-start lg:w-0 lg:flex-1">
-          <Link href="/">
-            <a className="border-0">
-              <span className="sr-only">Furbaby and the Tight Spaces</span>
-              <img
-                className="h-16 md:h-20 w-auto"
-                src="/images/furbaby-and-ts-logo_white.png"
-                alt=""
-              />
-            </a>
+          <Link href="/" className="border-0">
+
+            <span className="sr-only">Furbaby and the Tight Spaces</span>
+            <img
+              className="h-16 md:h-20 w-auto"
+              src="/images/furbaby-and-ts-logo_white.png"
+              alt=""
+            />
+
           </Link>
         </div>
         <div className="-mr-2 -my-2 md:hidden">

@@ -1,6 +1,6 @@
-import React from "react";
 import PropTypes from "prop-types";
-import Section from "components/section";
+import React from "react";
+import Section from "../section";
 import classNames from "classnames";
 
 function HeadlineCalloutWrapper({ isWhite, children }) {

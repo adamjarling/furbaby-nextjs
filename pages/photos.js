@@ -5,10 +5,10 @@ import { Parallax, ParallaxBanner } from "react-scroll-parallax";
 
 import Head from "next/head";
 import Image from "next/image";
-import Layout from "components/layout";
+import Layout from "../components/layout";
 import Link from "next/link";
 import Masonry from "react-masonry-css";
-import Section from "components/section";
+import Section from "../components/section";
 
 const breakpointColumnsObj = {
   default: 3,

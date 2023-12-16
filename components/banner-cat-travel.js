@@ -1,12 +1,12 @@
-import * as manifest from "music-release-manifest";
+import * as manifest from "../music-release-manifest";
 
 import { FaAmazon, FaApple, FaYoutube } from "react-icons/fa";
 
 import ExternalLink from "./external-link";
 import Image from "next/image";
-import ImageCalloutCallout from "components/image-callout/callout";
-import ImageCalloutImage from "components/image-callout/image";
-import ImageCalloutWrapper from "components/image-callout/wrapper";
+import ImageCalloutCallout from "./image-callout/callout";
+import ImageCalloutImage from "./image-callout/image";
+import ImageCalloutWrapper from "./image-callout/wrapper";
 import LinkButton from "./link-button";
 import React from "react";
 

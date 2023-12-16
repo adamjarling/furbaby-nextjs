@@ -1,4 +1,4 @@
-import Layout from "components/layout";
+import Layout from "../../components/layout";
 // import { getAllPostIds, getPostData } from "lib/posts";
 // import Head from "next/head";
 // import Date from "components/date";
@@ -71,26 +71,26 @@ export default function Post({ postData, allPostsData }) {
         <p className="text-center z-1">
           <Date dateString={postData.date} />
         </p>
-        <h1 className="relative z-1 text-center text-5xl md:text-6xl lg:text-7xl xl:text-8xl leading-tight md:leading-relaxed py-8 lg:py-12 xl:py-16">
+        <h1 className="relative py-8 text-5xl leading-tight text-center z-1 md:text-6xl lg:text-7xl xl:text-8xl md:leading-relaxed lg:py-12 xl:py-16">
           {postData.title}
         </h1>
       </div>
 
       <Section isSkinny>
         <div
-          className="z-1 break-words"
+          className="break-words z-1"
           dangerouslySetInnerHTML={{ __html: postData.contentHtml }}
         />
 
         {postData.externalUrl && (
-          <div className="text-center pt-8">
+          <div className="pt-8 text-center">
             <LinkButton href={postData.externalUrl} isExternal>
               Read Full Article
             </LinkButton>
           </div>
         )}
       </Section>
-      <nav className="px-6 py-6 md:px-12 md:py-12 flex justify-between uppercase md:text-xl w-full">
+      <nav className="flex justify-between w-full px-6 py-6 uppercase md:px-12 md:py-12 md:text-xl">
         <div className="max-w-sm">{renderPrev()}</div>
         <div className="max-w-sm text-right">{renderNext()}</div>
       </nav> */}

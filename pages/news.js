@@ -1,11 +1,11 @@
-import Head from "next/head";
-import Layout from "components/layout";
-import { getSortedPostsData } from "lib/posts";
-import Section from "components/section";
-import Image from "next/image";
-import Link from "next/link";
+import Date from "../components/date";
 import { FaArrowRight } from "react-icons/fa";
-import Date from "components/date";
+import Head from "next/head";
+import Image from "next/image";
+import Layout from "../components/layout";
+import Link from "next/link";
+import Section from "../components/section";
+import { getSortedPostsData } from "../lib/posts";
 
 export async function getStaticProps() {
   const allPostsData = getSortedPostsData();
@@ -25,19 +25,17 @@ export default function News({ allPostsData }) {
 
       <Section>
         <h2 className="mt-20">News</h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-4">
+        <div className="grid grid-cols-1 gap-4 mt-4 sm:grid-cols-2">
           {allPostsData.map(({ id, coverImage, date, title, tagLine }) => (
-            <div key={id} className="bg-white text-black">
+            <div key={id} className="text-black bg-white">
               <Link href={`posts/${id}`}>
-                <a>
-                  <Image
-                    src={`/images/posts/${coverImage}`}
-                    alt={`ho`}
-                    width={1366}
-                    height={768}
-                    layout="responsive"
-                  />
-                </a>
+                <Image
+                  src={`/images/posts/${coverImage}`}
+                  alt={`ho`}
+                  width={1366}
+                  height={768}
+                  layout="responsive"
+                />
               </Link>
 
               <div className="p-4">
@@ -46,10 +44,11 @@ export default function News({ allPostsData }) {
                   <Date dateString={date} />
                 </p>
                 {/* <p>{tagLine}</p> */}
-                <Link href={`posts/${id}`}>
-                  <a className="border-gray-800 inline-flex items-center text-gray-700 hover:text-black uppercase">
-                    <span className="pr-3">Read More</span> <FaArrowRight />
-                  </a>
+                <Link
+                  href={`posts/${id}`}
+                  className="inline-flex items-center text-gray-700 uppercase border-gray-800 hover:text-black"
+                >
+                  <span className="pr-3">Read More</span> <FaArrowRight />
                 </Link>
               </div>
             </div>

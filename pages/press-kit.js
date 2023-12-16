@@ -1,15 +1,15 @@
 import { Parallax, ParallaxBanner } from "react-scroll-parallax";
 
-import CargoPromo from "components/cargo-promo";
-import ExternalLink from "components/external-link";
-import FandTS from "components/f-and-ts";
+import CargoPromo from "../components/cargo-promo";
+import ExternalLink from "../components/external-link";
+import FandTS from "../components/f-and-ts";
 import Head from "next/head";
-import Layout from "components/layout";
+import Layout from "../components/layout";
 import Obfuscate from "react-obfuscate";
-import ParallaxBannerChildren from "components/parallax-banner-children";
-import Section from "components/section";
-import SplashSingles from "components/splash-singles";
-import SplashVideos from "components/splash-videos";
+import ParallaxBannerChildren from "../components/parallax-banner-children";
+import Section from "../components/section";
+import SplashSingles from "../components/splash-singles";
+import SplashVideos from "../components/splash-videos";
 
 export default function PressKit() {
   return (

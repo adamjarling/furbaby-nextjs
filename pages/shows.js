@@ -1,13 +1,26 @@
 import { Parallax, ParallaxBanner } from "react-scroll-parallax";
 import { format, parseISO } from "date-fns";
 
-import ExternalLink from "components/external-link";
+import ExternalLink from "../components/external-link";
 import Head from "next/head";
 import Image from "next/image";
-import Layout from "components/layout";
-import LinkButton from "components/link-button";
-import PromoDownloads from "components/promo-downloads";
-import Section from "components/section";
+import Layout from "../components/layout";
+import LinkButton from "../components/link-button";
+import PromoDownloads from "../components/promo-downloads";
+import Section from "../components/section";
+
+const shows2024 = [
+  {
+    date: "2024-02-17",
+    venue: "Space Evanston",
+    venueLink: "https://www.evanstonspace.com/",
+    time: "12pm",
+    playingWith: "Senn High School Battle of the Bands",
+    location: "Evanson, IL USA",
+    ticketUrl: "",
+    facebookEventUrl: "",
+  },
+];
 
 const shows2023 = [
   {
@@ -312,6 +325,12 @@ export default function Shows() {
       </ParallaxBanner>
 
       <Section isCentered>
+        <h2>2024</h2>
+        <div className="">
+          {[...shows2024].map((show) => (
+            <ShowsGrid key={show.date} {...show}></ShowsGrid>
+          ))}
+        </div>
         <h2>2023</h2>
         <div className="">
           {[...shows2023].map((show) => (
@@ -381,7 +400,7 @@ export default function Shows() {
         <h2>2021</h2>
         <div className="">
           {shows2021.map((show) => (
-            <ShowsGrid {...show}></ShowsGrid>
+            <ShowsGrid key={show.date} {...show}></ShowsGrid>
           ))}
         </div>
       </Section>
