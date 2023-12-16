@@ -1,9 +1,9 @@
-import React from "react";
-import ImageCalloutWrapper from "components/image-callout/wrapper";
-import ImageCalloutImage from "components/image-callout/image";
-import ImageCalloutCallout from "components/image-callout/callout";
 import Image from "next/image";
+import ImageCalloutCallout from "components/image-callout/callout";
+import ImageCalloutImage from "components/image-callout/image";
+import ImageCalloutWrapper from "components/image-callout/wrapper";
 import LinkButton from "./link-button";
+import React from "react";
 
 export default function ReggiesJan2023() {
   return (
@@ -29,7 +29,7 @@ export default function ReggiesJan2023() {
           <a href="https://jasonkaneandthejive.bandcamp.com/" target="_blank">
             Jason Kane and the Jive
           </a>{" "}
-          as part of the Jive's January residency. Wednesday, January 25. 8pm.
+          as part of the Jives January residency. Wednesday, January 25. 8pm.
           21+ Free!
         </p>
 

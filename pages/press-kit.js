@@ -1,14 +1,15 @@
+import { Parallax, ParallaxBanner } from "react-scroll-parallax";
+
+import CargoPromo from "components/cargo-promo";
+import ExternalLink from "components/external-link";
+import FandTS from "components/f-and-ts";
 import Head from "next/head";
 import Layout from "components/layout";
-import { ParallaxBanner, Parallax } from "react-scroll-parallax";
-import ParallaxBannerChildren from "components/parallax-banner-children";
-import FandTS from "components/f-and-ts";
-import ExternalLink from "components/external-link";
 import Obfuscate from "react-obfuscate";
+import ParallaxBannerChildren from "components/parallax-banner-children";
 import Section from "components/section";
-import SplashVideos from "components/splash-videos";
 import SplashSingles from "components/splash-singles";
-import CargoPromo from "components/cargo-promo";
+import SplashVideos from "components/splash-videos";
 
 export default function PressKit() {
   return (
@@ -39,7 +40,7 @@ export default function PressKit() {
         <p>
           <FandTS /> is an alt/garage/psych art project hatched for the 2020s.
           The band experiments with music, videos, photography and reflects
-          what's going on in a world that just got fast-forwarded into the
+          what&apos;s going on in a world that just got fast-forwarded into the
           future.
         </p>
         <p>
@@ -67,7 +68,7 @@ export default function PressKit() {
           ,{" "}
           <ExternalLink url="https://www.abbarama.com/">ABBARAMA</ExternalLink>,{" "}
           <ExternalLink url="https://en.wikipedia.org/wiki/The_Dogs_D%27Amour">
-            Tyla and Dogs 'D Amour
+            Tyla and Dogs &apos;D Amour
           </ExternalLink>
           ,{" "}
           <ExternalLink url="https://www.facebook.com/EarlySound">

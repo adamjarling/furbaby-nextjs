@@ -26,13 +26,13 @@ export default function BannerCatTravel() {
       </ImageCalloutImage>
       <ImageCalloutCallout isReversed>
         <p className="py-6 uppercase">First single in 2 years!</p>
-        <h2 className="py-8">What if the Cat Won't Travel</h2>
+        <h2 className="py-8">What if the Cat Won&apos;t Travel</h2>
         <p>
           April Fools Day everyone! First single in 2 years just released, and
-          it's a cover of the classic "I'm a Believer" by The Monkees. (Just
-          kidding). Even more questionable, it's a mellow, acoustic number to
-          grease the wheels for a whole bunch of garage rock coming up in 2023.
-          🤘🎸
+          it&apos;s a cover of the classic &quot;I&apos;m a Believer&quot; by
+          The Monkees. (Just kidding). Even more questionable, it&apos;s a
+          mellow, acoustic number to grease the wheels for a whole bunch of
+          garage rock coming up in 2023. 🤘🎸
         </p>
 
         <div className="flex mb-8 text-3xl">

@@ -1,14 +1,15 @@
-import Head from "next/head";
-import Layout from "components/layout";
-import { ParallaxBanner, Parallax } from "react-scroll-parallax";
-import ParallaxBannerChildren from "components/parallax-banner-children";
-import ExternalLink from "components/external-link";
-import Section from "components/section";
+import { Parallax, ParallaxBanner } from "react-scroll-parallax";
 import { format, parseISO } from "date-fns";
+
+import ExternalLink from "components/external-link";
+import Head from "next/head";
 import Image from "next/image";
-import SplashVideos from "components/splash-videos";
-import PromoDownloads from "components/promo-downloads";
+import Layout from "components/layout";
 import Obfuscate from "react-obfuscate";
+import ParallaxBannerChildren from "components/parallax-banner-children";
+import PromoDownloads from "components/promo-downloads";
+import Section from "components/section";
+import SplashVideos from "components/splash-videos";
 
 function formatDate(date) {
   return format(parseISO(date), "E MMM dd");
@@ -30,13 +31,13 @@ export default function Press() {
         style={{ height: "60vh" }}
       >
         <div className="absolute inset-0 bg-fur-blue mix-blend-multiply" />
-        <div className="absolute top-0 left-0 right-0 bottom-0 flex flex-col justify-end pb-6 px-6">
+        <div className="absolute top-0 bottom-0 left-0 right-0 flex flex-col justify-end px-6 pb-6">
           <h1 className="text-right">Press Pack</h1>
         </div>
       </ParallaxBanner>
 
       <Section>
-        <div className="text-center mb-10 text-3xl">
+        <div className="mb-10 text-3xl text-center">
           <figure className="mb-10">
             <blockquote>
               <p className="leading-tight">
@@ -50,8 +51,8 @@ export default function Press() {
           <figure className="mb-10">
             <blockquote>
               <p className="leading-tight">
-                “...innate garage-rock swagger. Rich in Redd Kross-recalling
-                melodic sensibility."
+                &quot;...innate garage-rock swagger. Rich in Redd
+                Kross-recalling melodic sensibility.&quot;
               </p>
             </blockquote>
             <figcaption className="text-xl">
@@ -61,7 +62,7 @@ export default function Press() {
           <figure className="mb-10">
             <blockquote>
               <p className="leading-tight">
-                It's time to swipe right on Furbaby and the Tight Spaces”.
+                It&apos;s time to swipe right on Furbaby and the Tight Spaces”.
               </p>
             </blockquote>
             <figcaption className="text-xl">
@@ -159,7 +160,7 @@ export default function Press() {
         <SplashVideos />
 
         <h2 className="mt-10">Promo Material</h2>
-        <div className="bg-white text-black">
+        <div className="text-black bg-white">
           <PromoDownloads />
         </div>
       </Section>

@@ -82,8 +82,8 @@ export default function Spain2022Page() {
               ...
             </p>
             <p>
-              "A finales del próximo mes tendremos de gira por la península la
-              fantástica banda americana Furbaby and the Tight Spaces... para
+              &quot;A finales del próximo mes tendremos de gira por la península
+              la fantástica banda americana Furbaby and the Tight Spaces... para
               aquellos que no la conozcáis, se trata de una superbanda
               procedente de Chicago y que tiene entre sus filas a gente como
               Adam Arling (The Last Vegas, Warrior Soul, Urge Overkill), Joe
@@ -93,20 +93,20 @@ export default function Spain2022Page() {
               de gira por primera vez en nuestro país para presentar su nuevo
               álbum repleto de garaje, pop y psicodelia... apunta tu fecha y no
               te los pierdas porque seguro que será una bomba en directo... keep
-              on rockin'!!!"
+              on rockin&apos;!!!&quot;
             </p>
             <p className="hidden">
               at the end of next month we will have the fantastic American band
               Furbaby and the Tight Spaces touring the peninsula... For those of
-              you who don't know, it's a superb band from Chicago that has
-              people like Adam Arling (The Last Vegas, Warrior Soul, Urge
+              you who don&apos;t know, it&apos;s a superb band from Chicago that
+              has people like Adam Arling (The Last Vegas, Warrior Soul, Urge
               Overkill), Joe Winters (Steepwater Band), Dennis Post (Warrior
               Soul, City Kid) s), Calvin Marty (Chicago actor and musician) and
-              Bryan Wilkinson (The Last Vegas, Black Actress), there's that,
-              almost nothing.. the band will be touring for the first time in
-              our country to present their new album packed with garage, pop and
-              psychedelia... mark your date and don't miss because it's sure to
-              be bomb live.. Keep on rockin'!!!
+              Bryan Wilkinson (The Last Vegas, Black Actress), there&apos;s
+              that, almost nothing.. the band will be touring for the first time
+              in our country to present their new album packed with garage, pop
+              and psychedelia... mark your date and don&apos;t miss because
+              it&apos;s sure to be bomb live.. Keep on rockin&apos;!!!
             </p>
           </div>
           <div className="my-10 aspect-w-16 aspect-h-9">
@@ -132,7 +132,7 @@ export default function Spain2022Page() {
         <div className="text-2xl text-center text-white bg-black">
           <Section>
             {dates.map(({ date, label }) => (
-              <p>
+              <p key={label}>
                 <span className="text-xl font-bold uppercase">{date}</span>
                 <br />
                 {label}

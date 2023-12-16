@@ -1,16 +1,16 @@
+import ExternalLink from "components/external-link";
+import FandTS from "components/f-and-ts";
 import React from "react";
 import Section from "components/section";
-import FandTS from "components/f-and-ts";
-import ExternalLink from "components/external-link";
 
 function IntroParagraph(props) {
   return (
     <Section isJustify isNarrow>
-      <div className="lead-text text-center">
+      <div className="text-center lead-text">
         <p>
           Dreamed up during our 2020 quarantine, <FandTS /> is an
           alt/garage/psych art project that experiments with music, videos,
-          photography and reflects on what's going on in a world that just got
+          photography and reflects on what is going on in a world that just got
           fast-forwarded into the future, unexpectedly.
         </p>
         <p>

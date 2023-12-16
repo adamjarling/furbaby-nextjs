@@ -315,13 +315,13 @@ export default function Shows() {
         <h2>2023</h2>
         <div className="">
           {[...shows2023].map((show) => (
-            <ShowsGrid {...show}></ShowsGrid>
+            <ShowsGrid key={show.date} {...show}></ShowsGrid>
           ))}
         </div>
         <h2>2022</h2>
         <div className="">
           {[...shows2022].map((show) => (
-            <ShowsGrid {...show}></ShowsGrid>
+            <ShowsGrid key={show.date} {...show}></ShowsGrid>
           ))}
         </div>
         <LinkButton href="/press">Download Tour Kit</LinkButton>

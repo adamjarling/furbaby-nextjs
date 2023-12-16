@@ -1,9 +1,9 @@
-import React from "react";
-import ImageCalloutWrapper from "components/image-callout/wrapper";
-import ImageCalloutImage from "components/image-callout/image";
-import ImageCalloutCallout from "components/image-callout/callout";
 import Image from "next/image";
+import ImageCalloutCallout from "components/image-callout/callout";
+import ImageCalloutImage from "components/image-callout/image";
+import ImageCalloutWrapper from "components/image-callout/wrapper";
 import LinkButton from "./link-button";
+import React from "react";
 
 export default function EuroTease() {
   return (
@@ -18,12 +18,13 @@ export default function EuroTease() {
         />
       </ImageCalloutImage>
       <ImageCalloutCallout>
-        <p className="uppercase py-6">Special Announcement</p>
-        <h2 className="py-8">Let's Go! Spanish Tour 2022</h2>
+        <p className="py-6 uppercase">Special Announcement</p>
+        <h2 className="py-8">Let&apos;s Go! Spanish Tour 2022</h2>
         <p>
-          We're excited to announce the first official "fur tour", Septiembre 23
-          - Octubre 3, 2022 in a place dear to our hearts. We pledge to bring
-          Chicago #TrashBluesPsychPop to the Iberian Peninsula in full effect.
+          We&apos;re excited to announce the first official &quot;fur
+          tour&quot;, Septiembre 23 - Octubre 3, 2022 in a place dear to our
+          hearts. We pledge to bring Chicago #TrashBluesPsychPop to the Iberian
+          Peninsula in full effect.
         </p>
 
         <LinkButton isInverted href="/spain2022">

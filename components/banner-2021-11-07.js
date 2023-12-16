@@ -1,18 +1,18 @@
-import React from "react";
-import PropTypes from "prop-types";
-import Section from "components/section";
-import LinkButton from "components/link-button";
-import HeadlineCalloutWrapper from "components/headline-callout/wrapper";
-import HeadlineCalloutSubhead from "components/headline-callout/subhead";
-import HeadlineCalloutHeadline from "components/headline-callout/headline";
 import ExternalLink from "./external-link";
+import HeadlineCalloutHeadline from "components/headline-callout/headline";
+import HeadlineCalloutSubhead from "components/headline-callout/subhead";
+import HeadlineCalloutWrapper from "components/headline-callout/wrapper";
 import Image from "next/image";
+import LinkButton from "components/link-button";
+import PropTypes from "prop-types";
+import React from "react";
+import Section from "components/section";
 
 const facebookEvent = "https://www.facebook.com/events/168285825506607";
 
 function BannerDoubleDoor(props) {
   return (
-    <div className="bg-white text-black">
+    <div className="text-black bg-white">
       <Section>
         <ExternalLink url={facebookEvent}>
           <span className="hidden sm:block">
@@ -37,15 +37,15 @@ function BannerDoubleDoor(props) {
           has canceled their tour), however...
         </p>
         <p>
-          We'll now be performing November 7th at the new{" "}
+          We will now be performing November 7th at the new{" "}
           <ExternalLink url="https://doubledoor.com">Double Door</ExternalLink>{" "}
-          live music space in Chicago's Uptown neighborhood. During it's
-          renovation,{" "}
+          live music space in Chicago&apos;s Uptown neighborhood. During
+          it&apos;s renovation,{" "}
           <ExternalLink url="https://doubledoor.com">Double Door</ExternalLink>{" "}
-          is hosting "Double Door Jams", every other Sunday. RSVP, hang out,
-          have a free beer, check out some music and the new venue as its being
-          built. And Furbaby finally schedules a show that might not get
-          canceled. Smell the excitement!
+          is hosting &quot;Double Door Jams&quot;, every other Sunday. RSVP,
+          hang out, have a free beer, check out some music and the new venue as
+          its being built. And Furbaby finally schedules a show that might not
+          get canceled. Smell the excitement!
         </p>
         <p>
           <span className="font-extrabold">Sunday, November 7th at 1pm</span>.{" "}
@@ -53,7 +53,7 @@ function BannerDoubleDoor(props) {
             1050 W Wilson Ave, Chicago, IL
           </ExternalLink>
         </p>
-        <div className="flex flex-col sm:flex-row items-center justify-center sm:justify-start w-full">
+        <div className="flex flex-col items-center justify-center w-full sm:flex-row sm:justify-start">
           <LinkButton
             href={`https://forms.gle/yoN4NAZfZzkHSe7Y8`}
             isExternal
