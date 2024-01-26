@@ -1,5 +1,9 @@
 const videos = [
   {
+    id: "7NbRpqTQ5Lk",
+    title: "Furbaby and the Tight Spaces - When the Wheels Come Off video",
+  },
+  {
     id: "hGUpzW19SRc",
     title: "Furbaby and the Tight Spaces - Taste of the Wild video",
   },
