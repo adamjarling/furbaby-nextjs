@@ -30,13 +30,13 @@ export default function BannerWheels() {
         <p>
           A collaboration with UK multi-media artist+ designer{" "}
           <ExternalLink url={`https://www.instagram.com/miyuw0rld/`}>
-            Miyu
+            Mila Djokic-Randolph
           </ExternalLink>
           , the video concept was imagined, filmed and edited in December 2023.
-          Miyu&apos;s short-film paints a collage of wheels coming off in
+          Mila&apos;s short-film paints a collage of wheels coming off in
           abstract worlds and fur-realities. Check out more of{" "}
           <ExternalLink url={`https://www.instagram.com/miyuw0rld/`}>
-            Miyu&apos;s work
+            Mila Djokic-Randolph&apos;s work
           </ExternalLink>
         </p>
 
