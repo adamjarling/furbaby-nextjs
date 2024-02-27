@@ -25,32 +25,13 @@ export default function Home() {
         <Section>
           <BannerWheels />
           <iframe
-            className="w-full mt-5 aspect-video"
+            className="w-full mt-12 aspect-video"
             src="https://www.youtube.com/embed/7NbRpqTQ5Lk?si=PuVTEgMau7U4TE7Z"
             title="When The Wheels Come Off"
-            frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen
-          ></iframe>
-        </Section>
-      </div>
-
-      <div className="bg-black">
-        <Section>
-          <BannerTaste />
-        </Section>
-      </div>
-
-      <div className="container mx-auto">
-        <div className="mb-10">
-          <iframe
-            className="w-full aspect-video"
-            src={`https://www.youtube.com/embed/hGUpzW19SRc`}
-            title={`Taste of the Wild`}
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
           ></iframe>
-        </div>
+        </Section>
       </div>
 
       <div className="bg-white">

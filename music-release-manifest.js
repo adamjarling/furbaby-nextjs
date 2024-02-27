@@ -120,3 +120,16 @@ export const waiting = {
   wav: "https://drive.google.com/file/d/1KGG28quJNrJ700tW1fyOb4zFqz4pHAVI/view?usp=sharing",
   youTubeId: "e05rIyfWE9Y",
 };
+
+export const wheels = {
+  amazonMusic:
+    "https://music.amazon.com/tracks/B0CWFLC7RL?marketplaceId=ATVPDKIKX0DER&musicTerritory=US&ref=dm_sh_Q5AHA1JwikYtVUECm54P4FL0F",
+  appleMusic:
+    "https://music.apple.com/us/album/when-the-wheels-come-off-single/1732938854",
+  youTubeMusic:
+    "https://music.youtube.com/watch?v=iEulTkNyM3E&si=cR3EC6IDgc1CM7qc",
+  spotify:
+    "https://open.spotify.com/album/1M3ixAbEEP6zgUs4dEQDmI?si=jkrJmRupRQmn7ZaBeKRswQ",
+  wav: "",
+  youTubeId: "7NbRpqTQ5Lk",
+};

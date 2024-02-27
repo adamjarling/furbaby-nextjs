@@ -1,14 +1,11 @@
 import "photoswipe/dist/photoswipe.css";
 
 import { Gallery, Item } from "react-photoswipe-gallery";
-import { Parallax, ParallaxBanner } from "react-scroll-parallax";
 
 import Head from "next/head";
-import Image from "next/image";
 import Layout from "../components/layout";
-import Link from "next/link";
 import Masonry from "react-masonry-css";
-import Section from "../components/section";
+import { ParallaxBanner } from "react-scroll-parallax";
 
 const breakpointColumnsObj = {
   default: 3,
@@ -24,6 +21,14 @@ const photoDefault = {
 };
 
 const photos = [
+  {
+    ...photoDefault,
+    src: "/images/fur-live-space-2024.jpg",
+    alt: "Live at SPACE Evanston USA",
+    width: 2800,
+    height: 2004,
+    caption: `Photo by: <a href="https://caseymurtaugh.art" target="_blank">Casey Murtaugh</a>`,
+  },
   {
     ...photoDefault,
     src: "/images/spain2022/IMG_0723.JPG",

@@ -104,6 +104,12 @@ export default function Music() {
 
 export const releases = [
   {
+    src: "wheels-come-off-single.png",
+    title: "When the Wheels Come Off",
+    manifestItems: manifest.wheels,
+    year: "2024",
+  },
+  {
     src: "taste-final_v1.png",
     title: "Taste of the Wild",
     manifestItems: manifest.tasteOfTheWild,

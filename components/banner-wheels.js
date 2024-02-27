@@ -10,15 +10,15 @@ import ImageCalloutWrapper from "./image-callout/wrapper";
 import LinkButton from "./link-button";
 import React from "react";
 
-const manifestItems = manifest.tasteOfTheWild;
+const manifestItems = manifest.wheels;
 
 export default function BannerWheels() {
   return (
     <ImageCalloutWrapper isReversed>
       <ImageCalloutImage isReversed>
         <Image
-          src={`/images/wheels-teaser-poster.png`}
-          alt={`When the Wheels Come Off`}
+          src={`/images/wheels-come-off-single.png`}
+          alt={`When the Wheels Come Off Single Cover Artwork`}
           layout="responsive"
           width={2000}
           height={2000}
@@ -26,21 +26,21 @@ export default function BannerWheels() {
       </ImageCalloutImage>
       <ImageCalloutCallout isReversed>
         <p className="py-6 uppercase">New single/video!</p>
-        <h2 className="py-8">When the Wheels Come Off</h2>
+        <h2 className="py-8">Wheels Come Off</h2>
         <p>
           A collaboration with UK multi-media artist+ designer{" "}
           <ExternalLink url={`https://www.instagram.com/miyuw0rld/`}>
-            Mila Djokic-Randolph
+            Mila Djokic-Randolph led
           </ExternalLink>
-          , the video concept was imagined, filmed and edited in December 2023.
-          Mila&apos;s short-film paints a collage of wheels coming off in
-          abstract worlds and fur-realities. Check out more of{" "}
+          the video and cover art concepts. Mila&apos;s short-film and imagery
+          paint a collage of fur-realties in abstract worlds. What is real?
+          Check out more of{" "}
           <ExternalLink url={`https://www.instagram.com/miyuw0rld/`}>
             Mila Djokic-Randolph&apos;s work
           </ExternalLink>
         </p>
 
-        {/* <div className="flex mb-8 text-3xl">
+        <div className="flex mb-8 text-3xl">
           <ExternalLink url={manifestItems.youTubeMusic}>
             <FaYoutube />
           </ExternalLink>
@@ -54,11 +54,11 @@ export default function BannerWheels() {
               <FaAmazon />
             </ExternalLink>
           )}
-        </div> */}
+        </div>
 
-        {/* <LinkButton isExternal href={manifestItems.spotify}>
+        <LinkButton isExternal href={manifestItems.spotify}>
           Listen Now
-        </LinkButton> */}
+        </LinkButton>
       </ImageCalloutCallout>
     </ImageCalloutWrapper>
   );
